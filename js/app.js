@@ -10,6 +10,9 @@ const AppState = {
   isClickLocked: false, // Bloqueo permanente al hacer clic para evitar pérdidas por mouseleave accidental
 };
 
+// Variable para controlar el retraso (debounce) en las transiciones de hover y evitar el "hover storm"
+let hoverTimeout = null;
+
 document.addEventListener("DOMContentLoaded", () => {
   initColumnTransitions();
   initProductDrawer();
@@ -25,23 +28,94 @@ function initColumnTransitions() {
   const container = document.querySelector(".columns-container");
 
   columns.forEach((column) => {
-    // Evento de hover para computadoras
+    // Evento de hover para computadoras (menú de inicio vertical)
     column.addEventListener("mouseenter", function () {
+      // CRÍTICO: Si ya estamos en vista expandida o de pestañas superiores, ignorar por completo
+      // el mouseenter directo en el cuerpo de las columnas. Las transiciones en modo horizontal
+      // solo deben ser provocadas por los triggers estáticos (.tab-trigger) a z-index 150.
+      if (container.classList.contains("has-hover-active") || container.classList.contains("has-active-column")) {
+        return;
+      }
+
       const areaId = this.getAttribute("data-area");
-      activateColumnHover(this, areaId, container);
+      
+      // Limpiar cualquier transición pendiente anterior
+      if (hoverTimeout) clearTimeout(hoverTimeout);
+
+      // Debounce de 50ms en la primera apertura vertical para asegurar estabilidad
+      hoverTimeout = setTimeout(() => {
+        activateColumnHover(this, areaId, container);
+      }, 50);
     });
 
     // Evento de click para bloquear vista y soporte táctil
     column.addEventListener("click", function (e) {
       if (e.target.closest("button") || e.target.closest(".close-section-btn") || e.target.closest(".product-actions")) return;
 
+      // Limpiar cualquier transición por hover pendiente al hacer clic
+      if (hoverTimeout) {
+        clearTimeout(hoverTimeout);
+        hoverTimeout = null;
+      }
+
       const areaId = this.getAttribute("data-area");
       activateColumnClick(this, areaId, container);
     });
   });
 
+  // Triggers estáticos para las pestañas superiores (evita el "hover storm" o "flickering" al deslizar por el menú horizontal)
+  const tabTriggers = document.querySelectorAll(".tab-trigger");
+  tabTriggers.forEach((trigger) => {
+    const areaId = trigger.getAttribute("data-area");
+    const targetCol = document.getElementById(`col-${areaId}`);
+
+    trigger.addEventListener("mouseenter", function () {
+      if (targetCol) {
+        targetCol.classList.add("tab-hovered");
+        
+        // Limpiar cualquier transición por hover pendiente
+        if (hoverTimeout) clearTimeout(hoverTimeout);
+
+        // Debounce estratégico de 80ms para evitar parpadeos y cambios rápidos accidentales al deslizar el cursor a través de las pestañas
+        hoverTimeout = setTimeout(() => {
+          activateColumnHover(targetCol, areaId, container);
+        }, 80);
+      }
+    });
+
+    trigger.addEventListener("mouseleave", function () {
+      if (targetCol) {
+        targetCol.classList.remove("tab-hovered");
+      }
+      
+      // Limpiar timeout si el cursor sale de la pestaña antes de cumplirse el debounce
+      if (hoverTimeout) {
+        clearTimeout(hoverTimeout);
+        hoverTimeout = null;
+      }
+    });
+
+    trigger.addEventListener("click", function (e) {
+      e.stopPropagation();
+      
+      // Limpiar cualquier transición por hover pendiente al hacer clic
+      if (hoverTimeout) {
+        clearTimeout(hoverTimeout);
+        hoverTimeout = null;
+      }
+
+      if (targetCol) {
+        activateColumnClick(targetCol, areaId, container);
+      }
+    });
+  });
+
   // Evento de salida del contenedor general (restablece al menú si no está bloqueado por clic)
   container.addEventListener("mouseleave", function () {
+    if (hoverTimeout) {
+      clearTimeout(hoverTimeout);
+      hoverTimeout = null;
+    }
     if (!AppState.isClickLocked) {
       deactivateHoverTransitions(container);
     }
@@ -52,6 +126,10 @@ function initColumnTransitions() {
   closeBtns.forEach((btn) => {
     btn.addEventListener("click", function (e) {
       e.stopPropagation(); // Detener propagación
+      if (hoverTimeout) {
+        clearTimeout(hoverTimeout);
+        hoverTimeout = null;
+      }
       deactivateAllColumns(container);
     });
   });
@@ -104,9 +182,17 @@ function activateColumnClick(columnElem, areaId, containerElem) {
 }
 
 function deactivateHoverTransitions(containerElem) {
+  if (hoverTimeout) {
+    clearTimeout(hoverTimeout);
+    hoverTimeout = null;
+  }
+
   containerElem.classList.remove("has-hover-active");
   const allCols = containerElem.querySelectorAll(".area-column");
-  allCols.forEach(c => c.classList.remove("hover-active"));
+  allCols.forEach(c => {
+    c.classList.remove("hover-active");
+    c.classList.remove("tab-hovered");
+  });
 
   if (!AppState.isClickLocked) {
     document.body.classList.remove("section-active");
@@ -115,6 +201,11 @@ function deactivateHoverTransitions(containerElem) {
 }
 
 function deactivateAllColumns(containerElem) {
+  if (hoverTimeout) {
+    clearTimeout(hoverTimeout);
+    hoverTimeout = null;
+  }
+
   AppState.isClickLocked = false;
   AppState.activeArea = null;
   
@@ -125,6 +216,7 @@ function deactivateAllColumns(containerElem) {
   allCols.forEach(c => {
     c.classList.remove("hover-active");
     c.classList.remove("active");
+    c.classList.remove("tab-hovered");
   });
   
   document.body.classList.remove("section-active");

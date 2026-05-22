@@ -203,6 +203,31 @@
   display: none !important;
 }
 
+/* Overlay estático para evitar parpadeos en hover de pestañas */
+.tabs-trigger-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: none;
+  z-index: 150; /* Superior a la barra de pestañas que está en z-index 50 */
+  pointer-events: none;
+}
+
+.columns-container.has-hover-active .tabs-trigger-overlay,
+.columns-container.has-active-column .tabs-trigger-overlay {
+  display: flex;
+  pointer-events: auto;
+}
+
+.tab-trigger {
+  width: 14.2857%;
+  height: 100%;
+  cursor: pointer;
+  background: transparent;
+}
+
 /* Mostrar Pestaña Horizontal */
 .tab-header {
   display: none;
@@ -243,6 +268,8 @@
 }
 
 /* Efecto hover en pestañas superiores */
+.columns-container.has-hover-active .area-column.tab-hovered .tab-header,
+.columns-container.has-active-column .area-column.tab-hovered .tab-header,
 .columns-container.has-hover-active .area-column:hover .tab-header,
 .columns-container.has-active-column .area-column:hover .tab-header {
   opacity: 1;
