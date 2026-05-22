@@ -174,6 +174,25 @@ const PRODUCTS_DATA = {
         safety: "Debido a su naturaleza ácida y nivel de corrosividad, NUNCA debe mezclarse con cloro o cualquier otro producto. Si su uso es continuo por parte del personal de limpieza, se recomienda estrictamente el uso de guantes.",
         badge: "Desincrustante Ácido",
         image: "images/swipe_brite.png"
+      },
+      {
+        id: "blue_genie_spa",
+        name: "Swipe Blue Genie",
+        tagline: "Desinfectante y desodorizante enzimático para sanitarios",
+        description: "Es un limpiador enzimático y biodegradable perfecto para los inodoros de la Casa Club y áreas de vestidores. Actúa en el tanque y la taza inhibiendo el crecimiento bacteriano, eliminando olores y evitando depósitos de sarro de forma automática en cada descarga.",
+        benefits: [
+          "Doble acción automática: Limpieza enzimática constante en el tanque y la taza en cada descarga.",
+          "Control bacteriano y desodorización de larga duración para sanitarios de alto tráfico.",
+          "Evita depósitos de sarro sin dañar ni manchar la porcelana o cerámica de los inodoros.",
+          "100% biodegradable y seguro para sistemas de tuberías y fosas sépticas."
+        ],
+        usage: "Mantenimiento automático, desinfección y desodorización de inodoros en vestidores y Casa Club.",
+        dosage: "Dosificación automática mediante descarga de agua del tanque. Rinde de 2 a 3 meses.",
+        dilution: "Dispositivo de liberación lenta: 1 unidad de 250g rinde aproximadamente 900 descargas.",
+        phImpact: "Ligeramente alcalino (pH balanceado y protector).",
+        safety: "Seguro al tacto en su dispositivo dosificador. Biodegradable y no corrosivo.",
+        badge: "Desinfectante Enzimático",
+        image: "images/blue_genie.png"
       }
     ]
   },

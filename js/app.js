@@ -712,6 +712,45 @@ function updateSpaDisplay(product) {
           </div>
         </div>
       `;
+    } else if (product.id === "blue_genie_spa") {
+      featuresHtml = `
+        <div class="spa-feature-card">
+          <div class="spa-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="spa-feature-text">
+            <h4>Uso en el Club (Mantenimiento Automático)</h4>
+            <p>Es un limpiador enzimático y biodegradable perfecto para los inodoros de la Casa Club y áreas de vestidores. Actúa de forma continua tanto en el tanque como en la taza, inhibiendo eficazmente el crecimiento bacteriano, desinfectando y desodorizando el sanitario, al tiempo que evita depósitos de sarro.</p>
+          </div>
+        </div>
+        <div class="spa-feature-card">
+          <div class="spa-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="spa-feature-text">
+            <h4>Rendimiento Prolongado (Descargas)</h4>
+            <p>Su envase inteligente dosifica automáticamente la cantidad exacta necesaria de producto en cada descarga. Una sola unidad concentrada de 250 gramos mantiene el inodoro en óptimas condiciones por un periodo de <strong>2 a 3 meses</strong>, rindiendo aproximadamente **900 descargas**.</p>
+          </div>
+        </div>
+        <div class="spa-feature-card">
+          <div class="spa-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="spa-feature-text">
+            <h4>Ventaja Operativa Visual</h4>
+            <p>Facilita drásticamente la labor del personal de limpieza mediante su indicador visual activo, que tiñe el agua de un color azul claro. El producto solo requiere reemplazo cuando el agua de la descarga vuelve a ser transparente, garantizando no manchar la porcelana.</p>
+          </div>
+        </div>
+        <div class="spa-feature-card">
+          <div class="spa-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 3.5 1 8a9 9 0 0 1-9 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 22v-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="spa-feature-text">
+            <h4>Fórmula Biodegradable y Ecología</h4>
+            <p>Compuesto enzimático 100% biodegradable de liberación controlada. Es completamente inocuo para tuberías de drenaje, cañerías y sistemas de fosas sépticas, protegiendo las plantas tratadoras del club.</p>
+          </div>
+        </div>
+      `;
     } else {
       featuresHtml = `
         <div class="spa-feature-card">
