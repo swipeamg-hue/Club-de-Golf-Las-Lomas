@@ -255,12 +255,6 @@ function renderCatalogProducts() {
                 </svg>
                 Ficha Técnica
               </button>
-              <button class="btn-quote" onclick="addToQuoteCart('${product.id}', '${areaId}')">
-                <svg style="width:14px; height:14px; fill:none; stroke:currentColor; stroke-width:2.5" viewBox="0 0 24 24">
-                  <path d="M12 5v14M5 12h14"/>
-                </svg>
-                Agregar
-              </button>
             </div>
           </div>
         </div>
@@ -389,6 +383,8 @@ function initQuoteSystem() {
   const closeModalBtn = document.getElementById("quotes-close-modal");
   const quoteForm = document.getElementById("quotes-form-submit");
 
+  if (!floatingBar || !modalOverlay || !closeModalBtn || !quoteForm) return;
+
   // Abrir Modal
   floatingBar.addEventListener("click", (e) => {
     // Si se hace click en el botón o en la barra en general
@@ -450,6 +446,7 @@ window.addToQuoteCart = function (productId, areaId) {
 function updateQuoteUI() {
   const floatingBar = document.getElementById("quotes-floating-bar-container");
   const badgeCount = document.getElementById("quotes-badge-count");
+  if (!floatingBar || !badgeCount) return;
   
   const totalItems = AppState.quoteCart.reduce((sum, item) => sum + item.qty, 0);
 
@@ -459,7 +456,7 @@ function updateQuoteUI() {
   } else {
     floatingBar.classList.remove("visible");
     const modalOverlay = document.getElementById("quotes-modal-overlay");
-    modalOverlay.classList.remove("open");
+    if (modalOverlay) modalOverlay.classList.remove("open");
   }
 }
 
@@ -467,12 +464,13 @@ function openQuotesModal() {
   AppState.isClickLocked = true; // Bloquear colapso al abrir el cotizador principal
   const modalOverlay = document.getElementById("quotes-modal-overlay");
   const itemsContainer = document.getElementById("quotes-items-container");
+  if (!modalOverlay || !itemsContainer) return;
   
   // Limpiar vista de éxito previo si lo hubiera y restaurar formulario
   const formPanel = document.querySelector(".quotes-form-panel");
   const successPanel = document.getElementById("quotes-success-panel");
-  formPanel.style.display = "flex";
-  successPanel.style.display = "none";
+  if (formPanel) formPanel.style.display = "flex";
+  if (successPanel) successPanel.style.display = "none";
   
   renderQuoteItems();
   modalOverlay.classList.add("open");
@@ -480,6 +478,7 @@ function openQuotesModal() {
 
 function renderQuoteItems() {
   const itemsContainer = document.getElementById("quotes-items-container");
+  if (!itemsContainer) return;
   
   if (AppState.quoteCart.length === 0) {
     itemsContainer.innerHTML = `
@@ -543,11 +542,12 @@ window.removeQuoteItem = function (productId) {
 function submitQuoteRequest() {
   const formPanel = document.querySelector(".quotes-form-panel");
   const successPanel = document.getElementById("quotes-success-panel");
+  if (!formPanel || !successPanel) return;
   
   // Obtener valores de campos
-  const name = document.getElementById("client-name").value;
-  const dept = document.getElementById("client-dept").value;
-  const email = document.getElementById("client-email").value;
+  const name = document.getElementById("client-name") ? document.getElementById("client-name").value : "";
+  const dept = document.getElementById("client-dept") ? document.getElementById("client-dept").value : "";
+  const email = document.getElementById("client-email") ? document.getElementById("client-email").value : "";
   
   // Simulador de envío premium de cotización
   formPanel.style.display = "none";
@@ -596,7 +596,7 @@ function updateSpaDisplay(product) {
   const quoteBtn = document.getElementById("spa-add-to-quote-btn");
   const featuresColumn = document.getElementById("spa-features-column");
 
-  if (!spotlightCard || !quoteBtn || !featuresColumn) return;
+  if (!spotlightCard || !featuresColumn) return;
 
   // Añadir un pequeño efecto de fade-out temporal para la transición
   featuresColumn.style.opacity = "0";
@@ -628,7 +628,9 @@ function updateSpaDisplay(product) {
     }
 
     // 2. Actualizar botón de cotización
-    quoteBtn.setAttribute("onclick", `addToQuoteCart('${product.id}', 'spa')`);
+    if (quoteBtn) {
+      quoteBtn.setAttribute("onclick", `addToQuoteCart('${product.id}', 'spa')`);
+    }
 
     // 3. Generar las características técnicas dinámicas
     let featuresHtml = "";

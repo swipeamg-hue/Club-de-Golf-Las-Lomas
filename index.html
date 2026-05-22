@@ -330,13 +330,7 @@
                     <!-- Contenedor para SVGs cuando el producto no tiene imagen dedicada -->
                     <div id="spa-spotlight-svg-container" style="display: none; z-index: 2;"></div>
                   </div>
-                  
-                  <button class="btn-quote" id="spa-add-to-quote-btn" style="background: var(--color-spa); color: #000; width: 100%; justify-content: center; font-size: 0.9rem; padding: 0.8rem 1.5rem; border-radius: 12px; font-weight: 700;" onclick="addToQuoteCart('swipe_concentrado_spa', 'spa')">
-                    <svg style="width:16px; height:16px; fill:none; stroke:currentColor; stroke-width:2.5" viewBox="0 0 24 24">
-                      <path d="M12 5v14M5 12h14"/>
-                    </svg>
-                    Agregar al Presupuesto
-                  </button>
+
                 </div>
 
                 <!-- Columna de Características Técnicas -->
@@ -681,83 +675,7 @@
 
     </main>
 
-    <!-- 5. SISTEMA DE COTIZACIÓN (BARRA FLOTANTE INFERIOR) -->
-    <div class="quotes-bar-container" id="quotes-floating-bar-container">
-      <div class="quotes-floating-bar" id="quotes-floating-bar">
-        <div class="quotes-bar-info">
-          <div style="position:relative">
-            <svg class="quotes-cart-icon" viewBox="0 0 24 24">
-              <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
-              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span class="quotes-badge-count" id="quotes-badge-count" style="position:absolute; top:-12px; right:-12px;">0</span>
-          </div>
-          <span class="quotes-bar-text">Productos Seleccionados para el Club</span>
-        </div>
-        <button class="btn-open-quotes" id="btn-open-quotes">Ver Cotización</button>
-      </div>
-    </div>
 
-    <!-- MODAL DE COTIZACIÓN -->
-    <div class="quotes-modal-overlay" id="quotes-modal-overlay">
-      <div class="quotes-modal">
-        <!-- Columna Izquierda: Lista de Productos -->
-        <div class="quotes-list-panel">
-          <h3 class="quotes-list-title">Tu Solicitud de Cotización</h3>
-          <div class="quotes-items-container" id="quotes-items-container">
-            <!-- Rellenado dinámicamente por JS -->
-          </div>
-        </div>
-
-        <!-- Columna Derecha: Formulario de Contacto -->
-        <div class="quotes-form-panel">
-          <div class="quotes-form-header">
-            <div>
-              <h3 class="quotes-form-title">Datos del Solicitante</h3>
-              <span class="quotes-form-subtitle">Club de Golf Las Lomas</span>
-            </div>
-            <button class="quotes-close-modal" id="quotes-close-modal">×</button>
-          </div>
-
-          <form class="quotes-form" id="quotes-form-submit">
-            <div class="quotes-form-group">
-              <label class="quotes-form-label" for="client-name">Nombre Completo</label>
-              <input type="text" id="client-name" class="quotes-form-input" placeholder="Ej. Ing. Carlos Mendoza" required>
-            </div>
-            <div class="quotes-form-group">
-              <label class="quotes-form-label" for="client-dept">Departamento / Puesto</label>
-              <select id="client-dept" class="quotes-form-input calc-select" required>
-                <option value="mantenimiento">Gerente de Mantenimiento</option>
-                <option value="albercas">Coordinador de Áreas Acuáticas</option>
-                <option value="compras">Director de Compras / Suministros</option>
-                <option value="restaurante">Chef Ejecutivo / A&B</option>
-                <option value="spa">Administrador de Spa & Wellness</option>
-                <option value="direccion">Dirección General del Club</option>
-              </select>
-            </div>
-            <div class="quotes-form-group">
-              <label class="quotes-form-label" for="client-email">Correo Electrónico Oficial</label>
-              <input type="email" id="client-email" class="quotes-form-input" placeholder="carlos.mendoza@laslomas.com" required>
-            </div>
-            <div class="quotes-form-group">
-              <label class="quotes-form-label" for="client-phone">Teléfono de Contacto (Directo / Celular)</label>
-              <input type="tel" id="client-phone" class="quotes-form-input" placeholder="33 1234 5678" required>
-            </div>
-            
-            <button type="submit" class="quotes-btn-submit">Enviar Solicitud de Cotización</button>
-          </form>
-
-          <!-- Pantalla de Éxito al enviar (Oculta por defecto) -->
-          <div class="quotes-success-msg" id="quotes-success-panel" style="display: none;">
-            <div class="success-icon-container">✓</div>
-            <h3 style="font-family: var(--font-title); font-size: 1.4rem; color: #fff; margin-top: 1rem;">¡Solicitud Recibida!</h3>
-            <p style="font-size: 0.85rem; line-height: 1.6; color: var(--color-text-muted);">
-              Hemos registrado la solicitud de cotización para el <strong>Club de Golf Las Lomas</strong>. Un asesor técnico Swipe especializado se comunicará contigo a la brevedad para coordinar la entrega física del presupuesto y fichas de seguridad en PDF.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- CAJÓN INFORMATIVO DE DETALLES DE PRODUCTO (DRAWER) -->
     <div class="drawer-overlay" id="drawer-overlay">
