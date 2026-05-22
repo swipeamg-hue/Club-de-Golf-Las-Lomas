@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swipe - Presentación Química Club de Golf Las Lomas</title>
+  <meta name="description" content="Soluciones químicas profesionales de Swipe personalizadas para las 5 áreas clave del Club de Golf Las Lomas: Alberca, Spa, Gimnasio, Gastronomía y Mantenimiento.">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/components.css">
+  
+  <!-- Favicon placeholder or custom crest -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2240%22 fill=%22%2307070a%22 stroke=%22%2300f2fe%22 stroke-width=%226%22/><path d=%22M50 25 L65 55 L35 55 Z%22 fill=%22%2305e6b4%22/></svg>">
+</head>
+<body>
+
+  <!-- Fondo animado sutil -->
+  <div class="background-grid"></div>
+
+  <!-- Contenedor General SPA -->
+  <div class="spa-wrapper">
+
+    <!-- Encabezado General (Se oculta al expandir columna) -->
+    <header class="main-header" id="main-header">
+      <div class="brand-container">
+        <!-- Logo Vectorial Premium Swipe/Lomas -->
+        <svg class="brand-logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="45" stroke="url(#logo-grad)" stroke-width="4" stroke-dasharray="8 4"/>
+          <!-- Droplet -->
+          <path d="M50 20C50 20 28 48 28 62C28 74.1503 37.8497 84 50 84C62.1503 84 72 74.1503 72 62C72 48 50 20 50 20Z" fill="url(#drop-grad)" opacity="0.85"/>
+          <!-- Golf Crest Inside -->
+          <path d="M50 45 L58 68 L42 68 Z" fill="#ffffff" opacity="0.9"/>
+          <circle cx="50" cy="40" r="4" fill="#ffffff"/>
+          <defs>
+            <linearGradient id="logo-grad" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#00f2fe"/>
+              <stop offset="100%" stop-color="#8a3ffc"/>
+            </linearGradient>
+            <linearGradient id="drop-grad" x1="50" y1="20" x2="50" y2="84" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#00f2fe"/>
+              <stop offset="100%" stop-color="#05e6b4"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="brand-text">
+          <h1 class="brand-title">SWIPE</h1>
+          <span class="brand-subtitle">Soluciones Químicas</span>
+        </div>
+      </div>
+
+      <!-- Badge de Identidad del Club -->
+      <div class="club-lomas-badge">
+        <div class="club-badge-dot"></div>
+        <span class="club-badge-text">Club de Golf Las Lomas</span>
+      </div>
+    </header>
+
+    <!-- Layout Acordeón de 5 Columnas -->
+    <main class="columns-container" id="columns-container">
+
+      <!-- COLUMNA 1: ALBERCA -->
+      <section class="area-column col-alberca" data-area="alberca" id="col-alberca">
+        <div class="column-overlay"></div>
+        <div class="column-pattern"></div>
+        
+        <!-- Estado Colapsado -->
+        <div class="collapsed-content">
+          <span class="column-number">01</span>
+          <h2 class="column-vertical-title">Alberca & Acuáticos</h2>
+          <div class="column-explore-hint">
+            <span>Explorar</span>
+            <svg class="explore-icon-arrow" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M19 12l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+
+        <!-- Estado Expandido (Dashboard) -->
+        <div class="expanded-content" id="expanded-alberca">
+          <div class="dashboard-header">
+            <div>
+              <span class="info-area-badge" style="color: var(--color-alberca)">Área Técnica</span>
+              <h2 class="info-title" style="font-family: var(--font-title);">Alberca & Acuáticos</h2>
+            </div>
+            <button class="close-section-btn" id="close-alberca">
+              <svg class="close-icon-arrow" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+              Regresar al Menú
+            </button>
+          </div>
+
+          <div class="dashboard-grid">
+            <!-- Panel de Información y Calculadora (Izquierda) -->
+            <div class="info-panel">
+              <div class="info-title-group">
+                <p class="info-slogan">Agua 100% segura, cristalina y en perfecto balance químico para una experiencia de natación de clase mundial.</p>
+              </div>
+              
+              <!-- Contenedor donde se monta la calculadora en JS -->
+              <div id="calc-container-alberca"></div>
+            </div>
+
+            <!-- Panel de Catálogo de Productos (Derecha) -->
+            <div class="catalog-panel">
+              <div class="catalog-title-bar">
+                <h3 class="catalog-title">Línea Hidro-Sanitaria</h3>
+                <span class="catalog-subtitle">Productos Químicos Profesionales</span>
+              </div>
+              <div class="catalog-grid" id="catalog-grid-alberca">
+                <!-- Tarjetas se cargan dinámicamente por JS -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COLUMNA 2: SPA & WELLNESS -->
+      <section class="area-column col-spa" data-area="spa" id="col-spa">
+        <div class="column-overlay"></div>
+        <div class="column-pattern"></div>
+        
+        <!-- Estado Colapsado -->
+        <div class="collapsed-content">
+          <span class="column-number">02</span>
+          <h2 class="column-vertical-title">Spa & Wellness</h2>
+          <div class="column-explore-hint">
+            <span>Explorar</span>
+            <svg class="explore-icon-arrow" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M19 12l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+
+        <!-- Estado Expandido (Dashboard) -->
+        <div class="expanded-content" id="expanded-spa">
+          <div class="dashboard-header">
+            <div>
+              <span class="info-area-badge" style="color: var(--color-spa)">Área Sensorial</span>
+              <h2 class="info-title" style="font-family: var(--font-title);">Spa & Wellness</h2>
+            </div>
+            <button class="close-section-btn" id="close-spa">
+              <svg class="close-icon-arrow" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+              Regresar al Menú
+            </button>
+          </div>
+
+          <div class="dashboard-grid">
+            <div class="info-panel">
+              <div class="info-title-group">
+                <p class="info-slogan">Espacios de relajación profunda e higiene absoluta. Aromas de lujo y sanitización hipoalergénica botánica.</p>
+              </div>
+              <div id="calc-container-spa"></div>
+            </div>
+
+            <div class="catalog-panel">
+              <div class="catalog-title-bar">
+                <h3 class="catalog-title">Línea de Aromaterapia e Higiene Sensorial</h3>
+                <span class="catalog-subtitle">Productos Químicos Profesionales</span>
+              </div>
+              <div class="catalog-grid" id="catalog-grid-spa">
+                <!-- Se inyecta dinámicamente -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COLUMNA 3: GIMNASIO -->
+      <section class="area-column col-gimnasio" data-area="gimnasio" id="col-gimnasio">
+        <div class="column-overlay"></div>
+        <div class="column-pattern"></div>
+        
+        <!-- Estado Colapsado -->
+        <div class="collapsed-content">
+          <span class="column-number">03</span>
+          <h2 class="column-vertical-title">Gimnasio & Fitness</h2>
+          <div class="column-explore-hint">
+            <span>Explorar</span>
+            <svg class="explore-icon-arrow" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M19 12l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+
+        <!-- Estado Expandido (Dashboard) -->
+        <div class="expanded-content" id="expanded-gimnasio">
+          <div class="dashboard-header">
+            <div>
+              <span class="info-area-badge" style="color: var(--color-gimnasio)">Área Deportiva</span>
+              <h2 class="info-title" style="font-family: var(--font-title);">Gimnasio & Fitness</h2>
+            </div>
+            <button class="close-section-btn" id="close-gimnasio">
+              <svg class="close-icon-arrow" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+              Regresar al Menú
+            </button>
+          </div>
+
+          <div class="dashboard-grid">
+            <div class="info-panel">
+              <div class="info-title-group">
+                <p class="info-slogan">Desinfección de alto rendimiento y secado rápido. Cuidado anticorrosivo de pantallas táctiles, tapizados y pesas.</p>
+              </div>
+              <div id="calc-container-gimnasio"></div>
+            </div>
+
+            <div class="catalog-panel">
+              <div class="catalog-title-bar">
+                <h3 class="catalog-title">Línea de Desinfección Deportiva</h3>
+                <span class="catalog-subtitle">Productos Químicos Profesionales</span>
+              </div>
+              <div class="catalog-grid" id="catalog-grid-gimnasio">
+                <!-- Se inyecta dinámicamente -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COLUMNA 4: GASTRONOMÍA -->
+      <section class="area-column col-gastronomia" data-area="gastronomia" id="col-gastronomia">
+        <div class="column-overlay"></div>
+        <div class="column-pattern"></div>
+        
+        <!-- Estado Colapsado -->
+        <div class="collapsed-content">
+          <span class="column-number">04</span>
+          <h2 class="column-vertical-title">Gastronomía & Cocinas</h2>
+          <div class="column-explore-hint">
+            <span>Explorar</span>
+            <svg class="explore-icon-arrow" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M19 12l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+
+        <!-- Estado Expandido (Dashboard) -->
+        <div class="expanded-content" id="expanded-gastronomia">
+          <div class="dashboard-header">
+            <div>
+              <span class="info-area-badge" style="color: var(--color-gastronomia)">Área Gastronómica</span>
+              <h2 class="info-title" style="font-family: var(--font-title);">Gastronomía & Cocinas</h2>
+            </div>
+            <button class="close-section-btn" id="close-gastronomia">
+              <svg class="close-icon-arrow" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+              Regresar al Menú
+            </button>
+          </div>
+
+          <div class="dashboard-grid">
+            <div class="info-panel">
+              <div class="info-title-group">
+                <p class="info-slogan">Cocinas impecables y vajillas resplandecientes. Cumplimiento estricto del Distintivo H con seguridad de grado alimentario.</p>
+              </div>
+              <div id="calc-container-gastronomia"></div>
+            </div>
+
+            <div class="catalog-panel">
+              <div class="catalog-title-bar">
+                <h3 class="catalog-title">Línea de Higiene Alimentaria</h3>
+                <span class="catalog-subtitle">Productos Químicos Profesionales</span>
+              </div>
+              <div class="catalog-grid" id="catalog-grid-gastronomia">
+                <!-- Se inyecta dinámicamente -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COLUMNA 5: MANTENIMIENTO GENERAL -->
+      <section class="area-column col-mantenimiento" data-area="mantenimiento" id="col-mantenimiento">
+        <div class="column-overlay"></div>
+        <div class="column-pattern"></div>
+        
+        <!-- Estado Colapsado -->
+        <div class="collapsed-content">
+          <span class="column-number">05</span>
+          <h2 class="column-vertical-title">Mantenimiento General</h2>
+          <div class="column-explore-hint">
+            <span>Explorar</span>
+            <svg class="explore-icon-arrow" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M19 12l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+
+        <!-- Estado Expandido (Dashboard) -->
+        <div class="expanded-content" id="expanded-mantenimiento">
+          <div class="dashboard-header">
+            <div>
+              <span class="info-area-badge" style="color: var(--color-mantenimiento)">Área Operativa</span>
+              <h2 class="info-title" style="font-family: var(--font-title);">Mantenimiento General</h2>
+            </div>
+            <button class="close-section-btn" id="close-mantenimiento">
+              <svg class="close-icon-arrow" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+              Regresar al Menú
+            </button>
+          </div>
+
+          <div class="dashboard-grid">
+            <div class="info-panel">
+              <div class="info-title-group">
+                <p class="info-slogan">Preservación meticulosa de la casa club, oficinas, áreas comunes y vehículos utilitarios. Diluciones inteligentes biodegradables.</p>
+              </div>
+              <div id="calc-container-mantenimiento"></div>
+            </div>
+
+            <div class="catalog-panel">
+              <div class="catalog-title-bar">
+                <h3 class="catalog-title">Línea de Mantenimiento General</h3>
+                <span class="catalog-subtitle">Productos Químicos Profesionales</span>
+              </div>
+              <div class="catalog-grid" id="catalog-grid-mantenimiento">
+                <!-- Se inyecta dinámicamente -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 5. SISTEMA DE COTIZACIÓN (BARRA FLOTANTE INFERIOR) -->
+    <div class="quotes-bar-container" id="quotes-floating-bar-container">
+      <div class="quotes-floating-bar" id="quotes-floating-bar">
+        <div class="quotes-bar-info">
+          <div style="position:relative">
+            <svg class="quotes-cart-icon" viewBox="0 0 24 24">
+              <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="quotes-badge-count" id="quotes-badge-count" style="position:absolute; top:-12px; right:-12px;">0</span>
+          </div>
+          <span class="quotes-bar-text">Productos Seleccionados para el Club</span>
+        </div>
+        <button class="btn-open-quotes" id="btn-open-quotes">Ver Cotización</button>
+      </div>
+    </div>
+
+    <!-- MODAL DE COTIZACIÓN -->
+    <div class="quotes-modal-overlay" id="quotes-modal-overlay">
+      <div class="quotes-modal">
+        <!-- Columna Izquierda: Lista de Productos -->
+        <div class="quotes-list-panel">
+          <h3 class="quotes-list-title">Tu Solicitud de Cotización</h3>
+          <div class="quotes-items-container" id="quotes-items-container">
+            <!-- Rellenado dinámicamente por JS -->
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Formulario de Contacto -->
+        <div class="quotes-form-panel">
+          <div class="quotes-form-header">
+            <div>
+              <h3 class="quotes-form-title">Datos del Solicitante</h3>
+              <span class="quotes-form-subtitle">Club de Golf Las Lomas</span>
+            </div>
+            <button class="quotes-close-modal" id="quotes-close-modal">×</button>
+          </div>
+
+          <form class="quotes-form" id="quotes-form-submit">
+            <div class="quotes-form-group">
+              <label class="quotes-form-label" for="client-name">Nombre Completo</label>
+              <input type="text" id="client-name" class="quotes-form-input" placeholder="Ej. Ing. Carlos Mendoza" required>
+            </div>
+            <div class="quotes-form-group">
+              <label class="quotes-form-label" for="client-dept">Departamento / Puesto</label>
+              <select id="client-dept" class="quotes-form-input calc-select" required>
+                <option value="mantenimiento">Gerente de Mantenimiento</option>
+                <option value="albercas">Coordinador de Áreas Acuáticas</option>
+                <option value="compras">Director de Compras / Suministros</option>
+                <option value="restaurante">Chef Ejecutivo / A&B</option>
+                <option value="spa">Administrador de Spa & Wellness</option>
+                <option value="direccion">Dirección General del Club</option>
+              </select>
+            </div>
+            <div class="quotes-form-group">
+              <label class="quotes-form-label" for="client-email">Correo Electrónico Oficial</label>
+              <input type="email" id="client-email" class="quotes-form-input" placeholder="carlos.mendoza@laslomas.com" required>
+            </div>
+            <div class="quotes-form-group">
+              <label class="quotes-form-label" for="client-phone">Teléfono de Contacto (Directo / Celular)</label>
+              <input type="tel" id="client-phone" class="quotes-form-input" placeholder="33 1234 5678" required>
+            </div>
+            
+            <button type="submit" class="quotes-btn-submit">Enviar Solicitud de Cotización</button>
+          </form>
+
+          <!-- Pantalla de Éxito al enviar (Oculta por defecto) -->
+          <div class="quotes-success-msg" id="quotes-success-panel" style="display: none;">
+            <div class="success-icon-container">✓</div>
+            <h3 style="font-family: var(--font-title); font-size: 1.4rem; color: #fff; margin-top: 1rem;">¡Solicitud Recibida!</h3>
+            <p style="font-size: 0.85rem; line-height: 1.6; color: var(--color-text-muted);">
+              Hemos registrado la solicitud de cotización para el <strong>Club de Golf Las Lomas</strong>. Un asesor técnico Swipe especializado se comunicará contigo a la brevedad para coordinar la entrega física del presupuesto y fichas de seguridad en PDF.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CAJÓN INFORMATIVO DE DETALLES DE PRODUCTO (DRAWER) -->
+    <div class="drawer-overlay" id="drawer-overlay">
+      <div class="product-drawer">
+        <div class="drawer-header">
+          <div id="drawer-header-left">
+            <!-- Título y categoría se inyectan en JS -->
+          </div>
+          <button class="drawer-close" id="drawer-close">×</button>
+        </div>
+        <div id="drawer-content-body">
+          <!-- El contenido técnico se inyecta en JS -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JS Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/calculators.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
