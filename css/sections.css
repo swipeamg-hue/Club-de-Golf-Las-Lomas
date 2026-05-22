@@ -162,9 +162,10 @@
 .area-column.active {
   flex: 1 0 100% !important;
   cursor: default;
-  padding: 4rem 4rem 2rem 4rem;
+  padding: 4rem 4rem 4rem 4rem;
   z-index: 100;
   border-right: none;
+  overflow-y: auto;
 }
 
 /* Ocultar las otras columnas por completo */
@@ -266,17 +267,14 @@
   grid-template-columns: 38% 62%;
   gap: 3rem;
   flex: 1;
-  overflow: hidden;
-  height: calc(100vh - 16rem);
+  margin-top: 1rem;
 }
 
 /* Columna de Información (Izquierda) */
 .info-panel {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  overflow-y: auto;
+  gap: 2.5rem;
   padding-right: 1rem;
 }
 
@@ -319,8 +317,6 @@
 
 /* Columna del Catálogo (Derecha) */
 .catalog-panel {
-  height: 100%;
-  overflow-y: auto;
   padding-right: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -506,3 +502,14 @@
 .col-gimnasio.active { color: var(--color-gimnasio); }
 .col-gastronomia.active { color: var(--color-gastronomia); }
 .col-mantenimiento.active { color: var(--color-mantenimiento); }
+
+/* Adaptabilidad Responsiva para pantallas medianas/móviles */
+@media (max-width: 1024px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .area-column.active {
+    padding: 3rem 2rem;
+  }
+}
