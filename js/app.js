@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initProductDrawer();
   initQuoteSystem();
   renderCatalogProducts();
+  initSpaProductSwitcher();
 });
 
 /**
@@ -557,4 +558,171 @@ function submitQuoteRequest() {
   setTimeout(() => {
     updateQuoteUI();
   }, 3000);
+}
+
+/**
+ * 5. CONTROLADOR INTERACTIVO DE SPA & WELLNESS
+ */
+function initSpaProductSwitcher() {
+  const tabs = document.querySelectorAll(".spa-product-tab");
+  const selector = document.getElementById("spa-products-selector");
+  if (!tabs.length || !selector) return;
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", function (e) {
+      e.stopPropagation(); // Evitar cerrar o activar columnas del acordeón
+      
+      const productId = this.getAttribute("data-product-id");
+      if (!productId) return;
+
+      // Cambiar clase active en las pestañas
+      tabs.forEach((t) => t.classList.remove("active"));
+      this.classList.add("active");
+
+      // Buscar el producto en PRODUCTS_DATA
+      const product = PRODUCTS_DATA.spa.products.find((p) => p.id === productId);
+      if (!product) return;
+
+      // Actualizar el panel derecho
+      updateSpaDisplay(product);
+    });
+  });
+}
+
+function updateSpaDisplay(product) {
+  const spotlightCard = document.getElementById("spa-spotlight-card");
+  const imgEl = document.getElementById("spa-spotlight-img");
+  const svgContainer = document.getElementById("spa-spotlight-svg-container");
+  const quoteBtn = document.getElementById("spa-add-to-quote-btn");
+  const featuresColumn = document.getElementById("spa-features-column");
+
+  if (!spotlightCard || !quoteBtn || !featuresColumn) return;
+
+  // Añadir un pequeño efecto de fade-out temporal para la transición
+  featuresColumn.style.opacity = "0";
+  featuresColumn.style.transform = "translateY(10px)";
+  featuresColumn.style.transition = "all 0.3s ease";
+  
+  spotlightCard.style.opacity = "0.5";
+  spotlightCard.style.transform = "scale(0.98)";
+
+  setTimeout(() => {
+    // 1. Actualizar imagen o SVG en el spotlight
+    if (product.image) {
+      imgEl.src = product.image;
+      imgEl.style.display = "block";
+      svgContainer.style.display = "none";
+    } else {
+      imgEl.style.display = "none";
+      // Obtener el SVG correspondiente de getProductIconSvg
+      const iconSvg = getProductIconSvg(product.id);
+      svgContainer.innerHTML = iconSvg;
+      // Hacer que el SVG sea grande y estilizado en el spotlight
+      const svgInner = svgContainer.querySelector("svg");
+      if (svgInner) {
+        svgInner.style.width = "120px";
+        svgInner.style.height = "120px";
+        svgInner.style.strokeWidth = "1.2";
+      }
+      svgContainer.style.display = "block";
+    }
+
+    // 2. Actualizar botón de cotización
+    quoteBtn.setAttribute("onclick", `addToQuoteCart('${product.id}', 'spa')`);
+
+    // 3. Generar las características técnicas dinámicas
+    let featuresHtml = "";
+    
+    // Mapeo inteligente de características según el producto
+    if (product.id === "swipe_concentrado_spa") {
+      featuresHtml = `
+        <div class="spa-feature-card">
+          <div class="spa-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="spa-feature-text">
+            <h4>Identidad y Certificaciones</h4>
+            <p>Desengrasante industrial líquido de uso general, altamente concentrado, biodegradable >99%. Grado alimenticio certificado por NSF (Categoría A1) y SAGARPA para áreas de preparación de alimentos.</p>
+          </div>
+        </div>
+        <div class="spa-feature-card">
+          <div class="spa-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <div class="spa-feature-text">
+            <h4>Rendimiento y Dosificación</h4>
+            <p>Versatilidad máxima: Solución Liviana (1:100) para limpieza diaria estética de Casa Club, espejos y cromos; Solución Normal (1:12) para cocinas y vehículos de golf; Solución Pesada (1:4) para motores y talleres de mantenimiento.</p>
+          </div>
+        </div>
+        <div class="spa-feature-card">
+          <div class="spa-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <div class="spa-feature-text">
+            <h4>Seguridad para Personal e Instalaciones</h4>
+            <p>Sin cáusticos libres que quemen o maltraten la piel. No es tóxico, no es inflamable, no corroe metales y no daña ni despinta las superficies tratadas del club.</p>
+          </div>
+        </div>
+        <div class="spa-feature-card">
+          <div class="spa-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <div class="spa-feature-text">
+            <h4>Ventaja Técnica Institucional</h4>
+            <p>Adaptado a infraestructuras de nivel premium: versión Low Foam para equipos automáticos industriales de limpieza, y versión de pH neutro (pH 7) que protege las plantas tratadoras de agua del complejo.</p>
+          </div>
+        </div>
+      `;
+    } else {
+      featuresHtml = `
+        <div class="spa-feature-card">
+          <div class="spa-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z" stroke-linecap="round"/></svg>
+          </div>
+          <div class="spa-feature-text">
+            <h4>Descripción del Producto</h4>
+            <p>${product.description}</p>
+          </div>
+        </div>
+        <div class="spa-feature-card">
+          <div class="spa-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div class="spa-feature-text">
+            <h4>Beneficios Clave</h4>
+            <ul style="font-size: 0.85rem; line-height: 1.5; color: var(--color-glass-text); padding-left: 1.2rem; margin: 0.3rem 0 0 0;">
+              ${product.benefits.map(b => `<li style="margin-bottom: 0.3rem;">${b}</li>`).join("")}
+            </ul>
+          </div>
+        </div>
+        <div class="spa-feature-card">
+          <div class="spa-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zM12 6v6l4 2"/></svg>
+          </div>
+          <div class="spa-feature-text">
+            <h4>Rendimiento y Dosificación</h4>
+            <p><strong>Dosificación:</strong> ${product.dosage}<br><strong>Dilución / Método:</strong> ${product.dilution}</p>
+          </div>
+        </div>
+        <div class="spa-feature-card">
+          <div class="spa-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <div class="spa-feature-text">
+            <h4>Seguridad e Impacto Ambiental</h4>
+            <p><strong>Manejo Seguro:</strong> ${product.safety}<br><strong>Impacto en pH:</strong> ${product.phImpact || 'Neutro.'}</p>
+          </div>
+        </div>
+      `;
+    }
+
+    featuresColumn.innerHTML = featuresHtml;
+
+    // Restaurar opacidades con animaciones suaves
+    featuresColumn.style.opacity = "1";
+    featuresColumn.style.transform = "translateY(0)";
+    
+    spotlightCard.style.opacity = "1";
+    spotlightCard.style.transform = "scale(1)";
+  }, 150);
 }

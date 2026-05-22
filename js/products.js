@@ -86,6 +86,26 @@ const PRODUCTS_DATA = {
     slogan: "Santuarios de relajación absoluta con los más altos estándares de higiene y aromas cautivadores.",
     products: [
       {
+        id: "swipe_concentrado_spa",
+        name: "Swipe Limpiador Líquido Concentrado",
+        tagline: "Desengrasante industrial de grado alimentario NSF A1",
+        description: "Es un desengrasante industrial líquido de uso general, altamente concentrado y con una biodegradabilidad superior al 99%. Destaca por ser grado alimenticio, avalado por el registro NSF (Categoría A1) y SAGARPA, lo que lo hace completamente seguro para las áreas de preparación de alimentos y comedores del club.",
+        benefits: [
+          "Biodegradabilidad superior al 99%: sustentabilidad y cuidado ecológico.",
+          "Grado alimenticio avalado por NSF (Categoría A1) y SAGARPA.",
+          "Seguridad total: sin cáusticos libres, no quema ni maltrata la piel, no inflamable y no corrosivo.",
+          "Versiones adaptadas: versión Low Foam para restregadoras y versión pH Neutro (pH 7) para plantas tratadoras.",
+          "No daña, no despinta ni corroe los metales y superficies tratadas."
+        ],
+        usage: "Desengrase industrial y limpieza multiusos en comedores, Casa Club, cocinas y mantenimiento.",
+        dosage: "Liviana (1:100) para mantenimiento estético diario | Normal (1:12) para zonas operativas | Pesada (1:4) para taller y motores.",
+        dilution: "Dilución variable según la carga de suciedad. Rinde hasta 100 litros de limpiador útil.",
+        phImpact: "pH Neutro (pH 7) disponible para proteger plantas tratadoras de agua del club.",
+        safety: "No tóxico, no inflamable, sin cáusticos libres. Seguro para la piel y metales.",
+        badge: "Grado Alimenticio & Eco-Friendly",
+        image: "images/swipe_concentrado.png"
+      },
+      {
         id: "eucalyptus_vapor",
         name: "Esencia de Eucalipto & Menta Steam",
         tagline: "Concentrado hidrosoluble para vapor y saunas",
@@ -118,23 +138,6 @@ const PRODUCTS_DATA = {
         phImpact: "Ligeramente ácido (compatible con el pH natural de la piel).",
         safety: "Ecológico y biodegradable. No requiere equipo de protección especial.",
         badge: "100% Botánico & Seguro"
-      },
-      {
-        id: "linen_relax",
-        name: "Linen Spray Relax",
-        tagline: "Aromatizante y neutralizador textil de lavanda y manzanilla",
-        description: "Rocío aromático premium para toallas, batas, sábanas y almohadas de uso en el spa. Contiene aceites esenciales de lavanda francesa y manzanilla romana que promueven la relajación profunda de los socios y eliminan olores residuales de humedad.",
-        benefits: [
-          "Fórmula anti-manchas libre de aceites pesados que respeta los textiles más finos.",
-          "Propiedades relajantes clínicamente probadas para mejorar el bienestar mental.",
-          "Efecto desodorizante activo que destruye olores de sudoración o humedad."
-        ],
-        usage: "Rocío sobre toallas y blancos antes de ser entregados a los socios o colocados en camillas.",
-        dosage: "2 a 3 atomizaciones directas sobre el textil a una distancia de 30 cm.",
-        dilution: "Directo sin diluir.",
-        phImpact: "Neutro.",
-        safety: "Seguro para contacto con la piel. No inflamable.",
-        badge: "Experiencia Sensorial Textil"
       },
       {
         id: "jacuzzi_clear",

@@ -244,20 +244,167 @@
           </div>
 
           <div class="dashboard-grid">
+            <!-- Columna Izquierda: Selector de 4 Productos (info-panel) -->
             <div class="info-panel">
               <div class="info-title-group">
-                <p class="info-slogan">Espacios de relajación profunda e higiene absoluta. Aromas de lujo y sanitización hipoalergénica botánica.</p>
+                <span class="info-area-badge" style="color: var(--color-spa)">Línea Premium</span>
+                <h3 class="info-title" style="font-size: 2.3rem; color: #fff; font-family: var(--font-title); font-weight: 800; margin-top: 0.5rem; margin-bottom: 0.5rem;">Spa & Wellness</h3>
+                <p class="info-slogan" style="border-left: 2px solid var(--color-spa); padding-left: 1rem; font-size: 0.95rem; line-height: 1.5; color: var(--color-glass-text); text-align: justify; margin-top: 0.5rem; margin-bottom: 1.5rem;">
+                  Espacios de relajación profunda e higiene absoluta. Aromas de lujo y sanitización hipoalergénica botánica.
+                </p>
               </div>
-              <div id="calc-container-spa"></div>
+
+              <!-- Selector de 4 Contenedores de Producto -->
+              <div class="spa-products-selector" id="spa-products-selector">
+                
+                <!-- Producto 1: Swipe Concentrado -->
+                <div class="spa-product-tab active" data-product-id="swipe_concentrado_spa">
+                  <div class="product-tab-img-container">
+                    <img src="images/swipe_concentrado.png" alt="Swipe Limpiador Líquido Concentrado">
+                  </div>
+                  <div class="product-tab-info">
+                    <span class="product-tab-badge">Grado Alimenticio & Eco-Friendly</span>
+                    <h4 class="product-tab-name">Swipe Limpiador Concentrado</h4>
+                  </div>
+                  <div class="product-tab-indicator"></div>
+                </div>
+
+                <!-- Producto 2: Esencia de Eucalipto -->
+                <div class="spa-product-tab" data-product-id="eucalyptus_vapor">
+                  <div class="product-tab-img-container">
+                    <svg viewBox="0 0 24 24" style="stroke: var(--color-spa); fill: none; stroke-width: 1.5; width: 24px; height: 24px;">
+                      <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <div class="product-tab-info">
+                    <span class="product-tab-badge">Aromaterapia de Lujo</span>
+                    <h4 class="product-tab-name">Esencia de Eucalipto & Menta</h4>
+                  </div>
+                  <div class="product-tab-indicator"></div>
+                </div>
+
+                <!-- Producto 3: Sanitizante Orgánico -->
+                <div class="spa-product-tab" data-product-id="organic_sanitizer">
+                  <div class="product-tab-img-container">
+                    <svg viewBox="0 0 24 24" style="stroke: var(--color-spa); fill: none; stroke-width: 1.5; width: 24px; height: 24px;">
+                      <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="product-tab-info">
+                    <span class="product-tab-badge">100% Botánico & Seguro</span>
+                    <h4 class="product-tab-name">Sanitizante Orgánico Cítrico</h4>
+                  </div>
+                  <div class="product-tab-indicator"></div>
+                </div>
+
+                <!-- Producto 4: Spa Clear & Sanitizer -->
+                <div class="spa-product-tab" data-product-id="jacuzzi_clear">
+                  <div class="product-tab-img-container">
+                    <svg viewBox="0 0 24 24" style="stroke: var(--color-spa); fill: none; stroke-width: 1.5; width: 24px; height: 24px;">
+                      <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z" stroke-linecap="round"/>
+                      <path d="M8 12h8" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <div class="product-tab-info">
+                    <span class="product-tab-badge">Higiene en Hidroterapia</span>
+                    <h4 class="product-tab-name">Spa Clear & Sanitizer</h4>
+                  </div>
+                  <div class="product-tab-indicator"></div>
+                </div>
+
+              </div>
+
+              <!-- Elementos ocultos para preservar compatibilidad con scripts dinámicos -->
+              <div style="display: none;">
+                <div id="calc-container-spa"></div>
+                <div id="catalog-grid-spa"></div>
+              </div>
             </div>
 
+            <!-- Columna Derecha: Información Técnica Dinámica (catalog-panel) -->
             <div class="catalog-panel">
               <div class="catalog-title-bar">
-                <h3 class="catalog-title">Línea de Aromaterapia e Higiene Sensorial</h3>
-                <span class="catalog-subtitle">Productos Químicos Profesionales</span>
+                <h3 class="catalog-title" style="color: var(--color-spa); font-family: var(--font-title); font-weight: 700; font-size: 1.4rem;">Información del Producto</h3>
+                <span class="catalog-subtitle" style="font-size: 0.85rem; color: var(--color-text-muted);">Especificaciones Técnicas</span>
               </div>
-              <div class="catalog-grid" id="catalog-grid-spa">
-                <!-- Se inyecta dinámicamente -->
+
+              <div class="spa-dynamic-display">
+                <!-- Columna de Spotlight (Imagen del Producto y Botón Agregar) -->
+                <div class="spa-spotlight-column">
+                  <div class="spa-spotlight-card" id="spa-spotlight-card">
+                    <div class="spa-spotlight-glow"></div>
+                    <img id="spa-spotlight-img" src="images/swipe_concentrado.png" alt="Swipe Limpiador Concentrado">
+                    <!-- Contenedor para SVGs cuando el producto no tiene imagen dedicada -->
+                    <div id="spa-spotlight-svg-container" style="display: none; z-index: 2;"></div>
+                  </div>
+                  
+                  <button class="btn-quote" id="spa-add-to-quote-btn" style="background: var(--color-spa); color: #000; width: 100%; justify-content: center; font-size: 0.9rem; padding: 0.8rem 1.5rem; border-radius: 12px; font-weight: 700;" onclick="addToQuoteCart('swipe_concentrado_spa', 'spa')">
+                    <svg style="width:16px; height:16px; fill:none; stroke:currentColor; stroke-width:2.5" viewBox="0 0 24 24">
+                      <path d="M12 5v14M5 12h14"/>
+                    </svg>
+                    Agregar al Presupuesto
+                  </button>
+                </div>
+
+                <!-- Columna de Características Técnicas -->
+                <div class="spa-features-column" id="spa-features-column">
+                  <!-- Renderizado por defecto del Producto 1 (Swipe Concentrado) -->
+                  
+                  <!-- Ficha 1: Identidad y Certificaciones -->
+                  <div class="spa-feature-card">
+                    <div class="spa-feature-icon-container">
+                      <svg class="feature-icon-svg" viewBox="0 0 24 24">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                      </svg>
+                    </div>
+                    <div class="spa-feature-text">
+                      <h4>Identidad y Certificaciones</h4>
+                      <p>Desengrasante industrial líquido de uso general, altamente concentrado, biodegradable >99%. Grado alimenticio certificado por NSF (Categoría A1) y SAGARPA para áreas de preparación de alimentos.</p>
+                    </div>
+                  </div>
+
+                  <!-- Ficha 2: Rendimiento y Dosificación -->
+                  <div class="spa-feature-card">
+                    <div class="spa-feature-icon-container">
+                      <svg class="feature-icon-svg" viewBox="0 0 24 24">
+                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                      </svg>
+                    </div>
+                    <div class="spa-feature-text">
+                      <h4>Rendimiento y Dosificación</h4>
+                      <p>Versatilidad máxima: Solución Liviana (1:100) para limpieza diaria estética de Casa Club, espejos y cromos; Solución Normal (1:12) para cocinas y vehículos de golf; Solución Pesada (1:4) para motores y talleres de mantenimiento.</p>
+                    </div>
+                  </div>
+
+                  <!-- Ficha 3: Seguridad para Personal e Instalaciones -->
+                  <div class="spa-feature-card">
+                    <div class="spa-feature-icon-container">
+                      <svg class="feature-icon-svg" viewBox="0 0 24 24">
+                        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                        <line x1="12" y1="9" x2="12" y2="13"/>
+                        <line x1="12" y1="17" x2="12.01" y2="17"/>
+                      </svg>
+                    </div>
+                    <div class="spa-feature-text">
+                      <h4>Seguridad y Manejo</h4>
+                      <p>Sin cáusticos libres que quemen o maltraten la piel. No es tóxico, no es inflamable, no corroe metales y no daña ni despinta las superficies tratadas del club.</p>
+                    </div>
+                  </div>
+
+                  <!-- Ficha 4: Ventaja Técnica Institucional -->
+                  <div class="spa-feature-card">
+                    <div class="spa-feature-icon-container">
+                      <svg class="feature-icon-svg" viewBox="0 0 24 24">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                      </svg>
+                    </div>
+                    <div class="spa-feature-text">
+                      <h4>Ventaja Técnica Institucional</h4>
+                      <p>Adaptado a infraestructuras de nivel premium: versión Low Foam para equipos automáticos industriales de limpieza, y versión de pH neutro (pH 7) que protege las plantas tratadoras de agua del complejo.</p>
+                    </div>
+                  </div>
+
+                </div>
               </div>
             </div>
           </div>

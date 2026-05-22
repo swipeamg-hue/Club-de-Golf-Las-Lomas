@@ -651,3 +651,332 @@
     padding: 3rem 2rem;
   }
 }
+
+/* ==========================================================================
+   ESTILOS EXCLUSIVOS DE LA SECCIÓN SPA & WELLNESS (LAYOUT DE 4 PRODUCTOS)
+   ========================================================================== */
+
+.spa-products-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.spa-product-tab {
+  background: rgba(22, 22, 33, 0.4);
+  border: 1px solid var(--color-glass-border);
+  border-left: 4px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 0.9rem 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.spa-product-tab::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(5, 230, 180, 0.05) 0%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.spa-product-tab:hover {
+  background: rgba(26, 26, 38, 0.6);
+  border-color: rgba(255, 255, 255, 0.15);
+  border-left-color: var(--color-spa);
+  transform: translateX(4px);
+}
+
+.spa-product-tab.active {
+  background: rgba(22, 22, 33, 0.85);
+  border-color: rgba(5, 230, 180, 0.35);
+  border-left-color: var(--color-spa);
+  box-shadow: 0 0 20px rgba(5, 230, 180, 0.15), inset 0 0 10px rgba(5, 230, 180, 0.05);
+  transform: translateX(6px);
+}
+
+.spa-product-tab.active::after {
+  opacity: 1;
+}
+
+.spa-product-tab .product-tab-img-container {
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--color-glass-border);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.spa-product-tab:hover .product-tab-img-container,
+.spa-product-tab.active .product-tab-img-container {
+  background: rgba(5, 230, 180, 0.08);
+  border-color: rgba(5, 230, 180, 0.3);
+  transform: scale(1.05);
+}
+
+.spa-product-tab .product-tab-img-container img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.5));
+}
+
+.spa-product-tab .product-tab-img-container svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--color-text-muted);
+  stroke-width: 1.5;
+  fill: none;
+  transition: var(--transition-fast);
+}
+
+.spa-product-tab:hover .product-tab-img-container svg,
+.spa-product-tab.active .product-tab-img-container svg {
+  stroke: var(--color-spa);
+  filter: drop-shadow(0 0 4px var(--color-spa-glow));
+}
+
+.spa-product-tab .product-tab-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.spa-product-tab .product-tab-badge {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: var(--transition-fast);
+}
+
+.spa-product-tab:hover .product-tab-badge,
+.spa-product-tab.active .product-tab-badge {
+  color: var(--color-spa);
+}
+
+.spa-product-tab .product-tab-name {
+  font-family: var(--font-title);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #cbd5e1;
+  margin: 0;
+  transition: var(--transition-fast);
+}
+
+.spa-product-tab:hover .product-tab-name,
+.spa-product-tab.active .product-tab-name {
+  color: #ffffff;
+}
+
+.spa-product-tab .product-tab-indicator {
+  width: 6px;
+  height: 6px;
+  background: transparent;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.spa-product-tab.active .product-tab-indicator {
+  background: var(--color-spa);
+  box-shadow: 0 0 10px var(--color-spa), 0 0 20px var(--color-spa);
+}
+
+/* Panel de visualización dinámico del producto seleccionado */
+.spa-dynamic-display {
+  display: grid;
+  grid-template-columns: 42% 58%;
+  gap: 2rem;
+  height: 100%;
+}
+
+.spa-spotlight-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.spa-spotlight-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15, 15, 25, 0.45);
+  border: 1px solid var(--color-glass-border);
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-premium);
+  min-height: 380px;
+  transition: all 0.5s ease;
+}
+
+.spa-spotlight-glow {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  background: var(--color-spa-glow);
+  filter: blur(70px);
+  opacity: 0.25;
+  z-index: 1;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+.spa-spotlight-card img {
+  max-width: 90%;
+  max-height: 280px;
+  object-fit: contain;
+  z-index: 2;
+  filter: drop-shadow(0 16px 32px rgba(0,0,0,0.6));
+  transition: transform var(--transition-fast);
+}
+
+.spa-spotlight-card img:hover {
+  transform: scale(1.03);
+}
+
+.spa-spotlight-card svg {
+  width: 100px;
+  height: 100px;
+  stroke: var(--color-spa);
+  stroke-width: 1.2;
+  fill: none;
+  z-index: 2;
+  filter: drop-shadow(0 0 15px var(--color-spa-glow));
+  transition: transform 0.5s ease;
+}
+
+.spa-spotlight-card:hover svg {
+  transform: scale(1.08) rotate(5deg);
+}
+
+.spa-features-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-y: auto;
+  max-height: calc(100vh - 240px);
+  padding-right: 0.5rem;
+}
+
+/* Scrollbar personalizado para las fichas técnicas */
+.spa-features-column::-webkit-scrollbar,
+.swipol-features-grid::-webkit-scrollbar {
+  width: 6px;
+}
+
+.spa-features-column::-webkit-scrollbar-track,
+.swipol-features-grid::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 10px;
+}
+
+.spa-features-column::-webkit-scrollbar-thumb,
+.swipol-features-grid::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.spa-features-column::-webkit-scrollbar-thumb:hover,
+.swipol-features-grid::-webkit-scrollbar-thumb:hover {
+  background: rgba(5, 230, 180, 0.3);
+}
+
+.spa-feature-card {
+  background: var(--color-dark-card);
+  border: 1px solid var(--color-glass-border);
+  border-left: 4px solid var(--color-spa);
+  border-radius: 12px;
+  padding: 1.2rem;
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 1rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  transition: var(--transition-fast);
+}
+
+.spa-feature-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(5, 230, 180, 0.2);
+  background: rgba(26, 26, 38, 0.7);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.spa-feature-icon-container {
+  width: 40px;
+  height: 40px;
+  background: rgba(5, 230, 180, 0.05);
+  border: 1px solid rgba(5, 230, 180, 0.15);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-spa);
+  transition: var(--transition-fast);
+}
+
+.spa-feature-card:hover .spa-feature-icon-container {
+  background: rgba(5, 230, 180, 0.1);
+  border-color: rgba(5, 230, 180, 0.3);
+  transform: scale(1.05);
+}
+
+.spa-feature-card .feature-icon-svg {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  stroke-width: 2;
+  fill: none;
+}
+
+.spa-feature-text h4 {
+  font-family: var(--font-title);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.3rem;
+}
+
+.spa-feature-text p {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--color-glass-text);
+  text-align: justify;
+  margin: 0;
+}
+
+/* Efectos responsivos en la visualización del spa */
+@media (max-width: 1200px) {
+  .spa-dynamic-display {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .spa-spotlight-card {
+    min-height: auto;
+    padding: 1.5rem;
+  }
+  .spa-features-column {
+    max-height: none;
+  }
+}
