@@ -193,6 +193,26 @@ const PRODUCTS_DATA = {
         safety: "Seguro al tacto en su dispositivo dosificador. Biodegradable y no corrosivo.",
         badge: "Desinfectante Enzimático",
         image: "images/blue_genie.png"
+      },
+      {
+        id: "swipol_spa",
+        name: "Swipol",
+        tagline: "Alguicida, fungicida y viricida de amplio espectro",
+        description: "Swipol está formulado para el control efectivo de algas en piscinas y en sistemas de recirculación de aguas. Las pruebas de eficiencia bacteriológica lo respaldan como un alguicida, fungicida y viricida de amplio espectro. Compuesto por cuaternario de amonio de última generación, es incoloro, inoloro y de grado quirúrgico y alimenticio.",
+        benefits: [
+          "Seguridad para los socios: compuesto por cuaternario de amonio de última generación (cero irritación cutánea).",
+          "Completamente incoloro e inoloro: no altera la pureza visual ni sensorial del área.",
+          "Estabilidad térmica total en temperaturas altas y bajas (albercas techadas o al aire libre).",
+          "Alta tolerancia a las aguas duras, garantizando su eficacia continua en sistemas hidráulicos.",
+          "Desinfección perimetral total: inhibición de hongos en baños de pies, vestidores, pisos y tapetes sanitarios."
+        ],
+        usage: "Control e inhibición de hongos en vestidores y desinfección perimetral de albercas, además de control de algas en piscina.",
+        dosage: "Dosificación recomendada según el área a desinfectar y volumen de recirculación.",
+        dilution: "Dilución de uso general y perimetral de grado quirúrgico y alimenticio.",
+        phImpact: "Completamente neutro y estable ante aguas duras.",
+        safety: "No irritante para la piel en dilución. Totalmente incoloro e inoloro.",
+        badge: "Alguicida Especializado",
+        image: "images/swipol.png"
       }
     ]
   },
