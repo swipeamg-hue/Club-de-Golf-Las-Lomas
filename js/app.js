@@ -673,6 +673,45 @@ function updateSpaDisplay(product) {
           </div>
         </div>
       `;
+    } else if (product.id === "swipe_brite_spa") {
+      featuresHtml = `
+        <div class="spa-feature-card">
+          <div class="spa-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="spa-feature-text">
+            <h4>Uso en el Club (Sanitarios y Vestidores)</h4>
+            <p>Limpiador líquido de tipo ácido y biodegradable, diseñado específicamente para desincrustar, desinfectar y desodorizar los inodoros. Elimina eficazmente las manchas y el sarro formados por los residuos calcáreos del agua depositados en la porcelana.</p>
+          </div>
+        </div>
+        <div class="spa-feature-card">
+          <div class="spa-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="spa-feature-text">
+            <h4>Rendimiento y Dosificación</h4>
+            <p><strong>Uso Concentrado (Restauración Profunda):</strong> Se aplica de forma directa, sin diluir, cuando existe un problema serio de sarro incrustado en los inodoros.<br><strong>Mantenimiento Diario (Dilución 1:4):</strong> Se mezcla 1 parte de producto por 4 partes de agua para la limpieza de rutina.</p>
+          </div>
+        </div>
+        <div class="spa-feature-card">
+          <div class="spa-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="spa-feature-text">
+            <h4>Ventaja Operativa (Eliminación de Olores)</h4>
+            <p>Inhibe el desarrollo de bacterias provenientes del agua y las materias fecales, impidiendo la formación de los olores desagradables generados por estos microorganismos. Es seguro para cualquier color de porcelana y totalmente inofensivo para las tuberías y fosas sépticas.</p>
+          </div>
+        </div>
+        <div class="spa-feature-card">
+          <div class="spa-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="spa-feature-text">
+            <h4>Precauciones Críticas</h4>
+            <p style="color: #ff5a5a; font-weight: 600;">Debido a su naturaleza ácida y nivel de corrosividad, NUNCA debe mezclarse con cloro o cualquier otro producto. Si su uso es continuo por parte del personal de limpieza, se recomienda estrictamente el uso de guantes.</p>
+          </div>
+        </div>
+      `;
     } else {
       featuresHtml = `
         <div class="spa-feature-card">

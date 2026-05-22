@@ -155,6 +155,25 @@ const PRODUCTS_DATA = {
         phImpact: "Neutro.",
         safety: "Hipoalergénico a dilución de uso. No irrita ojos ni mucosas.",
         badge: "Higiene en Hidroterapia"
+      },
+      {
+        id: "swipe_brite_spa",
+        name: "Swipe Brite",
+        tagline: "Limpiador desincrustante ácido y biodegradable para inodoros",
+        description: "Es un limpiador líquido de tipo ácido y biodegradable, diseñado específicamente para desincrustar, desinfectar y desodorizar los inodoros. Elimina eficazmente las manchas y el sarro formados por los residuos calcáreos del agua depositados en la porcelana.",
+        benefits: [
+          "Eliminación de olores: Inhibe el desarrollo de bacterias provenientes del agua y las materias fecales, impidiendo los olores desagradables.",
+          "Seguro para cualquier color de porcelana y totalmente inofensivo para las tuberías y fosas sépticas.",
+          "Doble acción: Limpieza profunda y desincrustación o mantenimiento diario.",
+          "100% biodegradable: Respetuoso con el medio ambiente y los sistemas biológicos."
+        ],
+        usage: "Desincrustación, desinfección y desodorización en sanitarios y vestidores del club.",
+        dosage: "Concentrado para sarro incrustado | Dilución 1:4 para mantenimiento de rutina.",
+        dilution: "Uso Concentrado (Restauración Profunda): directo sin diluir. | Mantenimiento Diario: 1 parte de producto por 4 partes de agua.",
+        phImpact: "Ácido activo.",
+        safety: "Debido a su naturaleza ácida y nivel de corrosividad, NUNCA debe mezclarse con cloro o cualquier otro producto. Si su uso es continuo por parte del personal de limpieza, se recomienda estrictamente el uso de guantes.",
+        badge: "Desincrustante Ácido",
+        image: "images/swipe_brite.png"
       }
     ]
   },
