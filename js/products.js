@@ -155,8 +155,7 @@ const PRODUCTS_DATA = {
           "Alta tolerancia a las aguas duras, garantizando su eficacia continua en sistemas hidráulicos.",
           "Desinfección perimetral total: inhibición de hongos en baños de pies, vestidores, pisos y tapetes sanitarios."
         ],
-        usage: "Control e inhibición de hongos en vestidores y desinfección perimetral de albercas, además de control de algas en piscina.",
-        dosage: "Dosificación recomendada según el área a desinfectar y volumen de recirculación.",
+        usage: "Control e inhibición de hongos en vestidores y desinfección perimetral de albercas.",
         dilution: "Dilución de uso general y perimetral de grado quirúrgico y alimenticio.",
         phImpact: "Completamente neutro y estable ante aguas duras.",
         safety: "No irritante para la piel en dilución. Totalmente incoloro e inoloro.",
@@ -168,75 +167,47 @@ const PRODUCTS_DATA = {
   gimnasio: {
     title: "Gimnasio & Fitness",
     accentColor: "var(--color-gimnasio)",
-    slogan: "Máxima higiene deportiva que protege la salud de los atletas y preserva los equipos de entrenamiento.",
+    slogan: "Máxima higiene deportiva que protege la salud de los socios y preserva las instalaciones del club.",
     products: [
       {
-        id: "gym_spray",
-        name: "Swipe Gym Sanitizante Equipos",
-        tagline: "Desinfectante anticorrosivo de acción rápida",
-        description: "Desinfectante de grado profesional formulado con sales de amonio cuaternario de quinta generación y agentes acondicionadores. Específicamente diseñado para la limpieza y sanitización de tapices de cuero sintético, consolas táctiles, pantallas de caminadoras, mancuernas y agarres metálicos.",
+        id: "swipe_concentrado_gym",
+        name: "Swipe Limpiador Líquido Concentrado",
+        tagline: "Desengrasante industrial de grado alimentario NSF A1",
+        description: "Es un desengrasante industrial líquido de uso general, altamente concentrado y con una biodegradabilidad superior al 99%. Destaca por ser grado alimenticio, avalado por el registro NSF (Categoría A1) y SAGARPA, lo que lo hace completamente seguro para las áreas de preparación de alimentos y comedores del club.",
         benefits: [
-          "Fórmula anticorrosiva probada que no oxida metales ni reseca vinilos.",
-          "Eficacia virucida y bactericida total en solo 15 segundos.",
-          "Secado rápido sin residuos grasosos o pegajosos para comodidad del usuario."
+          "Biodegradabilidad superior al 99%: sustentabilidad y cuidado ecológico.",
+          "Grado alimenticio avalado por NSF (Categoría A1) y SAGARPA.",
+          "Seguridad total: sin cáusticos libres, no quema ni maltrata la piel, no inflamable y no corrosivo.",
+          "Versiones adaptadas: versión Low Foam para restregadoras y versión pH Neutro (pH 7) para plantas tratadoras.",
+          "No daña, no despinta ni corroe los metales y superficies tratadas."
         ],
-        usage: "Limpieza y desinfección de equipos de gimnasio por parte del personal o de los mismos socios.",
-        dosage: "Atomizar sobre la superficie y limpiar con un paño de microfibra limpio.",
-        dilution: "Concentrado para dilución 1:20 (rinde 20 litros por cada litro) o presentación lista para usar.",
-        phImpact: "Neutro.",
-        safety: "Seguro para uso frecuente sobre plásticos, hule, metal y pantallas LCD.",
-        badge: "Protección de Equipos"
+        usage: "Desengrase industrial y limpieza multiusos en comedores, Casa Club, cocinas y mantenimiento.",
+        dosage: "Liviana (1:100) para mantenimiento estético diario | Normal (1:12) para zonas operativas | Pesada (1:4) para taller y motores.",
+        dilution: "Dilución variable según la carga de suciedad. Rinde hasta 100 litros de limpiador útil.",
+        phImpact: "pH Neutro (pH 7) disponible para proteger plantas tratadoras de agua del club.",
+        safety: "No tóxico, no inflamable, sin cáusticos libres. Seguro para la piel y metales.",
+        badge: "Grado Alimenticio & Eco-Friendly",
+        image: "images/swipe_concentrado.png"
       },
       {
-        id: "odor_kill",
-        name: "Odor-Kill Sport Enzimático",
-        tagline: "Destructor biológico de malos olores",
-        description: "Biocatalizador enzimático concentrado que degrada las bacterias causantes del mal olor por sudoración, humedad y desechos orgánicos en vestidores, casilleros, calzado, alfombras y áreas de spinning. No disfraza el olor con perfume pesado, lo elimina de raíz.",
+        id: "swipol_gym",
+        name: "Swipol",
+        tagline: "Alguicida, fungicida y viricida de amplio espectro",
+        description: "Swipol está formulado para el control efectivo de algas en piscinas y en sistemas de recirculación de aguas. Las pruebas de eficiencia bacteriológica lo respaldan como un alguicida, fungicida y viricida de amplio espectro. Compuesto por cuaternario de amonio de última generación, es incoloro, inoloro y de grado quirúrgico y alimenticio.",
         benefits: [
-          "Las enzimas digieren la fuente orgánica del olor eliminándola definitivamente.",
-          "Deja una fresca fragancia cítrica-deportiva de larga duración.",
-          "Seguro para rociar directamente en casilleros y áreas de alfombra o tapetes de yoga."
+          "Seguridad para los socios: compuesto por cuaternario de amonio de última generación (cero irritación cutánea).",
+          "Completamente incoloro e inoloro: no altera la pureza visual ni sensorial del área.",
+          "Estabilidad térmica total en temperaturas altas y bajas (albercas techadas o al aire libre).",
+          "Alta tolerancia a las aguas duras, garantizando su eficacia continua en sistemas hidráulicos.",
+          "Desinfección perimetral total: inhibición de hongos en baños de pies, vestidores, pisos y tapetes sanitarios."
         ],
-        usage: "Control ambiental y de superficies en vestidores, casilleros y baños de gimnasio.",
-        dosage: "Diluir 100 ml en 1 litro de agua y aplicar con atomizador en áreas afectadas.",
-        dilution: "Dilución normal 1:10 en agua limpia.",
-        phImpact: "Neutro.",
-        safety: "Ecológico, no tóxico para humanos ni mascotas. 100% biodegradable.",
-        badge: "Control de Olores Extremo"
-      },
-      {
-        id: "floor_active",
-        name: "Floor-Active Sanitizer Antiderrapante",
-        tagline: "Limpiador desinfectante para pisos deportivos",
-        description: "Fórmula de limpieza profunda y desinfección para pisos de caucho, hule amortiguante, pistas interiores y duela de madera tratada. Su fórmula especial elimina grasa de sudoración sin dejar residuos cerosos o resbalosos, garantizando un piso de alta tracción y seguro para los socios.",
-        benefits: [
-          "Mantiene las propiedades antiderrapantes originales del piso de gimnasio.",
-          "Fórmula libre de cloro que no decolora el caucho negro o losetas de color.",
-          "Acción bactericida que elimina hongos causantes de pie de atleta en vestidores."
-        ],
-        usage: "Trapeado diario y limpieza con máquina restregadora de los pisos del gimnasio y áreas comunes.",
-        dosage: "Diluir 50 ml por cubeta de agua (10 litros) para trapeado manual. 100 ml para máquina restregadora.",
-        dilution: "Dilución 1:200 en trapeado diario. Rinde hasta 200 cubetas por litro.",
-        phImpact: "Ligeramente alcalino (pH 8.5) para remover grasas corporales de forma eficiente.",
-        safety: "Usar guantes para el manejo del producto concentrado. No mezclar con ácidos.",
-        badge: "Pisos Seguros y Sanitizados"
-      },
-      {
-        id: "dermo_wash",
-        name: "Dermo-Soap Premium Té Verde",
-        tagline: "Gel de ducha corporal y capilar hidratante",
-        description: "Exclusivo jabón líquido corporal y champú premium para las regaderas de los casilleros de socios. Enriquecido con extracto de té verde, aloe vera y notas de verbena. Ofrece una espuma rica que remueve el sudor e hidrata la piel dejándola fresca y revitalizada.",
-        benefits: [
-          "Fórmula 2 en 1 (cuerpo y cabello) de grado dermatológico.",
-          "Fragancia energizante y premium de Té Verde y Verbena muy apreciada por socios.",
-          "Libre de parabenos y siliconas pesadas. Fácil enjuague sin tapar drenajes."
-        ],
-        usage: "Dosificadores automáticos en regaderas de caballeros, damas y spa.",
-        dosage: "Llenar los dispensadores del gimnasio directamente con el bidón.",
-        dilution: "Directo sin diluir.",
-        phImpact: "5.5 (pH balanceado idéntico a la piel).",
-        safety: "Seguro para todo tipo de pieles y cabello. Probado dermatológicamente.",
-        badge: "Cuidado Personal Premium"
+        usage: "Control e inhibición de hongos en vestidores y desinfección perimetral de albercas, además de control de algas en piscina.",
+        dosage: "Dosificación recomendada según el área a desinfectar y volumen de recirculación.",
+        dilution: "Dilución de uso general y perimetral de grado quirúrgico y alimenticio.",
+        phImpact: "Completamente neutro y estable ante aguas duras.",
+        safety: "No irritante para la piel en dilución. Totalmente incoloro e inoloro.",
+        badge: "Alguicida Especializado",
+        image: "images/swipol.png"
       }
     ]
   },
