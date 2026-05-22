@@ -106,25 +106,113 @@
           </div>
 
           <div class="dashboard-grid">
-            <!-- Panel de Información y Calculadora (Izquierda) -->
+            <!-- Panel de Información y Spotlight de Swipol (Izquierda) -->
             <div class="info-panel">
               <div class="info-title-group">
-                <p class="info-slogan">Agua 100% segura, cristalina y en perfecto balance químico para una experiencia de natación de clase mundial.</p>
+                <span class="info-area-badge" style="color: var(--color-alberca)">Producto Estrella</span>
+                <h3 class="info-title" style="font-size: 2.5rem; color: #fff; font-family: var(--font-title); font-weight: 800; margin-top: 0.5rem; margin-bottom: 0.5rem;">Swipol</h3>
+                <p class="info-slogan" style="border-left: 2px solid var(--color-alberca); padding-left: 1rem; font-size: 0.95rem; line-height: 1.5;">Desinfectante concentrado de amplio espectro, con grado quirúrgico y alimenticio para una bioseguridad total.</p>
               </div>
               
-              <!-- Contenedor donde se monta la calculadora en JS -->
-              <div id="calc-container-alberca"></div>
+              <!-- Contenedor del Producto (Swipol) con su imagen y acción para cotizar -->
+              <div class="product-spotlight-container" style="display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(15, 15, 25, 0.45); border: 1px solid var(--color-glass-border); padding: 1.8rem; border-radius: 16px; margin-top: 0.5rem; position: relative; overflow: hidden; box-shadow: var(--shadow-premium);">
+                <div class="product-spotlight-glow" style="position: absolute; width: 140px; height: 140px; background: var(--color-alberca-glow); filter: blur(50px); opacity: 0.2; z-index: 1;"></div>
+                
+                <img src="images/swipol.png" alt="Swipe Swipol" style="max-width: 90%; max-height: 220px; object-fit: contain; z-index: 2; filter: drop-shadow(0 12px 24px rgba(0,0,0,0.5)); transition: transform var(--transition-fast);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                
+                <div class="product-spotlight-actions" style="margin-top: 1.5rem; z-index: 2; display: flex; width: 100%;">
+                  <button class="btn-quote" style="flex: 1; justify-content: center; display: flex; align-items: center; gap: 0.5rem; background: var(--color-alberca); color: #000; border: none; padding: 0.75rem; border-radius: 8px; font-family: var(--font-title); font-weight: 700; cursor: pointer; transition: var(--transition-fast);" onmouseover="this.style.filter='brightness(1.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.filter='none'; this.style.transform='none';" onclick="addToQuoteCart('alguicida_max', 'alberca')">
+                    <svg style="width:16px; height:16px; fill:none; stroke:currentColor; stroke-width:2.5" viewBox="0 0 24 24">
+                      <path d="M12 5v14M5 12h14"/>
+                    </svg>
+                    Agregar Swipol a la Cotización
+                  </button>
+                </div>
+              </div>
             </div>
 
-            <!-- Panel de Catálogo de Productos (Derecha) -->
+            <!-- Panel de Información Técnica de Swipol (Derecha) -->
             <div class="catalog-panel">
               <div class="catalog-title-bar">
-                <h3 class="catalog-title">Línea Hidro-Sanitaria</h3>
-                <span class="catalog-subtitle">Productos Químicos Profesionales</span>
+                <h3 class="catalog-title" style="color: var(--color-alberca); font-family: var(--font-title); font-weight: 700; font-size: 1.4rem;">Información del Producto</h3>
+                <span class="catalog-subtitle" style="font-size: 0.85rem; color: var(--color-text-muted);">Especificaciones Técnicas</span>
               </div>
-              <div class="catalog-grid" id="catalog-grid-alberca">
-                <!-- Tarjetas se cargan dinámicamente por JS -->
+              
+              <div class="swipol-features-grid" style="display: flex; flex-direction: column; gap: 1rem; overflow-y: auto; max-height: calc(100vh - 240px); padding-right: 0.5rem;">
+                
+                <!-- Tarjeta 1 -->
+                <div class="feature-card" style="background: var(--color-dark-card); border: 1px solid var(--color-glass-border); border-left: 4px solid var(--color-alberca); border-radius: 12px; padding: 1.2rem; display: grid; grid-template-columns: 40px 1fr; gap: 1rem; box-shadow: 0 6px 18px rgba(0,0,0,0.1); transition: var(--transition-fast);" onmouseover="this.style.transform='translateY(-2px)'; this.style.borderColor='rgba(0, 242, 254, 0.2)';" onmouseout="this.style.transform='none'; this.style.borderColor='var(--color-glass-border)';">
+                  <div class="feature-icon-container" style="width: 40px; height: 40px; background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.12); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--color-alberca);">
+                    <svg style="width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2" viewBox="0 0 24 24">
+                      <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z"/><path d="M12 6c-2.5 0-4 1.5-4 4 0 4 3 5 3 7.5S9.5 20 7 20"/>
+                    </svg>
+                  </div>
+                  <div class="feature-text">
+                    <h4 style="font-family: var(--font-title); font-size: 1.05rem; font-weight: 700; color: #fff; margin-bottom: 0.3rem;">Acción Alguicida Especializada</h4>
+                    <p style="font-size: 0.85rem; line-height: 1.5; color: var(--color-glass-text); text-align: justify; margin: 0;">Acción Alguicida Especializada: Swipol está formulado para el control efectivo de algas en piscinas y en sistemas de recirculación de aguas. Las pruebas de eficiencia bacteriológica lo respaldan como un alguicida, fungicida y viricida de amplio espectro.</p>
+                  </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="feature-card" style="background: var(--color-dark-card); border: 1px solid var(--color-glass-border); border-left: 4px solid var(--color-alberca); border-radius: 12px; padding: 1.2rem; display: grid; grid-template-columns: 40px 1fr; gap: 1rem; box-shadow: 0 6px 18px rgba(0,0,0,0.1); transition: var(--transition-fast);" onmouseover="this.style.transform='translateY(-2px)'; this.style.borderColor='rgba(0, 242, 254, 0.2)';" onmouseout="this.style.transform='none'; this.style.borderColor='var(--color-glass-border)';">
+                  <div class="feature-icon-container" style="width: 40px; height: 40px; background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.12); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--color-alberca);">
+                    <svg style="width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2" viewBox="0 0 24 24">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
+                  </div>
+                  <div class="feature-text">
+                    <h4 style="font-family: var(--font-title); font-size: 1.05rem; font-weight: 700; color: #fff; margin-bottom: 0.3rem;">Seguridad para los Socios (Cero Irritación)</h4>
+                    <p style="font-size: 0.85rem; line-height: 1.5; color: var(--color-glass-text); text-align: justify; margin: 0;">Seguridad para los Socios (Cero Irritación): Está compuesto por cuaternario de amonio de última generación y, a diferencia de otros químicos de limpieza, no es irritante para la piel. Además, es completamente incoloro e inoloro, por lo que no altera la pureza visual ni sensorial del área.</p>
+                  </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="feature-card" style="background: var(--color-dark-card); border: 1px solid var(--color-glass-border); border-left: 4px solid var(--color-alberca); border-radius: 12px; padding: 1.2rem; display: grid; grid-template-columns: 40px 1fr; gap: 1rem; box-shadow: 0 6px 18px rgba(0,0,0,0.1); transition: var(--transition-fast);" onmouseover="this.style.transform='translateY(-2px)'; this.style.borderColor='rgba(0, 242, 254, 0.2)';" onmouseout="this.style.transform='none'; this.style.borderColor='var(--color-glass-border)';">
+                  <div class="feature-icon-container" style="width: 40px; height: 40px; background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.12); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--color-alberca);">
+                    <svg style="width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2" viewBox="0 0 24 24">
+                      <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/>
+                    </svg>
+                  </div>
+                  <div class="feature-text">
+                    <h4 style="font-family: var(--font-title); font-size: 1.05rem; font-weight: 700; color: #fff; margin-bottom: 0.3rem;">Estabilidad Térmica</h4>
+                    <p style="font-size: 0.85rem; line-height: 1.5; color: var(--color-glass-text); text-align: justify; margin: 0;">Estabilidad Térmica: Mantiene intactas todas sus propiedades desinfectantes en temperaturas altas y bajas, lo que lo hace perfecto tanto para albercas techadas y climatizadas como para instalaciones al aire libre.</p>
+                  </div>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="feature-card" style="background: var(--color-dark-card); border: 1px solid var(--color-glass-border); border-left: 4px solid var(--color-alberca); border-radius: 12px; padding: 1.2rem; display: grid; grid-template-columns: 40px 1fr; gap: 1rem; box-shadow: 0 6px 18px rgba(0,0,0,0.1); transition: var(--transition-fast);" onmouseover="this.style.transform='translateY(-2px)'; this.style.borderColor='rgba(0, 242, 254, 0.2)';" onmouseout="this.style.transform='none'; this.style.borderColor='var(--color-glass-border)';">
+                  <div class="feature-icon-container" style="width: 40px; height: 40px; background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.12); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--color-alberca);">
+                    <svg style="width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2" viewBox="0 0 24 24">
+                      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                    </svg>
+                  </div>
+                  <div class="feature-text">
+                    <h4 style="font-family: var(--font-title); font-size: 1.05rem; font-weight: 700; color: #fff; margin-bottom: 0.3rem;">Resistencia Operativa</h4>
+                    <p style="font-size: 0.85rem; line-height: 1.5; color: var(--color-glass-text); text-align: justify; margin: 0;">Resistencia Operativa: Tiene una alta tolerancia a las aguas duras, garantizando su eficacia continua en los sistemas hidráulicos del club.</p>
+                  </div>
+                </div>
+
+                <!-- Tarjeta 5 -->
+                <div class="feature-card" style="background: var(--color-dark-card); border: 1px solid var(--color-glass-border); border-left: 4px solid var(--color-alberca); border-radius: 12px; padding: 1.2rem; display: grid; grid-template-columns: 40px 1fr; gap: 1rem; box-shadow: 0 6px 18px rgba(0,0,0,0.1); transition: var(--transition-fast);" onmouseover="this.style.transform='translateY(-2px)'; this.style.borderColor='rgba(0, 242, 254, 0.2)';" onmouseout="this.style.transform='none'; this.style.borderColor='var(--color-glass-border)';">
+                  <div class="feature-icon-container" style="width: 40px; height: 40px; background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.12); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--color-alberca);">
+                    <svg style="width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2.5" viewBox="0 0 24 24">
+                      <path d="M4.5 16.5c-1.5 1.5-2.5 3.5-2.5 5.5h20c0-2-1-4-2.5-5.5"/><path d="M12 2v14M8 5l4-3 4 3"/>
+                    </svg>
+                  </div>
+                  <div class="feature-text">
+                    <h4 style="font-family: var(--font-title); font-size: 1.05rem; font-weight: 700; color: #fff; margin-bottom: 0.3rem;">Desinfección Perimetral Total</h4>
+                    <p style="font-size: 0.85rem; line-height: 1.5; color: var(--color-glass-text); text-align: justify; margin: 0;">Desinfección Perimetral Total: Es el producto indicado para el control e inhibición de hongos en los baños de pies de los vestidores. Su grado quirúrgico y alimenticio asegura una desinfección total en los pisos, tapetes sanitarios y áreas de descanso que rodean la alberca.</p>
+                  </div>
+                </div>
+
               </div>
+
+              <!-- Elementos de control ocultos para mantener la compatibilidad con el render dinámico de JS -->
+              <div style="display: none;">
+                <div id="calc-container-alberca"></div>
+                <div id="catalog-grid-alberca"></div>
+              </div>
+
             </div>
           </div>
         </div>

@@ -27,20 +27,22 @@ const PRODUCTS_DATA = {
       },
       {
         id: "alguicida_max",
-        name: "Alguicida Concentrado Cuaternario",
-        tagline: "Preventivo y correctivo de amplio espectro",
-        description: "Poderosa fórmula polimérica libre de cobre que elimina y previene la formación de algas verdes, negras y amarillas en las paredes y fondo de la alberca. Su formulación especial garantiza que no se produzca espuma molesta en el agua.",
+        name: "Swipol",
+        tagline: "Alguicida, fungicida y viricida de amplio espectro",
+        description: "Swipol está formulado para el control efectivo de algas en piscinas y en sistemas de recirculación de aguas. Las pruebas de eficiencia bacteriológica lo respaldan como un alguicida, fungicida y viricida de amplio espectro. Compuesto por cuaternario de amonio de última generación, es incoloro, inoloro y de grado quirúrgico y alimenticio.",
         benefits: [
-          "100% libre de cobre (no tiñe el cabello rubio ni mancha las paredes).",
-          "Compatible con tratamientos de cloro y sistemas de electrólisis salina.",
-          "No genera espuma incluso en áreas con turbulencia."
+          "Seguridad para los socios: compuesto por cuaternario de amonio de última generación (cero irritación cutánea).",
+          "Completamente incoloro e inoloro: no altera la pureza visual ni sensorial del área.",
+          "Estabilidad térmica total en temperaturas altas y bajas (albercas techadas o al aire libre).",
+          "Alta tolerancia a las aguas duras, garantizando su eficacia continua en sistemas hidráulicos.",
+          "Desinfección perimetral total: inhibición de hongos en baños de pies, vestidores, pisos y tapetes sanitarios."
         ],
-        usage: "Tratamiento preventivo semanal o correctivo ante presencia visible de algas.",
-        dosage: "Preventivo: 100 ml por cada 10 m³ por semana. Correctivo: 300 ml por cada 10 m³ de agua.",
-        dilution: "Disolver previamente en una cubeta con agua y distribuir uniformemente alrededor del perímetro.",
-        phImpact: "Completamente neutro.",
-        safety: "Biodegradable a dilución de uso. Manténgase fuera del alcance de niños.",
-        badge: "Anti-Algas de Alto Rendimiento"
+        usage: "Control e inhibición de hongos en vestidores y desinfección perimetral de albercas, además de control de algas en piscina.",
+        dosage: "Dosificación recomendada según el área a desinfectar y volumen de recirculación.",
+        dilution: "Dilución de uso general y perimetral de grado quirúrgico y alimenticio.",
+        phImpact: "Completamente neutro y estable ante aguas duras.",
+        safety: "No irritante para la piel en dilución. Totalmente incoloro e inoloro.",
+        badge: "Alguicida Especializado"
       },
       {
         id: "clarificador_gold",
