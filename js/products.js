@@ -106,57 +106,6 @@ const PRODUCTS_DATA = {
         image: "images/swipe_concentrado.png"
       },
       {
-        id: "eucalyptus_vapor",
-        name: "Esencia de Eucalipto & Menta Steam",
-        tagline: "Concentrado hidrosoluble para vapor y saunas",
-        description: "Formulación premium a base de aceites esenciales puros de eucalipto globulus y menta piperita. Especialmente diseñada para dosificarse en sistemas de inyección de vapor o saunas secas, liberando notas refrescantes, descongestionantes y relajantes.",
-        benefits: [
-          "100% soluble en agua (no obstruye las boquillas de los generadores de vapor).",
-          "Efecto descongestionante y tonificante natural de larga duración.",
-          "Libre de solventes químicos nocivos o alcoholes inflamables."
-        ],
-        usage: "Aromaterapia en cuartos de vapor, saunas y jacuzzis.",
-        dosage: "Sistemas automáticos: Regular a 1-2 ml por ciclo. Manual: Rociar 10 ml directamente sobre las rocas de la sauna disueltos en agua.",
-        dilution: "1 parte de esencia por 10 partes de agua para uso manual.",
-        phImpact: "Neutro.",
-        safety: "Uso ambiental únicamente. No ingerir ni aplicar concentrado en los ojos.",
-        badge: "Aromaterapia de Lujo"
-      },
-      {
-        id: "organic_sanitizer",
-        name: "Sanitizante Orgánico Cítrico",
-        tagline: "Desinfectante hipoalergénico sin enjuague para superficies",
-        description: "Poderoso desinfectante botánico de amplio espectro derivado de extracto de semilla de toronja y ácidos orgánicos. Ideal para camillas de masaje, cabinas, vestidores y áreas de relajación. Libre de cloro, alcohol y fragancias sintéticas.",
-        benefits: [
-          "Hipoalergénico y 100% seguro para contacto dermatológico inmediato.",
-          "Elimina el 99.999% de hongos, bacterias y virus en 30 segundos.",
-          "No mancha, no reseca el vinil ni la piel sintética de las camillas de masaje."
-        ],
-        usage: "Sanitización rápida entre servicios de masajes y tratamientos faciales.",
-        dosage: "Listo para usar. Rociar y dejar secar o pasar un paño de microfibra.",
-        dilution: "Listo para usar (RTU - Ready To Use).",
-        phImpact: "Ligeramente ácido (compatible con el pH natural de la piel).",
-        safety: "Ecológico y biodegradable. No requiere equipo de protección especial.",
-        badge: "100% Botánico & Seguro"
-      },
-      {
-        id: "jacuzzi_clear",
-        name: "Spa Clear & Sanitizer",
-        tagline: "Sanitizante activo libre de cloro para tinas de hidromasaje",
-        description: "Tratamiento desinfectante a base de oxígeno activo y polímeros desinfectantes suaves. Específicamente formulado para jacuzzis, tinas calientes y circuitos de hidroterapia donde las altas temperaturas evaporan el cloro común y causan molestias respiratorias.",
-        benefits: [
-          "Sin molestos olores a cloro en espacios cerrados de spa.",
-          "Estable a temperaturas de hasta 42°C sin perder poder bactericida.",
-          "Previene la acumulación de biofilm biológico en las tuberías internas de los hidromasajes."
-        ],
-        usage: "Sanitización y clarificación continua de tinas de spa e hidroterapia.",
-        dosage: "Añadir 20 ml por cada 1 m³ de agua cada 2 días o después de uso intenso.",
-        dilution: "Verter directamente en el agua con las bombas de hidromasaje encendidas.",
-        phImpact: "Neutro.",
-        safety: "Hipoalergénico a dilución de uso. No irrita ojos ni mucosas.",
-        badge: "Higiene en Hidroterapia"
-      },
-      {
         id: "swipe_brite_spa",
         name: "Swipe Brite",
         tagline: "Limpiador desincrustante ácido y biodegradable para inodoros",
