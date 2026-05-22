@@ -217,72 +217,44 @@ const PRODUCTS_DATA = {
     slogan: "Cocinas de clase mundial impecables. Seguridad alimentaria total y vajillas resplandecientes.",
     products: [
       {
-        id: "grease_remover",
-        name: "Super Degreaser Plus",
-        tagline: "Desengrasante alcalino pesado biodegradable",
-        description: "Formulación cáustica-solvente concentrada de alto rendimiento diseñada para penetrar, emulsionar y disolver de forma inmediata las grasas más difíciles, cochambre carbonizado y aceites quemados en campanas de extracción, hornos, freidoras, planchas y parrillas del restaurante del club.",
+        id: "swipe_concentrado_gastronomia",
+        name: "Swipe Limpiador Líquido Concentrado",
+        tagline: "Desengrasante industrial de grado alimentario NSF A1",
+        description: "Es un desengrasante industrial líquido de uso general, altamente concentrado y con una biodegradabilidad superior al 99%. Destaca por ser grado alimenticio, avalado por el registro NSF (Categoría A1) y SAGARPA, lo que lo hace completamente seguro para las áreas de preparación de alimentos y comedores del club.",
         benefits: [
-          "Fórmula de rápida acción que ahorra horas de tallado manual pesado.",
-          "Contiene agentes inhibidores de corrosión para proteger acero inoxidable de grado alimenticio.",
-          "Acción espumante activa que se adhiere a superficies verticales para mayor tiempo de contacto."
+          "Biodegradabilidad superior al 99%: sustentabilidad y cuidado ecológico.",
+          "Grado alimenticio avalado por NSF (Categoría A1) y SAGARPA.",
+          "Seguridad total: sin cáusticos libres, no quema ni maltrata la piel, no inflamable y no corrosivo.",
+          "Versiones adaptadas: versión Low Foam para restregadoras y versión pH Neutro (pH 7) para plantas tratadoras.",
+          "No daña, no despinta ni corroe los metales y superficies tratadas."
         ],
-        usage: "Limpieza profunda al cierre de turnos en cocinas calientes de restaurantes y snacks del club.",
-        dosage: "Suciedad extrema: Dilución 1:3 en agua. Limpieza general: Dilución 1:10.",
-        dilution: "Aplicar con atomizador espumador, dejar actuar 5-10 minutos, tallar levemente y enjuagar con agua abundante.",
-        phImpact: "Fuertemente alcalino (pH > 12) - requiere manejo cuidadoso.",
-        safety: "Obligatorio uso de guantes de nitrilo, lentes de seguridad y pechera protectora en su aplicación.",
-        badge: "Poder Desengrasante Extremo"
+        usage: "Desengrase industrial y limpieza multiusos en comedores, Casa Club, cocinas y mantenimiento.",
+        dosage: "Liviana (1:100) para mantenimiento estético diario | Normal (1:12) para zonas operativas | Pesada (1:4) para taller y motores.",
+        dilution: "Dilución variable según la carga de suciedad. Rinde hasta 100 litros de limpiador útil.",
+        phImpact: "pH Neutro (pH 7) disponible para proteger plantas tratadoras de agua del club.",
+        safety: "No tóxico, no inflamable, sin cáusticos libres. Seguro para la piel y metales.",
+        badge: "Grado Alimenticio & Eco-Friendly",
+        image: "images/swipe_concentrado.png"
       },
       {
-        id: "dish_auto",
-        name: "Auto-Dish Liquid Premium",
-        tagline: "Detergente concentrado para lavavajillas automáticas",
-        description: "Detergente líquido de baja espuma formulado especialmente para máquinas automáticas lavavajillas y lavacristales del club de golf. Su alta concentración remueve manchas de lápiz labial, almidón, café y grasa seca en vajillas y cristalería fina en un solo ciclo, incluso en condiciones de agua dura.",
+        id: "swipol_gastronomia",
+        name: "Swipol",
+        tagline: "Alguicida, fungicida y viricida de amplio espectro",
+        description: "Swipol está formulado para el control efectivo de algas en piscinas y en sistemas de recirculación de aguas. Las pruebas de eficiencia bacteriológica lo respaldan como un alguicida, fungicida y viricida de amplio espectro. Compuesto por cuaternario de amonio de última generación, es incoloro, inoloro y de grado quirúrgico y alimenticio.",
         benefits: [
-          "Previene incrustaciones de calcio y sarro en los inyectores de la máquina.",
-          "Brillo cristalino sin manchas de agua en copas y cubertería fina.",
-          "Biodegradable y libre de fosfatos nocivos para el medio ambiente."
+          "Seguridad para los socios: compuesto por cuaternario de amonio de última generación (cero irritación cutánea).",
+          "Completamente incoloro e inoloro: no altera la pureza visual ni sensorial del área.",
+          "Estabilidad térmica total en temperaturas altas y bajas (albercas techadas o al aire libre).",
+          "Alta tolerancia a las aguas duras, garantizando su eficacia continua en sistemas hidráulicos.",
+          "Desinfección perimetral total: inhibición de hongos en baños de pies, vestidores, pisos y tapetes sanitarios."
         ],
-        usage: "Lavado automatizado de vajillas en la cocina central del club.",
-        dosage: "Dosificar de 2 a 4 ml por litro de agua mediante dosificador electrónico de la máquina.",
-        dilution: "Inyección automática directa al ciclo de lavado.",
-        phImpact: "Fuertemente alcalino.",
-        safety: "Usar equipo de protección al reponer la garrafa de producto. No apto para lavado manual.",
-        badge: "Brillo Espejo Automatizado"
-      },
-      {
-        id: "fruit_wash",
-        name: "Fruit & Veggie Sanitizer",
-        tagline: "Desinfectante de alimentos base cítrica sin cloro",
-        description: "Desinfectante de grado alimentario derivado de extractos de semillas cítricas y ácidos orgánicos. Especialmente desarrollado para la sanitización de frutas, verduras, hortalizas y hielo en las barras y cocinas. No altera el sabor, color, olor ni textura de los ingredientes frescos.",
-        benefits: [
-          "100% natural, biodegradable y libre de cloro (sin olor ni sabor químico residual).",
-          "No requiere enjuague posterior, manteniendo la frescura y vida de anaquel del vegetal.",
-          "Elimina bacterias patógenas (E. Coli, Salmonella) y virus en solo 2 minutos."
-        ],
-        usage: "Lavado y desinfección de ensaladas, hierbas, frutas y vegetales en áreas de preparación fría.",
-        dosage: "Diluir 10 ml de producto por cada 5 litros de agua limpia.",
-        dilution: "Dilución recomendada 1:500. Sumergir vegetales por 2 minutos y escurrir.",
-        phImpact: "Ligeramente ácido.",
-        safety: "Totalmente seguro para consumo humano. No tóxico en su manejo diario.",
-        badge: "Seguridad en Alimentos"
-      },
-      {
-        id: "surface_food",
-        name: "Swipe Surface Sanitizer RTU",
-        tagline: "Sanitizante de superficies en contacto con alimentos sin enjuague",
-        description: "Sanitizante de evaporación rápida a base de alcohol isopropílico e ingredientes activos cuaternarios de grado alimenticio. Diseñado para sanitizar tablas de corte, cuchillos, rebanadoras, mesas de trabajo y barras de servicio. Cumple con la norma internacional de desinfección sin enjuague.",
-        benefits: [
-          "Secado ultra rápido por evaporación: la superficie queda lista en segundos.",
-          "No requiere enjuague con agua potable, evitando la recontaminación de superficies limpias.",
-          "Ideal para la sanitización rápida y constante durante las horas de servicio."
-        ],
-        usage: "Sanitización rápida de utensilios, barras, mesas y equipos de cocina entre preparaciones.",
-        dosage: "Rociar directamente a una distancia de 20 cm cubriendo la superficie y dejar evaporar.",
-        dilution: "Listo para usar sin dilución previa.",
-        phImpact: "Neutro.",
-        safety: "Inflamable en estado concentrado. Mantener alejado de flamas abiertas o pilotos de estufas.",
-        badge: "Higiene Inmediata en Servicio"
+        usage: "Control e inhibición de hongos en vestidores y desinfección perimetral de albercas.",
+        dosage: "Dosificación recomendada según el área a desinfectar y volumen de recirculación.",
+        dilution: "Dilución de uso general y perimetral de grado quirúrgico y alimenticio.",
+        phImpact: "Completamente neutro y estable ante aguas duras.",
+        safety: "No irritante para la piel en dilución. Totalmente incoloro e inoloro.",
+        badge: "Alguicida Especializado",
+        image: "images/swipol.png"
       }
     ]
   },
