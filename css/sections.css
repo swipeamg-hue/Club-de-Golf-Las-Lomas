@@ -2,7 +2,7 @@
 
 .area-column {
   position: relative;
-  flex: 1 1 20%;
+  flex: 1 1 14.28%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,6 +26,8 @@
 .col-gimnasio { background: var(--color-gimnasio-bg); }
 .col-gastronomia { background: var(--color-gastronomia-bg); }
 .col-mantenimiento { background: var(--color-mantenimiento-bg); }
+.col-ahorro { background: var(--color-ahorro-bg); }
+.col-demo { background: var(--color-demo-bg); }
 
 /* Capas visuales internas de las columnas */
 .column-overlay {
@@ -65,7 +67,7 @@
 
 /* Cuando una columna está Hovered, las demás se achican un poco */
 .columns-container:not(.has-active-column):has(.area-column:hover) .area-column:not(:hover) {
-  flex: 1 1 17%;
+  flex: 1 1 11.33%;
   opacity: 0.55;
   filter: grayscale(0.2) blur(1px);
 }
@@ -121,6 +123,8 @@
 .col-gimnasio:hover .column-vertical-title { color: var(--color-gimnasio); text-shadow: 0 0 20px var(--color-gimnasio-glow); }
 .col-gastronomia:hover .column-vertical-title { color: var(--color-gastronomia); text-shadow: 0 0 20px var(--color-gastronomia-glow); }
 .col-mantenimiento:hover .column-vertical-title { color: var(--color-mantenimiento); text-shadow: 0 0 20px var(--color-mantenimiento-glow); }
+.col-ahorro:hover .column-vertical-title { color: var(--color-ahorro); text-shadow: 0 0 20px var(--color-ahorro-glow); }
+.col-demo:hover .column-vertical-title { color: var(--color-demo); text-shadow: 0 0 20px var(--color-demo-glow); }
 
 .column-explore-hint {
   font-family: var(--font-body);
@@ -162,7 +166,7 @@
 .area-column.active {
   flex: 1 0 100% !important;
   cursor: default;
-  padding: 4rem 4rem 4rem 4rem;
+  padding: 4rem 4rem 10rem 4rem;
   z-index: 100;
   border-right: none;
   overflow-y: auto;
@@ -196,7 +200,7 @@
   position: relative;
   z-index: 10;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   display: none; /* Controlado por JS, cambia a flex */
   flex-direction: column;
   opacity: 0;
@@ -502,6 +506,8 @@
 .col-gimnasio.active { color: var(--color-gimnasio); }
 .col-gastronomia.active { color: var(--color-gastronomia); }
 .col-mantenimiento.active { color: var(--color-mantenimiento); }
+.col-ahorro.active { color: var(--color-ahorro); }
+.col-demo.active { color: var(--color-demo); }
 
 /* Adaptabilidad Responsiva para pantallas medianas/móviles */
 @media (max-width: 1024px) {

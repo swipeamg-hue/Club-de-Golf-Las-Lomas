@@ -22,6 +22,14 @@
   --color-mantenimiento-glow: rgba(138, 63, 252, 0.45);
   --color-mantenimiento-bg: linear-gradient(135deg, #12002e, #3a008c);
 
+  --color-ahorro: #a8ff78;
+  --color-ahorro-glow: rgba(168, 255, 120, 0.45);
+  --color-ahorro-bg: linear-gradient(135deg, #0f2027, #134430);
+  
+  --color-demo: #f857a6;
+  --color-demo-glow: rgba(248, 87, 166, 0.45);
+  --color-demo-bg: linear-gradient(135deg, #2d001e, #61003f);
+
   /* Colores Globales de la Interfaz */
   --color-dark-bg: #07070a;
   --color-dark-surface: rgba(15, 15, 22, 0.7);

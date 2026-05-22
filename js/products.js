@@ -377,5 +377,87 @@ const PRODUCTS_DATA = {
         badge: "Pisos Espejo Antiderrapantes"
       }
     ]
+  },
+  ahorro: {
+    title: "Ahorro & Ecología",
+    accentColor: "var(--color-ahorro)",
+    slogan: "Sustentabilidad financiera y ambiental para el Club de Golf Las Lomas con inyección de alta concentración.",
+    products: [
+      {
+        id: "eco_doser",
+        name: "Sistema Eco-Doser Swipe",
+        tagline: "Dispensadores automáticos de precisión",
+        description: "Equipo de dosificación en comodato que inyecta la cantidad exacta de producto Swipe concentrado diluido en agua corriente. Garantiza control total de inventarios y costo por litro inigualable.",
+        benefits: [
+          "Elimina el desperdicio por error manual.",
+          "Instalación sin costo sujeta a volumen contractual.",
+          "Llave de seguridad y calibración por personal técnico de Swipe."
+        ],
+        usage: "Control de dosificación en lavandería, mantenimiento y cocinas.",
+        dosage: "Precalibrado según el producto químico a dispensar.",
+        dilution: "Diluciones automáticas reguladas por venturi.",
+        phImpact: "No aplica.",
+        safety: "Previene salpicaduras del producto concentrado, 100% seguro para el operador.",
+        badge: "Control de Insumos"
+      },
+      {
+        id: "audit_service",
+        name: "Auditoría de Costo-Beneficio",
+        tagline: "Análisis y plan de optimización de presupuesto en sitio",
+        description: "Estudio técnico personalizado para el Club de Golf Las Lomas. Analizamos tus procesos de limpieza actuales para proponer el sistema de diluciones Swipe adecuado, reduciendo costos drásticamente.",
+        benefits: [
+          "Ahorro inmediato comprobado de hasta un 45% del gasto mensual.",
+          "Capacitación presencial al personal y entrega de guías de uso visuales.",
+          "Soporte técnico continuo con reportes de consumo bimensuales."
+        ],
+        usage: "Estudio inicial de operaciones en sitio sin costo ni compromiso.",
+        dosage: "Reunión técnica de diagnóstico de 2 horas en el Club.",
+        dilution: "Personalizado por nuestro Ingeniero de Ventas Swipe.",
+        phImpact: "No aplica.",
+        safety: "Protocolo de visitas bajo estrictas normas de seguridad del club.",
+        badge: "Servicio Sin Costo"
+      }
+    ]
+  },
+  demo: {
+    title: "Demos & Pruebas en Sitio",
+    accentColor: "var(--color-demo)",
+    slogan: "Comprueba el rendimiento y resultados espectaculares de Swipe directamente en tus instalaciones.",
+    products: [
+      {
+        id: "demo_alberca",
+        name: "Demo: Clarificación Express",
+        tagline: "Prueba de floculación instantánea en tu alberca",
+        description: "Programamos una prueba en vivo del Clarificador Gold en la alberca de tu elección. Observa el brillo espejo y la aglutinación de turbidez en tiempo récord ante tu personal.",
+        benefits: [
+          "Demostración física sin costo con resultados en 12 horas.",
+          "Medición y análisis digital de parámetros químicos del agua sin costo.",
+          "Capacitación express al operador de la alberca durante la prueba."
+        ],
+        usage: "Albercas principales o jacuzzis con problemas de turbidez.",
+        dosage: "Aplicado de forma controlada por nuestro especialista técnico.",
+        dilution: "Directo en la succión o retorno seleccionado de prueba.",
+        phImpact: "Neutro.",
+        safety: "Seguro. No altera el balance de desinfección existente.",
+        badge: "Prueba Sin Compromiso"
+      },
+      {
+        id: "demo_cocina",
+        name: "Demo: Desengrase Extremo",
+        tagline: "Remoción de cochambre carbonizado en vivo",
+        description: "Llevamos nuestro Super Degreaser Plus a tu cocina y lo probamos en tu campana, plancha o freidora más sucia. Observa cómo disuelve el cochambre más denso sin esfuerzo.",
+        benefits: [
+          "Demostración inmediata de la reducción de horas-hombre de tallado.",
+          "Prueba de no corrosión en tu acero inoxidable de grado alimenticio.",
+          "Entrega de muestra física para que tu personal continúe la prueba."
+        ],
+        usage: "Cocina caliente del restaurante principal o snack del club.",
+        dosage: "Cuadrante de prueba de 50x50 cm aplicado en sitio.",
+        dilution: "Dilución activa 1:3 a 1:5 según el nivel de cochambre.",
+        phImpact: "Altamente alcalino, manejado por nuestro Ingeniero técnico.",
+        safety: "Aplicación segura con equipo de protección industrial Swipe.",
+        badge: "Garantía de Resultados"
+      }
+    ]
   }
 };

@@ -414,5 +414,150 @@ const CALCULATORS = {
       document.getElementById("maint-dil").addEventListener("change", update);
       update();
     }
+  },
+
+  // 6. AHORRO & ECOLOGÍA - Calculadora de Ahorro y Sustentabilidad
+  ahorro: {
+    render: (containerId) => {
+      const html = `
+        <div class="calculator-card" style="border-color: var(--color-ahorro)">
+          <div class="calc-title-group" style="color: var(--color-ahorro)">
+            <svg class="calc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3 class="calc-title">Simulador de Ahorro Anual</h3>
+          </div>
+          <div class="calc-form">
+            <div class="calc-input-group">
+              <label class="calc-label">Gasto Mensual Actual en Químicos</label>
+              <div class="calc-input-container">
+                <input type="number" id="eco-spend" class="calc-input" value="45000" min="5000" max="1000000">
+                <span class="calc-unit">MXN / mes</span>
+              </div>
+            </div>
+            <div class="calc-input-group">
+              <label class="calc-label">Eficiencia Estimada Swipe</label>
+              <select id="eco-efficiency" class="calc-input calc-select">
+                <option value="35">Optimización Conservadora (35% Ahorro)</option>
+                <option value="40" selected>Optimización Recomendada (40% Ahorro)</option>
+                <option value="45">Optimización Máxima (45% Ahorro)</option>
+              </select>
+            </div>
+            
+            <div class="calc-result-box" style="border-color: rgba(168, 255, 120, 0.15); display: grid; grid-template-columns: 50% 50%; gap: 1rem; align-items: center;">
+              <div>
+                <span class="calc-result-value" id="eco-res-monthly" style="color: var(--color-ahorro)">$18,000</span>
+                <span class="calc-result-label" style="font-size:0.65rem">Ahorro Mensual</span>
+              </div>
+              <div style="border-left: 1px solid rgba(255,255,255,0.08)">
+                <span class="calc-result-value" id="eco-res-annual" style="color: #10b981">$216,000</span>
+                <span class="calc-result-label" style="font-size:0.65rem">Ahorro Anual Est.</span>
+              </div>
+            </div>
+            
+            <div style="background: rgba(255,255,255,0.02); padding: 0.8rem 1rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.04); font-size: 0.75rem; text-align: center;">
+              🌱 <strong>Impacto Ecológico Anual:</strong> <span id="eco-res-bottles" style="color: var(--color-ahorro); font-weight: bold;">1,800</span> envases plásticos de 1L menos en el medio ambiente gracias a las diluciones Swipe.
+            </div>
+          </div>
+        </div>
+      `;
+      document.getElementById(containerId).innerHTML = html;
+
+      const update = () => {
+        const spend = parseFloat(document.getElementById("eco-spend").value) || 0;
+        const eff = parseFloat(document.getElementById("eco-efficiency").value);
+        
+        const monthlySave = spend * (eff / 100);
+        const annualSave = monthlySave * 12;
+        
+        const bottlesSaved = Math.round((spend / 300) * 12);
+
+        document.getElementById("eco-res-monthly").innerText = `$${Math.round(monthlySave).toLocaleString("es-MX")} MXN`;
+        document.getElementById("eco-res-annual").innerText = `$${Math.round(annualSave).toLocaleString("es-MX")} MXN`;
+        document.getElementById("eco-res-bottles").innerText = bottlesSaved.toLocaleString("es-MX");
+      };
+
+      document.getElementById("eco-spend").addEventListener("input", update);
+      document.getElementById("eco-efficiency").addEventListener("change", update);
+      update();
+    }
+  },
+
+  // 7. DEMO - Formulario de Programación de Demostraciones en Vivo
+  demo: {
+    render: (containerId) => {
+      const html = `
+        <div class="calculator-card" style="border-color: var(--color-demo)" id="demo-card-container">
+          <div class="calc-title-group" style="color: var(--color-demo)">
+            <svg class="calc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <h3 class="calc-title">Agendar Prueba en Sitio</h3>
+          </div>
+          <form class="calc-form" id="demo-booking-form">
+            <div class="calc-input-group">
+              <label class="calc-label">Área del Club a Probar</label>
+              <select id="demo-area" class="calc-input calc-select" required>
+                <option value="Alberca & Acuáticos">Alberca: Clarificación Express</option>
+                <option value="Spa & Wellness">Spa: Higiene Sensorial y Aromas</option>
+                <option value="Gimnasio & Fitness">Gimnasio: Sanitización de Equipos</option>
+                <option value="Gastronomía & Cocinas">Gastronomía: Desengrase de Cochambre</option>
+                <option value="Mantenimiento General">Mantenimiento: Pisos y Multiusos</option>
+              </select>
+            </div>
+            <div class="calc-input-group">
+              <label class="calc-label">Fecha Propuesta</label>
+              <input type="date" id="demo-date" class="calc-input" required>
+            </div>
+            <div class="calc-input-group">
+              <label class="calc-label">Horario Preferido</label>
+              <select id="demo-time" class="calc-input calc-select" required>
+                <option value="09:00 AM">Mañana (09:00 AM)</option>
+                <option value="12:00 PM" selected>Mediodía (12:00 PM)</option>
+                <option value="04:00 PM">Tarde (04:00 PM)</option>
+              </select>
+            </div>
+            
+            <button type="submit" class="quotes-btn-submit" style="background: linear-gradient(135deg, var(--color-demo) 0%, #61003f 100%); color: #fff; box-shadow: 0 10px 20px var(--color-demo-glow); border: none; padding: 0.8rem; font-family: var(--font-title); font-weight:800; font-size:0.85rem; border-radius:8px; cursor:pointer; text-transform:uppercase; margin-top:0.5rem;">
+              Solicitar Demostración
+            </button>
+          </form>
+        </div>
+      `;
+      document.getElementById(containerId).innerHTML = html;
+
+      // Establecer fecha mínima como mañana
+      const today = new Date();
+      today.setDate(today.getDate() + 1);
+      const yyyy = today.getFullYear();
+      let mm = today.getMonth() + 1;
+      let dd = today.getDate();
+      if (mm < 10) mm = '0' + mm;
+      if (dd < 10) dd = '0' + dd;
+      document.getElementById("demo-date").value = `${yyyy}-${mm}-${dd}`;
+      document.getElementById("demo-date").min = `${yyyy}-${mm}-${dd}`;
+
+      // Manejador de reserva
+      document.getElementById("demo-booking-form").addEventListener("submit", (e) => {
+        e.preventDefault();
+        const areaSelected = document.getElementById("demo-area").value;
+        const dateVal = document.getElementById("demo-date").value;
+        const timeVal = document.getElementById("demo-time").value;
+
+        // Formatear fecha
+        const dateParts = dateVal.split("-");
+        const formattedDate = `${dateParts[2]}/${dateParts[1]}/${dateParts[0]}`;
+
+        document.getElementById("demo-card-container").innerHTML = `
+          <div class="quotes-success-msg" style="padding: 1.5rem 0;">
+            <div class="success-icon-container" style="width:60px; height:60px; font-size:1.8rem; border-color: rgba(248, 87, 166, 0.4); color: var(--color-demo); box-shadow: 0 0 15px var(--color-demo-glow); margin: 0 auto;">✓</div>
+            <h4 style="font-family: var(--font-title); font-size: 1.2rem; color: #fff; margin-top: 0.5rem; text-align:center;">¡Demo Solicitada!</h4>
+            <p style="font-size: 0.8rem; line-height: 1.5; color: var(--color-text-muted); text-align: center; margin-top:0.5rem;">
+              Tu demostración para el área de <strong>${areaSelected}</strong> ha sido agendada tentativamente para el <strong>${formattedDate}</strong> a las <strong>${timeVal}</strong>.
+            </p>
+            <p style="font-size: 0.75rem; color: var(--color-demo); font-weight:600; margin-top:0.5rem; text-align:center;">
+              Un ingeniero de Swipe se pondrá en contacto para confirmar.
+            </p>
+            <button class="btn-details" onclick="CALCULATORS.demo.render('${containerId}')" style="margin: 1rem auto 0 auto; border-color: rgba(255,255,255,0.1); font-size: 0.75rem; padding: 0.5rem 1rem;">Agendar Otra Prueba</button>
+          </div>
+        `;
+      });
+    }
   }
 };
