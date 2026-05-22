@@ -7,6 +7,7 @@
 const AppState = {
   activeArea: null,
   quoteCart: [], // Array de objetos { id, name, area, qty }
+  isClickLocked: false, // Bloqueo permanente al hacer clic para evitar pérdidas por mouseleave accidental
 };
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -24,53 +25,109 @@ function initColumnTransitions() {
   const container = document.querySelector(".columns-container");
 
   columns.forEach((column) => {
+    // Evento de hover para computadoras
+    column.addEventListener("mouseenter", function () {
+      const areaId = this.getAttribute("data-area");
+      activateColumnHover(this, areaId, container);
+    });
+
+    // Evento de click para bloquear vista y soporte táctil
     column.addEventListener("click", function (e) {
-      // Si ya está activa, no hacer nada (dejar que los clicks internos actúen)
-      if (this.classList.contains("active")) return;
-      
-      // Evitar que el clic en botones de la tarjeta colapsada (si los hubiera) actúe raro
-      if (e.target.closest("button") || e.target.closest(".close-section-btn")) return;
+      if (e.target.closest("button") || e.target.closest(".close-section-btn") || e.target.closest(".product-actions")) return;
 
       const areaId = this.getAttribute("data-area");
-      activateColumn(this, areaId, container);
+      activateColumnClick(this, areaId, container);
     });
+  });
+
+  // Evento de salida del contenedor general (restablece al menú si no está bloqueado por clic)
+  container.addEventListener("mouseleave", function () {
+    if (!AppState.isClickLocked) {
+      deactivateHoverTransitions(container);
+    }
   });
 
   // Botones de cierre de sección
   const closeBtns = document.querySelectorAll(".close-section-btn");
   closeBtns.forEach((btn) => {
     btn.addEventListener("click", function (e) {
-      e.stopPropagation(); // Detener propagación para evitar reactivar
-      deactivateActiveColumn(container);
+      e.stopPropagation(); // Detener propagación
+      deactivateAllColumns(container);
     });
   });
 }
 
-function activateColumn(columnElem, areaId, containerElem) {
+function activateColumnHover(columnElem, areaId, containerElem) {
+  // Si ya es la columna hover-active actual, no hacer nada
+  if (columnElem.classList.contains("hover-active")) return;
+
   AppState.activeArea = areaId;
   
   // Agregar clases para activar layouts y ocultar encabezado general
   document.body.classList.add("section-active");
-  containerElem.classList.add("has-active-column");
-  columnElem.classList.add("active");
-
-  // Renderizar la calculadora correspondiente de forma diferida para animaciones suaves
-  setTimeout(() => {
-    if (CALCULATORS[areaId]) {
-      CALCULATORS[areaId].render(`calc-container-${areaId}`);
+  containerElem.classList.add("has-hover-active");
+  
+  // Limpiar hover activo y clase active de las demás para evitar superposiciones
+  const allCols = containerElem.querySelectorAll(".area-column");
+  allCols.forEach(c => {
+    c.classList.remove("hover-active");
+    if (c !== columnElem) {
+      c.classList.remove("active");
     }
-  }, 100);
+  });
+  
+  columnElem.classList.add("hover-active");
+  
+  // Si está bloqueado por clic, transferir la clase active a la columna actual
+  if (AppState.isClickLocked) {
+    columnElem.classList.add("active");
+    containerElem.classList.add("has-active-column");
+  }
+
+  // Renderizar la calculadora correspondiente
+  if (CALCULATORS[areaId]) {
+    CALCULATORS[areaId].render(`calc-container-${areaId}`);
+  }
 }
 
-function deactivateActiveColumn(containerElem) {
-  const activeCol = document.querySelector(".area-column.active");
-  if (!activeCol) return;
-
-  activeCol.classList.remove("active");
-  containerElem.classList.remove("has-active-column");
-  document.body.classList.remove("section-active");
+function activateColumnClick(columnElem, areaId, containerElem) {
+  AppState.isClickLocked = true;
   
+  // Sincronizar el estado active con el estado hover para compatibilidad en estilos y touch
+  containerElem.classList.add("has-active-column");
+  
+  const allCols = containerElem.querySelectorAll(".area-column");
+  allCols.forEach(c => c.classList.remove("active"));
+  columnElem.classList.add("active");
+  
+  activateColumnHover(columnElem, areaId, containerElem);
+}
+
+function deactivateHoverTransitions(containerElem) {
+  containerElem.classList.remove("has-hover-active");
+  const allCols = containerElem.querySelectorAll(".area-column");
+  allCols.forEach(c => c.classList.remove("hover-active"));
+
+  if (!AppState.isClickLocked) {
+    document.body.classList.remove("section-active");
+    AppState.activeArea = null;
+  }
+}
+
+function deactivateAllColumns(containerElem) {
+  AppState.isClickLocked = false;
   AppState.activeArea = null;
+  
+  containerElem.classList.remove("has-hover-active");
+  containerElem.classList.remove("has-active-column");
+  
+  const allCols = containerElem.querySelectorAll(".area-column");
+  allCols.forEach(c => {
+    c.classList.remove("hover-active");
+    c.classList.remove("active");
+  });
+  
+  document.body.classList.remove("section-active");
 }
 
 /**
@@ -171,6 +228,7 @@ function initProductDrawer() {
 }
 
 window.showProductDetails = function (productId, areaId) {
+  AppState.isClickLocked = true; // Bloquear colapso durante visualización de ficha técnica
   const product = PRODUCTS_DATA[areaId].products.find((p) => p.id === productId);
   if (!product) return;
 
@@ -266,6 +324,7 @@ function initQuoteSystem() {
 }
 
 window.addToQuoteCart = function (productId, areaId) {
+  AppState.isClickLocked = true; // Bloquear colapso al añadir productos
   const product = PRODUCTS_DATA[areaId].products.find((p) => p.id === productId);
   if (!product) return;
 
@@ -312,6 +371,7 @@ function updateQuoteUI() {
 }
 
 function openQuotesModal() {
+  AppState.isClickLocked = true; // Bloquear colapso al abrir el cotizador principal
   const modalOverlay = document.getElementById("quotes-modal-overlay");
   const itemsContainer = document.getElementById("quotes-items-container");
   
