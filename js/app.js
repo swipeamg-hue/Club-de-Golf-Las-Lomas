@@ -1118,6 +1118,162 @@ function updateGastronomiaDisplay(product) {
           </div>
         </div>
       `;
+    } else if (product.id === "freezer_cleaner") {
+      featuresHtml = `
+        <div class="gastronomia-feature-card">
+          <div class="gastronomia-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12h-4M4 12H8M12 4v4M12 20v-4M18.36 5.64l-2.82 2.83M8.46 15.54l-2.82 2.83M18.36 18.36l-2.82-2.82M8.46 8.46l-2.82-2.82" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gastronomia-feature-text">
+            <h4>Uso Concentrado (-55 °C)</h4>
+            <p>Aplicación directa. En el Club: Limpieza profunda de cámaras de congelación extrema. Permite desengrasar sin apagar equipos, evitando romper la cadena de frío.</p>
+          </div>
+        </div>
+        <div class="gastronomia-feature-card">
+          <div class="gastronomia-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gastronomia-feature-text">
+            <h4>Solución 1:1 (-20 °C)</h4>
+            <p>1 parte de producto por 1 de agua. En el Club: Ideal para el mantenimiento regular de cuartos fríos de almacenamiento general y bodegas de cárnicos.</p>
+          </div>
+        </div>
+        <div class="gastronomia-feature-card">
+          <div class="gastronomia-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h8" stroke-linecap="round"/></svg>
+          </div>
+          <div class="gastronomia-feature-text">
+            <h4>Solución 1:5 (-6 °C)</h4>
+            <p>1 parte de producto por 5 de agua. En el Club: Higiene continua de refrigeradores comerciales y vitrinas en snack bars, garantizando limpieza sin interrumpir el servicio.</p>
+          </div>
+        </div>
+        <div class="gastronomia-feature-card">
+          <div class="gastronomia-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gastronomia-feature-text">
+            <h4>Ventaja Operativa e Inocuidad</h4>
+            <p>Fórmula de evaporación controlada que evita la cristalización de la solución sobre evaporadores. Remueve grasas duras y suciedad sin dejar vapores tóxicos.</p>
+          </div>
+        </div>
+      `;
+    } else if (product.id === "crystal") {
+      featuresHtml = `
+        <div class="gastronomia-feature-card">
+          <div class="gastronomia-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gastronomia-feature-text">
+            <h4>Crystal: Rendimiento y Diluciones</h4>
+            <p>1 litro rinde hasta 100L. Normal: 10 ml/L para limpieza diaria. Grasa Pesada: 15 ml/L para sartenes y residuos difíciles.</p>
+          </div>
+        </div>
+        <div class="gastronomia-feature-card">
+          <div class="gastronomia-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gastronomia-feature-text">
+            <h4>Uso en el Club (Eventos y Cocinas)</h4>
+            <p>Elimina el efecto de gota en cristalería y loza fina, asegurando un acabado impecable de alta transparencia en áreas de alta exigencia.</p>
+          </div>
+        </div>
+        <div class="gastronomia-feature-card">
+          <div class="gastronomia-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gastronomia-feature-text">
+            <h4>Seguridad y Grado Alimenticio</h4>
+            <p>Su pH neutro y certificación garantizan la eliminación de bacterias y hongos sin maltratar ni resecar las manos del personal de limpieza.</p>
+          </div>
+        </div>
+        <div class="gastronomia-feature-card">
+          <div class="gastronomia-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gastronomia-feature-text">
+            <h4>Fórmula Biodegradable</h4>
+            <p>Compuesto 100% biodegradable de enjuague rápido y escurrimiento acelerado que reduce las horas-hombre invertidas en el secado manual de la vajilla.</p>
+          </div>
+        </div>
+      `;
+    } else if (product.id === "grease") {
+      featuresHtml = `
+        <div class="gastronomia-feature-card">
+          <div class="gastronomia-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v3M10 9V5a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gastronomia-feature-text">
+            <h4>Grease: Aplicación en Gel (Directo)</h4>
+            <p>Se aplica directo con brocha. Su formato en gel garantiza adherencia máxima, prolongando el tiempo de acción sin escurrimientos ni desperdicio.</p>
+          </div>
+        </div>
+        <div class="gastronomia-feature-card">
+          <div class="gastronomia-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1.5-3-1 1-1.5 1.62-1.5 3a2.5 2.5 0 0 0 .5 2.5z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gastronomia-feature-text">
+            <h4>Uso en Cocinas y Banquetes</h4>
+            <p>Quitacochambre definitivo para hornos, planchas y parrillas de hierro/acero inoxidable. Remueve simultáneamente capas superiores y profundas de grasa carbonizada.</p>
+          </div>
+        </div>
+        <div class="gastronomia-feature-card">
+          <div class="gastronomia-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gastronomia-feature-text">
+            <h4>Protocolo y Seguridad</h4>
+            <p style="color: #ff5a5a; font-weight: 600;">Actúa de 5 a 30 min. Nota de seguridad: Obligatorio el uso de guantes de hule. No aplicar sobre superficies calientes ni sobre aluminio.</p>
+          </div>
+        </div>
+        <div class="gastronomia-feature-card">
+          <div class="gastronomia-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gastronomia-feature-text">
+            <h4>Enjuague Sin Residuos</h4>
+            <p>Su fórmula soluble en agua emulsiona el cochambre quemado de modo que se remueve con un simple trapo húmedo, sin dejar residuos alcalinos en los equipos de cocción.</p>
+          </div>
+        </div>
+      `;
+    } else if (product.id === "crystal_dwm") {
+      featuresHtml = `
+        <div class="gastronomia-feature-card">
+          <div class="gastronomia-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gastronomia-feature-text">
+            <h4>Crystal DWM: Rendimiento y Dosificación</h4>
+            <p>Altamente concentrado. Permite utilizar únicamente de 8 ml a 12 ml de producto por cada ciclo de lavado en equipos modernos de alta eficiencia.</p>
+          </div>
+        </div>
+        <div class="gastronomia-feature-card">
+          <div class="gastronomia-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><line x1="4" y1="10" x2="20" y2="10"/><circle cx="8" cy="7" r="1"/><circle cx="12" cy="7" r="1"/></svg>
+          </div>
+          <div class="gastronomia-feature-text">
+            <h4>Uso en Lavado Automático</h4>
+            <p>Detergente de espuma controlada diseñado para máquinas lavaloza. Garantiza limpieza impecable de cristalería, vajillas y cubiertos en banquetes y restaurantes.</p>
+          </div>
+        </div>
+        <div class="gastronomia-feature-card">
+          <div class="gastronomia-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gastronomia-feature-text">
+            <h4>Ventaja Operativa y Mantenimiento</h4>
+            <p>Limpia la loza y desincrusta el interior de la máquina (elimina calcificaciones). Actúa perfectamente a &lt;50 °C, evitando el uso forzoso de calderas y reduciendo el consumo energético.</p>
+          </div>
+        </div>
+        <div class="gastronomia-feature-card">
+          <div class="gastronomia-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gastronomia-feature-text">
+            <h4>Protección Térmica y de Boquillas</h4>
+            <p>Evita el taponamiento de las boquillas de aspersión al inhibir la precipitación de calcio en el agua dura de lavado, protegiendo las bombas recirculadoras.</p>
+          </div>
+        </div>
+      `;
     }
 
     featuresColumn.innerHTML = featuresHtml;

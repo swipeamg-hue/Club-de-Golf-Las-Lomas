@@ -255,6 +255,82 @@ const PRODUCTS_DATA = {
         safety: "No irritante para la piel en dilución. Totalmente incoloro e inoloro.",
         badge: "Alguicida Especializado",
         image: "images/swipol.png"
+      },
+      {
+        id: "freezer_cleaner",
+        name: "Freezer Cleaner",
+        tagline: "Limpiador desengrasante para congeladores y cámaras frías",
+        description: "Limpiador especializado de alto rendimiento diseñado para operar en temperaturas de congelación extremas de hasta -55 °C. Permite realizar la limpieza profunda y el desengrase de cámaras de congelación y cuartos fríos sin apagar los equipos, garantizando que nunca se rompa la cadena de frío.",
+        benefits: [
+          "Limpieza en frío extremo: Evita el apagado de equipos y el deshielo, ahorrando energía y tiempo.",
+          "Preservación de la cadena de frío: Protege la integridad y sanidad de los alimentos almacenados.",
+          "Fórmula de rápida acción: Desengrasa y limpia a fondo depósitos difíciles y suciedad congelada.",
+          "Seguridad operativa: No inflamable, biodegradable y totalmente inofensivo para metales."
+        ],
+        usage: "Limpieza profunda de cámaras de congelación extrema, cuartos fríos de almacenamiento y refrigeradores comerciales.",
+        dosage: "Uso concentrado para frío extremo (-55 °C) | Solución 1:1 para frío regular (-20 °C) | Solución 1:5 para refrigeradores (-6 °C).",
+        dilution: "Uso Concentrado (-55 °C): Aplicación directa. | Solución 1:1 (-20 °C): 1 parte de producto por 1 de agua. | Solución 1:5 (-6 °C): 1 parte de producto por 5 de agua.",
+        phImpact: "Alcalinidad balanceada, formulado para no dañar serpentines ni superficies metálicas.",
+        safety: "Seguro de aplicar en frío. Utilizar el equipo de protección adecuado para áreas congeladas. Evitar contacto con los ojos.",
+        badge: "Frío Extremo hasta -55 °C",
+        image: "images/freezer_cleaner.png"
+      },
+      {
+        id: "crystal",
+        name: "Crystal",
+        tagline: "Detergente líquido manual lavaloza de alto rendimiento",
+        description: "Detergente líquido lavaloza altamente concentrado y biodegradable. Formulado específicamente para el lavado manual de cristalería, vajillas y loza fina en cocinas y eventos de alta exigencia del club. Su tecnología de escurrimiento avanzado previene el molesto efecto de gota, logrando un brillo impecable.",
+        benefits: [
+          "Rendimiento extraordinario: 1 litro rinde hasta 100 litros de solución útil de lavado.",
+          "Cero efecto de gota: Acabado impecable y brillante en cristalería y vajillas finas sin manchar.",
+          "pH Neutro y Grado Alimenticio: Certificado para la eliminación eficaz de bacterias y hongos sin maltratar las manos del personal.",
+          "Acción desengrasante superior: Remueve grasa pesada e incrustaciones difíciles en sartenes y loza."
+        ],
+        usage: "Lavado manual de loza fina, cristalería, vajillas, sartenes y cubiertos en eventos y cocinas del club.",
+        dosage: "Normal: 10 ml/L para limpieza diaria. | Grasa Pesada: 15 ml/L para sartenes y residuos difíciles.",
+        dilution: "Dilución en agua: 1 litro rinde hasta 100 litros de solución útil (1:100).",
+        phImpact: "pH Neutro (7.0) - Totalmente inofensivo para la piel y superficies delicadas.",
+        safety: "Grado alimenticio certificado. Dermatológicamente seguro, biodegradable y libre de fosfatos.",
+        badge: "Cero Efecto Gota / Rinde 1:100",
+        image: "images/crystal.png"
+      },
+      {
+        id: "grease",
+        name: "Grease",
+        tagline: "Quitacochambre definitivo en gel de máxima adherencia",
+        description: "Limpiador quitacochambre súper activo formulado en gel de alta viscosidad para la remoción definitiva de grasa carbonizada en hornos, planchas, parrillas y freidoras. Su formato en gel permite una adherencia superior en superficies verticales, prolongando el tiempo de acción sin escurrimientos ni desperdicios.",
+        benefits: [
+          "Formato en gel autoadherente: Elimina los escurrimientos y el desperdicio de producto.",
+          "Acción profunda y simultánea: Remueve al mismo tiempo capas superiores y profundas de grasa carbonizada extrema.",
+          "Especializado para cocinas y banquetes: Ideal para hornos, planchas y parrillas de hierro o acero inoxidable.",
+          "Rápida acción: Resultados contundentes y remoción fácil en un lapso de 5 a 30 minutos."
+        ],
+        usage: "Quitacochambre definitivo para hornos, planchas, freidoras y parrillas de hierro/acero inoxidable.",
+        dosage: "Listo para usar. Se aplica directo con brocha sobre la superficie fría.",
+        dilution: "Aplicación Directa (Gel Concentrado). No se diluye.",
+        phImpact: "Altamente alcalino para romper y saponificar grasas carbonizadas.",
+        safety: "Obligatorio el uso de guantes de hule. NO aplicar sobre superficies calientes ni sobre aluminio.",
+        badge: "Gel Adherente Quitacochambre",
+        image: "images/grease.png"
+      },
+      {
+        id: "crystal_dwm",
+        name: "Crystal DWM",
+        tagline: "Detergente concentrado de espuma controlada para lavalozas industriales",
+        description: "Detergente líquido de espuma controlada de alta concentración, diseñado especialmente para máquinas lavalozas industriales de alta demanda. Asegura una limpieza impecable y un brillo reluciente en cristalería, vajillas y cubiertos en restaurantes y áreas de banquetes del club.",
+        benefits: [
+          "Ultra concentrado y económico: Requiere solo de 8 ml a 12 ml por ciclo en equipos modernos.",
+          "Espuma controlada: Diseñado especialmente para optimizar la acción mecánica de lavado dentro de la máquina.",
+          "Doble ventaja operativa: Limpia impecablemente la loza y al mismo tiempo desincrusta el interior de la máquina (elimina calcificaciones).",
+          "Eficiencia térmica: Actúa perfectamente a menos de 50 °C, evitando el uso forzoso de calderas y reduciendo el consumo energético."
+        ],
+        usage: "Detergente de lavado automático para máquinas lavaloza en banquetes y restaurantes.",
+        dosage: "Dosificación automática o manual de 8 ml a 12 ml de producto por cada ciclo de lavado.",
+        dilution: "Inyección automatizada directa al ciclo de lavado de la máquina.",
+        phImpact: "Alcalino desincrustante controlado, estable frente a aguas duras.",
+        safety: "Evitar contacto directo con la piel y ojos. Diseñado exclusivamente para uso automático mecánico en lavalozas.",
+        badge: "Doble Acción & Ahorro Energético",
+        image: "images/crystal_dwm.png"
       }
     ]
   },
