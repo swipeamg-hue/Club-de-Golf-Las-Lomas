@@ -133,9 +133,22 @@ body.section-active .main-header {
 }
 
 .brand-container {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  padding: 0.4rem 1.2rem;
+  border-radius: 50px;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  transition: var(--transition-fast);
+}
+
+.brand-container:hover {
+  background: #ffffff;
+  transform: translateY(-1.5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
 }
 
 .brand-logo-svg {
