@@ -29,7 +29,31 @@
 .col-gastronomia { background: var(--color-gastronomia-bg); }
 .col-mantenimiento { background: var(--color-mantenimiento-bg); }
 .col-ahorro { background: var(--color-ahorro-bg); }
-.col-demo { background: var(--color-demo-bg); }
+.col-demo {
+  background: var(--color-demo-bg);
+  position: relative;
+}
+
+.col-demo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/demo_bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.08; /* Soft watermark transparency */
+  z-index: 0;
+  pointer-events: none;
+  transition: opacity 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.col-demo:hover::before {
+  opacity: 0.12; /* Aumenta sutilmente la visibilidad al hacer hover */
+}
 
 /* Capas visuales internas de las columnas */
 .column-overlay {
