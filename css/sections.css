@@ -24,7 +24,6 @@
 
 .col-alberca {
   background: var(--color-alberca-bg);
-  position: relative;
 }
 
 .col-alberca::before {
@@ -49,7 +48,6 @@
 }
 .col-spa {
   background: var(--color-spa-bg);
-  position: relative;
 }
 
 .col-spa::before {
@@ -78,7 +76,6 @@
 .col-ahorro { background: var(--color-ahorro-bg); }
 .col-demo {
   background: var(--color-demo-bg);
-  position: relative;
 }
 
 .col-demo::before {
@@ -167,10 +164,10 @@
   text-orientation: mixed;
   transform: rotate(180deg);
   font-family: var(--font-title);
-  font-size: 2rem;
+  font-size: clamp(1.1rem, 3.2vh, 1.7rem);
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   color: var(--color-glass-text);
   white-space: nowrap;
   transition: var(--transition-smooth);
