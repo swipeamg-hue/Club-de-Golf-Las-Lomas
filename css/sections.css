@@ -46,6 +46,7 @@
 
 .col-alberca:hover::before {
   opacity: 0.12; /* Aumenta sutilmente la visibilidad al hacer hover */
+}
 .col-spa {
   background: var(--color-spa-bg);
   position: relative;
