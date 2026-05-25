@@ -37,14 +37,14 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.08; /* Soft watermark transparency */
+  opacity: 0.16; /* Soft watermark transparency - increased for better visibility */
   z-index: 0;
   pointer-events: none;
   transition: opacity 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .col-alberca:hover::before {
-  opacity: 0.12; /* Aumenta sutilmente la visibilidad al hacer hover */
+  opacity: 0.25; /* Aumenta sutilmente la visibilidad al hacer hover - increased for better visibility */
 }
 .col-spa {
   background: var(--color-spa-bg);
@@ -61,14 +61,14 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.08; /* Soft watermark transparency */
+  opacity: 0.16; /* Soft watermark transparency - increased for better visibility */
   z-index: 0;
   pointer-events: none;
   transition: opacity 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .col-spa:hover::before {
-  opacity: 0.12; /* Aumenta sutilmente la visibilidad al hacer hover */
+  opacity: 0.25; /* Aumenta sutilmente la visibilidad al hacer hover - increased for better visibility */
 }
 .col-gimnasio { background: var(--color-gimnasio-bg); }
 .col-gastronomia { background: var(--color-gastronomia-bg); }
@@ -89,14 +89,14 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.08; /* Soft watermark transparency */
+  opacity: 0.16; /* Soft watermark transparency - increased for better visibility */
   z-index: 0;
   pointer-events: none;
   transition: opacity 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .col-demo:hover::before {
-  opacity: 0.12; /* Aumenta sutilmente la visibilidad al hacer hover */
+  opacity: 0.25; /* Aumenta sutilmente la visibilidad al hacer hover - increased for better visibility */
 }
 
 /* Capas visuales internas de las columnas */
