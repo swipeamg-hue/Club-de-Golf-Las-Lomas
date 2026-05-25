@@ -46,8 +46,31 @@
 
 .col-alberca:hover::before {
   opacity: 0.12; /* Aumenta sutilmente la visibilidad al hacer hover */
+.col-spa {
+  background: var(--color-spa-bg);
+  position: relative;
 }
-.col-spa { background: var(--color-spa-bg); }
+
+.col-spa::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/spa_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.08; /* Soft watermark transparency */
+  z-index: 0;
+  pointer-events: none;
+  transition: opacity 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.col-spa:hover::before {
+  opacity: 0.12; /* Aumenta sutilmente la visibilidad al hacer hover */
+}
 .col-gimnasio { background: var(--color-gimnasio-bg); }
 .col-gastronomia { background: var(--color-gastronomia-bg); }
 .col-mantenimiento { background: var(--color-mantenimiento-bg); }
