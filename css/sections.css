@@ -118,7 +118,30 @@
 .col-gastronomia:hover::before {
   opacity: 0.55; /* Aumenta la visibilidad al hacer hover */
 }
-.col-mantenimiento { background: var(--color-mantenimiento-bg); }
+.col-mantenimiento {
+  background: var(--color-mantenimiento-bg);
+}
+
+.col-mantenimiento::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/mantenimiento_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.35; /* Soft watermark visibility - increased on top of overlay */
+  z-index: 3;
+  pointer-events: none;
+  transition: opacity 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.col-mantenimiento:hover::before {
+  opacity: 0.55; /* Aumenta la visibilidad al hacer hover */
+}
 .col-ahorro { background: var(--color-ahorro-bg); }
 .col-demo {
   background: var(--color-demo-bg);
