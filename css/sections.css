@@ -142,7 +142,30 @@
 .col-mantenimiento:hover::before {
   opacity: 0.55; /* Aumenta la visibilidad al hacer hover */
 }
-.col-ahorro { background: var(--color-ahorro-bg); }
+.col-ahorro {
+  background: var(--color-ahorro-bg);
+}
+
+.col-ahorro::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/ahorro_bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.35; /* Soft watermark visibility - increased on top of overlay */
+  z-index: 3;
+  pointer-events: none;
+  transition: opacity 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.col-ahorro:hover::before {
+  opacity: 0.55; /* Aumenta la visibilidad al hacer hover */
+}
 .col-demo {
   background: var(--color-demo-bg);
 }
