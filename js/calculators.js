@@ -544,15 +544,20 @@ const CALCULATORS = {
         const dateParts = dateVal.split("-");
         const formattedDate = `${dateParts[2]}/${dateParts[1]}/${dateParts[0]}`;
 
+        // Redirección a WhatsApp
+        const textMessage = `¡Hola! Me gustaría agendar una demostración de productos Swipe en el Club de Golf Las Lomas para el área de *${areaSelected}*.\n\n📅 *Fecha propuesta:* ${formattedDate}\n⏰ *Horario:* ${timeVal}`;
+        const whatsappUrl = `https://wa.me/523321918862?text=${encodeURIComponent(textMessage)}`;
+        window.open(whatsappUrl, '_blank');
+
         document.getElementById("demo-card-container").innerHTML = `
           <div class="quotes-success-msg" style="padding: 1.5rem 0;">
             <div class="success-icon-container" style="width:60px; height:60px; font-size:1.8rem; border-color: rgba(248, 87, 166, 0.4); color: var(--color-demo); box-shadow: 0 0 15px var(--color-demo-glow); margin: 0 auto;">✓</div>
             <h4 style="font-family: var(--font-title); font-size: 1.2rem; color: #fff; margin-top: 0.5rem; text-align:center;">¡Demo Solicitada!</h4>
             <p style="font-size: 0.8rem; line-height: 1.5; color: var(--color-text-muted); text-align: center; margin-top:0.5rem;">
-              Tu demostración para el área de <strong>${areaSelected}</strong> ha sido agendada tentativamente para el <strong>${formattedDate}</strong> a las <strong>${timeVal}</strong>.
+              Te hemos redirigido a WhatsApp para coordinar tu demostración en el área de <strong>${areaSelected}</strong> el día <strong>${formattedDate}</strong> a las <strong>${timeVal}</strong>.
             </p>
             <p style="font-size: 0.75rem; color: var(--color-demo); font-weight:600; margin-top:0.5rem; text-align:center;">
-              Un ingeniero de Swipe se pondrá en contacto para confirmar.
+              Si no se abrió la ventana de WhatsApp, puedes hacer click en el enlace para enviar el mensaje.
             </p>
             <button class="btn-details" onclick="CALCULATORS.demo.render('${containerId}')" style="margin: 1rem auto 0 auto; border-color: rgba(255,255,255,0.1); font-size: 0.75rem; padding: 0.5rem 1rem;">Agendar Otra Prueba</button>
           </div>
