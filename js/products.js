@@ -496,13 +496,13 @@ const PRODUCTS_DATA = {  alberca: {
     products: [
       {
         id: "audit_service",
-        name: "Auditoría de Costo-Beneficio",
+        name: "Valor Agregado",
         tagline: "Análisis y plan de optimización de presupuesto en sitio",
         description: "Estudio técnico personalizado para el Club de Golf Las Lomas. Analizamos tus procesos de limpieza actuales para proponer el sistema de diluciones Swipe adecuado, reduciendo costos drásticamente.",
         benefits: [
-          "Ahorro inmediato comprobado de hasta un 45% del gasto mensual.",
+          "Disminución en costos de operación elevando la calidad de productos.",
           "Capacitación presencial al personal y entrega de guías de uso visuales.",
-          "Soporte técnico continuo con reportes de consumo bimensuales."
+          "Manuales técnicos, físicos o digitales para procesos de limpieza."
         ],
         usage: "Estudio inicial de operaciones en sitio sin costo ni compromiso.",
         dosage: "Reunión técnica de diagnóstico de 2 horas en el Club.",
