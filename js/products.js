@@ -533,7 +533,7 @@ const PRODUCTS_DATA = {  alberca: {
         dilution: "Dilución activa 1:3 a 1:5 según el nivel de cochambre.",
         phImpact: "Altamente alcalino, manejado por nuestro Ingeniero técnico.",
         safety: "Aplicación segura con equipo de protección industrial Swipe.",
-        badge: "Garantía de Resultados"
+        badge: "Prueba Sin Costo"
       }
     ]
   }
