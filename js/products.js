@@ -144,20 +144,20 @@ const PRODUCTS_DATA = {  alberca: {
       {
         id: "swipol_spa",
         name: "Swipol",
-        tagline: "Alguicida, fungicida y viricida de amplio espectro",
-        description: "Swipol está formulado para el control efectivo de algas en piscinas y en sistemas de recirculación de aguas. Las pruebas de eficiencia bacteriológica lo respaldan como un alguicida, fungicida y viricida de amplio espectro. Compuesto por cuaternario de amonio de quinta generación, es incoloro, inoloro y de grado quirúrgico y alimenticio.",
+        tagline: "Sanitizante y desinfectante perimetral de grado quirúrgico",
+        description: "Swipol es el desinfectante de grado quirúrgico y alimenticio definitivo para las áreas de relajación y bienestar del club. Su formulación a base de cuaternarios de amonio de quinta generación está diseñada para eliminar bacterias, virus y hongos en saunas, baños de vapor, salas de masaje, jacuzzis y vestidores, garantizando una bioseguridad absoluta sin alterar la atmósfera sensorial de relajación.",
         benefits: [
-          "Seguridad para los socios: compuesto por cuaternario de amonio de quinta generación (cero irritación cutánea).",
-          "Completamente incoloro e inoloro: no altera la pureza visual ni sensorial del área.",
-          "Estabilidad térmica total en temperaturas altas y bajas (albercas techadas o al aire libre).",
-          "Alta tolerancia a las aguas duras, garantizando su eficacia continua en sistemas hidráulicos.",
-          "Desinfección perimetral total: inhibición de hongos en baños de pies, vestidores, pisos y tapetes sanitarios."
+          "Seguridad Total (Cero Irritación): Compuesto dermatológicamente seguro y libre de vapores irritantes, ideal para desinfectar camillas de masaje, toallas y saunas.",
+          "Atmósfera Sensorial Inalterada: 100% incoloro e inoloro. Desinfecta a fondo sin dejar molestos olores químicos que alteren la aromaterapia.",
+          "Especial para Zonas de Alta Humedad: Elimina de raíz hongos causantes de pie de atleta, moho y bacterias en saunas, jacuzzis y baños de vapor.",
+          "Acción Germicida Residual: Crea una barrera desinfectante invisible de alta persistencia en camillas, barandales, pisos y tumbonas de descanso."
         ],
-        usage: "Control e inhibición de hongos en vestidores y desinfección perimetral de albercas.",
-        dilution: "Dilución de uso general y perimetral de grado quirúrgico y alimenticio.",
-        phImpact: "Completamente neutro y estable ante aguas duras.",
-        safety: "No irritante para la piel en dilución. Totalmente incoloro e inoloro.",
-        badge: "Alguicida Especializado",
+        usage: "Desinfección diaria de camillas de masaje, saunas, baños de vapor, jacuzzis, vestidores y áreas comunes de descanso.",
+        dosage: "Normal (1:200) para superficies de contacto y desodorización | Grado quirúrgico (1:100) para desinfección profunda.",
+        dilution: "Diluir en agua. Rociar en camillas, pisos, paredes de saunas y baños de vapor, dejar actuar y limpiar.",
+        phImpact: "Completamente neutro (pH 7), seguro para maderas finas, piedra natural, mármol y telas del Spa.",
+        safety: "Seguro para la piel en dilución recomendada. No inflamable, incoloro e inoloro.",
+        badge: "Desinfectante de Spa & Vapor",
         image: "images/swipol.png"
       }
     ]
