@@ -2,81 +2,79 @@
  * Base de datos de productos químicos especializados por área
  * para el Club de Golf Las Lomas.
  */
-const PRODUCTS_DATA = {
-  alberca: {
+const PRODUCTS_DATA = {  alberca: {
     title: "Alberca & Acuáticos",
     accentColor: "var(--color-alberca)",
-    slogan: "Agua 100% cristalina, segura y balanceada para una experiencia de natación de campeonato.",
+    slogan: "Higiene rigurosa, desinfección total y prevención en las superficies, andadores y áreas comunes colindantes a las albercas.",
     products: [
       {
         id: "shock_cloro",
-        name: "Cloro Shock Premium",
-        tagline: "Dicloro granulado al 60% de disolución rápida",
-        description: "Sanitizante de choque altamente concentrado formulado para la eliminación inmediata de materia orgánica, cloraminas y algas. Se disuelve instantáneamente sin dejar residuos calcáreos ni alterar drásticamente el pH del agua.",
+        name: "Cloro Shock Premium (Superficies & Andadores)",
+        tagline: "Sanitizante y blanqueador perimetral de alta penetración",
+        description: "Sanitizante y blanqueador granulado de cloro de alta concentración formulado para la desinfección y limpieza profunda de andadores, orillas de alberca, azulejos y áreas húmedas comunes. Elimina eficazmente las manchas difíciles de humedad, moho, algas y hongos en superficies de piedra, concreto o loseta.",
         benefits: [
-          "Disolución instantánea sin sedimentos en el fondo.",
-          "Estabilizado contra la degradación solar por rayos UV.",
-          "Elimina eficazmente cloraminas (causantes de olor a cloro e irritación ocular)."
+          "Blanqueamiento profundo y restauración instantánea de andadores y juntas de azulejos.",
+          "Acción fungicida de amplio espectro que elimina el moho negro y la humedad persistente en vestidores.",
+          "Ideal para la desinfección profunda de regaderas exteriores y escalones húmedos de alto tránsito."
         ],
-        usage: "Supercloración semanal o después de lluvias fuertes y alta afluencia de bañistas.",
-        dosage: "Añadir 150 gramos por cada 10 m³ de agua. Para tratamiento de choque (algas o turbidez), duplicar la dosis.",
-        dilution: "Directo al agua, preferentemente al atardecer frente a las boquillas de retorno con el filtro operando.",
-        phImpact: "Prácticamente neutro, reduce la necesidad de ajustar el pH constantemente.",
-        safety: "Evitar contacto directo con la piel y ojos. Almacenar en lugar seco y ventilado.",
-        badge: "Sanitizante de Choque"
+        usage: "Limpieza profunda periódica y choque desinfectante en superficies, pasillos y áreas húmedas colindantes a la alberca.",
+        dosage: "Disolver 100g en 10 litros de agua para lavado general, o aplicar directamente sobre manchas difíciles y tallar.",
+        dilution: "Dilución en agua para aplicación con cepillo, mopa o hidrolavadora.",
+        phImpact: "Estable en superficies duras.",
+        safety: "Utilizar guantes de protección y lentes de seguridad. Evitar que caiga directamente al agua de la alberca en estado concentrado.",
+        badge: "Blanqueador & Fungicida"
       },
       {
         id: "alguicida_max",
-        name: "Swipol",
-        tagline: "Alguicida, fungicida y viricida de amplio espectro",
-        description: "Swipol está formulado para el control efectivo de algas en piscinas y en sistemas de recirculación de aguas. Las pruebas de eficiencia bacteriológica lo respaldan como un alguicida, fungicida y viricida de amplio espectro. Compuesto por cuaternario de amonio de última generación, es incoloro, inoloro y de grado quirúrgico y alimenticio.",
+        name: "Swipol (Desinfectante Perimetral)",
+        tagline: "Alguicida, fungicida y viricida perimetral de amplio espectro",
+        description: "Swipol es la herramienta definitiva para la desinfección total de las áreas comunes colindantes a la alberca, como baños de pies, vestidores, regaderas y camastros. Su fórmula a base de cuaternarios de amonio de última generación elimina bacterias, virus y hongos previniendo pie de atleta e infecciones cruzadas, sin causar irritación en los socios.",
         benefits: [
-          "Seguridad para los socios: compuesto por cuaternario de amonio de última generación (cero irritación cutánea).",
-          "Completamente incoloro e inoloro: no altera la pureza visual ni sensorial del área.",
-          "Estabilidad térmica total en temperaturas altas y bajas (albercas techadas o al aire libre).",
-          "Alta tolerancia a las aguas duras, garantizando su eficacia continua en sistemas hidráulicos.",
-          "Desinfección perimetral total: inhibición de hongos en baños de pies, vestidores, pisos y tapetes sanitarios."
+          "Seguridad absoluta para socios descalzos: compuesto incoloro e inoloro de grado quirúrgico (cero irritación cutánea).",
+          "Prevención activa de pie de atleta e infecciones en regaderas, vestidores y andadores húmedos.",
+          "Alta adherencia y persistencia en azulejos, tapetes sanitarios y camastros de plástico o metal.",
+          "Alta tolerancia a la humedad constante y aguas duras, garantizando su eficacia continua."
         ],
-        usage: "Control e inhibición de hongos en vestidores y desinfección perimetral de albercas, además de control de algas en piscina.",
-        dosage: "Dosificación recomendada según el área a desinfectar y volumen de recirculación.",
-        dilution: "Dilución de uso general y perimetral de grado quirúrgico y alimenticio.",
-        phImpact: "Completamente neutro y estable ante aguas duras.",
+        usage: "Desinfección diaria de regaderas, vestidores, baños de pies, camastros y andadores perimetrales del área acuática.",
+        dosage: "Dosificación recomendada en dilución para desinfección de rutina.",
+        dilution: "Uso perimetral diluido. No requiere enjuague en superficies de bajo contacto.",
+        phImpact: "Neutro y estable en superficies.",
         safety: "No irritante para la piel en dilución. Totalmente incoloro e inoloro.",
-        badge: "Alguicida Especializado"
+        badge: "Desinfección Perimetral"
       },
       {
         id: "clarificador_gold",
-        name: "Clarificador Floculante Gold",
-        tagline: "Coagulante polimérico de alta velocidad",
-        description: "Agente clarificador concentrado que agrupa las micropartículas suspendidas coloidales que enturbian el agua, formando flóculos de mayor peso que se depositan en el fondo de la alberca para su fácil aspirado al drenaje o filtración.",
+        name: "Swipe Tile-Clean (Sarro de Azulejos)",
+        tagline: "Desincrustante de sales minerales en andadores, escaleras y azulejos",
+        description: "Limpiador ácido especializado biodegradable diseñado para remover de raíz el sarro, calcificaciones y sales minerales que se depositan en las líneas de flotación, azulejos, escaleras de acero inoxidable, trampolines y barandales húmedos de la alberca.",
         benefits: [
-          "Resultados visibles en menos de 12 horas.",
-          "Mejora drásticamente la eficiencia de los filtros de arena o cartucho.",
-          "No altera los niveles de cloro activo ni el pH."
+          "Remueve instantáneamente las incrustaciones blancas de calcio en la línea de agua y azulejos.",
+          "Limpia, pule y abrillanta escaleras de acero inoxidable y barandales húmedos expuestos al cloro.",
+          "Fórmula 100% biodegradable, no daña el sellador ni las juntas de los azulejos."
         ],
-        usage: "Tratamiento semanal para brillo extra o correctivo de agua turbia.",
-        dosage: "Preventivo: 50 ml por cada 10 m³ a la semana. Correctivo: 150 ml por cada 10 m³.",
-        dilution: "Verter directamente sobre el canal perimetral o boquillas de retorno con el filtro en posición de recirculación por 2 horas, luego apagar y dejar reposar 8 horas antes de aspirar.",
-        phImpact: "Neutro.",
-        safety: "No tóxico en diluciones recomendadas. Evitar congelamiento.",
-        badge: "Claridad Espejo"
+        usage: "Remoción de sarro, calcificaciones y óxido ligero en azulejos, escaleras, barandales y regaderas del área de albercas.",
+        dosage: "Listo para usar o dilución de hasta 1:3 en agua según la severidad del sarro acumulado.",
+        dilution: "Aplicar directamente con fibra blanca o suave, dejar actuar de 2 a 5 minutos, tallar suavemente y enjuagar con agua.",
+        phImpact: "Ácido controlado activo.",
+        safety: "Usar guantes de hule durante la aplicación. Evitar el contacto directo prolongado con metales blandos.",
+        badge: "Desincrustante de Azulejos"
       },
       {
         id: "ph_balance",
-        name: "Ajustadores de pH (Sube pH / Baja pH)",
-        tagline: "Estabilidad química y comodidad para el usuario",
-        description: "Productos formulados para mantener el pH del agua en el rango ideal de 7.2 a 7.6. Un pH correcto maximiza el poder desinfectante del cloro y previene irritaciones en la piel y ojos de los socios del club, además de evitar la corrosión de equipos.",
+        name: "Swipe Deck-Wash (Champú de Andadores)",
+        tagline: "Eliminador de protectores solares, aceites y grasas corporales",
+        description: "Limpiador desengrasante premium de espuma controlada diseñado específicamente para disolver protectores solares, aceites bronceadores, sudor y grasas corporales acumuladas en camastros, pisos antiderrapantes, andadores de piedra y áreas de vestidores colindantes a las albercas.",
         benefits: [
-          "Baja pH: Bisulfato de sodio de grado alimenticio altamente seguro (evita uso de ácido clorhídrico nocivo).",
-          "Sube pH: Carbonato de sodio denso de disolución rápida sin turbidez.",
-          "Previene incrustaciones de sarro (pH alto) o corrosión de calentadores (pH bajo)."
+          "Elimina de raíz la película grasosa y resbaladiza de bronceador en pisos y camastros.",
+          "Restaura la tracción antiderrapante natural de los andadores de piedra o cerámica.",
+          "No es corrosivo, es 100% biodegradable y deja un aroma fresco y limpio de alta duración."
         ],
-        usage: "Ajuste diario posterior a la lectura con el colorímetro.",
-        dosage: "Para modificar 0.2 unidades de pH en 10 m³: Añadir 100g de Baja pH para disminuir, o 80g de Sube pH para aumentar.",
-        dilution: "Disolver en agua antes de dosificar frente a las boquillas de retorno.",
-        phImpact: "Modificación controlada del balance químico.",
-        safety: "Manejar con guantes y protección ocular. No mezclar los dos productos concentrados.",
-        badge: "Control de Balance"
+        usage: "Lavado diario y desengrase de pisos perimetrales, camastros, trampolines y áreas comunes de alberca.",
+        dosage: "Mantenimiento diario (1:20) | Uso pesado (1:5) para acumulaciones extremas de bronceador.",
+        dilution: "Diluir en agua. Aplicar con cepillo o mopa, frotar y enjuagar con abundante agua.",
+        phImpact: "Neutro (pH 7), seguro para todo tipo de acabados perimetrales.",
+        safety: "Seguro al tacto, biodegradable y libre de cáusticos.",
+        badge: "Restaurador de Tracción"
       }
     ]
   },
