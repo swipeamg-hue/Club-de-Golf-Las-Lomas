@@ -1599,6 +1599,45 @@ function updateMantenimientoDisplay(product) {
           </div>
         </div>
       `;
+    } else if (product.id === "biodegreaser") {
+      featuresHtml = `
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Rendimiento y Dosificación</h4>
+            <p><strong>Dosificación Diaria:</strong> Se dosifican 200 ml diarios para tratar líneas de drenaje y trampas de grasa con una capacidad de hasta 500 litros.<br><strong>Dosificación Automática:</strong> Para facilitar esta labor y asegurar la dosificación exacta en el club, se recomienda utilizar el dosificador automático BIODEGREASER.</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="4"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Usos y Aplicación (Cocinas y Restaurantes)</h4>
+            <p>Es una mezcla de microorganismos, natural, no tóxica y no corrosiva. Diseñado específicamente para desintegar almidones, carbohidratos, grasas y aceites. Tratamiento preventivo ideal para trampas de grasa de cocinas y restaurantes del club, ya que degrada los desechos orgánicos y reduce significativamente los malos olores.</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Regla Operativa</h4>
+            <p>Para que los microorganismos actúen correctamente, el producto debe aplicarse de noche o en un horario en donde la línea de drenaje o la trampa de grasa no se encuentre en uso, permitiendo tiempo de reposo para el cultivo biológico.</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Nota Técnica Crítica</h4>
+            <p style="color: #ff5a5a; font-weight: 600;">Debido a que es un cultivo biológico vivo, NO debe mezclarse con desinfectantes ni con productos alcalinos o ácidos, ya que neutralizarían la acción de los microorganismos benéficos.</p>
+          </div>
+        </div>
+      `;
     } else {
       // Fallback dinámico premium para otros productos de Mantenimiento (Glass-Glow, Champú Cera Cart, Floor-Shine)
       featuresHtml = `

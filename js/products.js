@@ -504,6 +504,25 @@ const PRODUCTS_DATA = {
         safety: "Producto flamable. Almacenar adecuadamente alejado de fuentes de calor. Mantener envase bien cerrado.",
         badge: "Neutralizador Aromatizante",
         image: "images/sure_thing.png"
+      },
+      {
+        id: "biodegreaser",
+        name: "Swipe Biodegreaser",
+        tagline: "Cultivo biológico premium para drenajes y trampas de grasa",
+        description: "Mezcla natural, no tóxica y no corrosiva de microorganismos activos diseñada específicamente para desintegrar almidones, carbohidratos, grasas y aceites. Funciona como el tratamiento preventivo ideal para trampas de grasa y drenajes del club.",
+        benefits: [
+          "Fórmula biológica activa: Microorganismos que digieren grasas y aceites orgánicos de forma natural.",
+          "Control de malos olores: Su uso diario continuo neutraliza de raíz los aromas desagradables del drenaje.",
+          "Cero daño a tuberías: Composición biológica no corrosiva ni ácida que protege la infraestructura.",
+          "Automatización sencilla: Compatible con el dosificador automático BIODEGREASER para inyección precisa."
+        ],
+        usage: "Tratamiento biológico preventivo y correctivo en trampas de grasa, tuberías, drenajes y fosas del club.",
+        dosage: "Dosificación diaria de 200 ml por cada 500 litros de capacidad de la trampa o drenaje.",
+        dilution: "Uso directo concentrado. Aplicar de noche o en un horario en donde la línea de drenaje o la trampa de grasa no se encuentre en uso.",
+        phImpact: "Cercano a neutro (biodegradación bacteriana activa).",
+        safety: "Cultivo biológico vivo. NUNCA mezclar con desinfectantes, cloro, ni productos ácidos o alcalinos, para evitar la inactivación celular.",
+        badge: "Cultivo Biológico Activo",
+        image: "images/biodegreaser.png"
       }
     ]
   },
