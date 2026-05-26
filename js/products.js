@@ -428,6 +428,25 @@ const PRODUCTS_DATA = {
         phImpact: "Neutro una vez seco.",
         safety: "Dejar secar por completo antes de abrir el tráfico. No congelar el producto líquido.",
         badge: "Pisos Espejo Antiderrapantes"
+      },
+      {
+        id: "rust_off",
+        name: "Swipe Rust Off",
+        tagline: "Desincrustante ácido industrial con inhibidores de corrosión",
+        description: "Poderoso desincrustante industrial de tipo ácido, totalmente biodegradable, formulado con inhibidores de corrosión activos. Elimina de manera efectiva carbonatos de calcio y magnesio (sarro) adheridos a calderas, tuberías y maquinaria pesada, además de remover óxido, concreto y grasas incrustadas.",
+        benefits: [
+          "Inhibidores de corrosión: Protege las piezas metálicas activamente durante el proceso de desincrustación.",
+          "Acción antioxidante: Contiene agentes que evitan que las piezas tratadas vuelvan a oxidarse rápidamente.",
+          "Fórmula 100% biodegradable: Seguro para tuberías y sistemas del club una vez neutralizado y enjuagado.",
+          "Remoción de sarro y concreto: Elimina incrustaciones gruesas de calcio, magnesio y restos de obra civil."
+        ],
+        usage: "Eliminación de sarro en calderas/tuberías, remoción de óxido en metales y sarro/grasa animal extrema en cocinas.",
+        dosage: "Mantenimiento Normal (1:10) | Uso Pesado (Concentrado o dilución fuerte) según nivel de incrustación.",
+        dilution: "Mantenimiento Normal (1:10): 1 parte de producto por 10 partes de agua. Uso Pesado: aplicar directo. Rociar, dejar actuar 10-15 minutos y después enjuagar (apoyarse con una fibra verde SWIPE si es necesario).",
+        phImpact: "Ácido activo desincrustante (requiere enjuague completo).",
+        safety: "NUNCA mezclar con cloro ni con ningún otro producto. Obligatorio utilizar guantes de hule, goggles de protección y trabajar en áreas ventiladas.",
+        badge: "Desincrustante & Antioxidante",
+        image: "images/rust_off.png"
       }
     ]
   },

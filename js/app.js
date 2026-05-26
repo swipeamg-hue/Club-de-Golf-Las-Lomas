@@ -1443,6 +1443,45 @@ function updateMantenimientoDisplay(product) {
           </div>
         </div>
       `;
+    } else if (product.id === "rust_off") {
+      featuresHtml = `
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Rendimiento y Dosificación</h4>
+            <p><strong>Mantenimiento Normal (1:10):</strong> Se diluye 1 parte de producto por 10 partes de agua, lo que le otorga una gran economía a nivel industrial.<br><strong>Uso Pesado:</strong> Para incrustaciones de óxido muy gruesas, se puede aplicar en una dilución más fuerte o incluso concentrado. Su aplicación correcta consiste en rociar, dejar actuar de 10 a 15 minutos y después enjuagar (apoyándose con una fibra verde SWIPE si es necesario).</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 8v8M8 12h8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Uso en el Club (Infraestructura y Tuberías)</h4>
+            <p>Es un poderoso desincrustante industrial de tipo ácido, totalmente biodegradable. Está diseñado para eliminar de manera efectiva los carbonatos de calcio y magnesio (sarro) adheridos a calderas, tuberías y maquinaria pesada del club. Además, remueve concreto sobre diversas superficies y grasa animal o vegetal incrustada en equipos de cocina industrial.</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Ventaja Operativa (Protección de Activos)</h4>
+            <p>A diferencia de los ácidos tradicionales que corroen los metales, su fórmula incluye agentes inhibidores de corrosión que protegen las piezas metálicas mientras están siendo desincrustadas. Contiene agentes antioxidantes que ayudan a evitar que las piezas tratadas vuelvan a oxidarse rápidamente.</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Protocolo de Seguridad Estricto</h4>
+            <p style="color: #ff5a5a; font-weight: 600;">Químico de nivel industrial y de naturaleza ácida: NUNCA mezclarse con cloro ni con ningún otro producto. Requisito indispensable que el personal de mantenimiento utilice guantes de hule y goggles de protección al manipularlo, en áreas ventiladas.</p>
+          </div>
+        </div>
+      `;
     } else {
       // Fallback dinámico premium para otros productos de Mantenimiento (Glass-Glow, Champú Cera Cart, Floor-Shine)
       featuresHtml = `
