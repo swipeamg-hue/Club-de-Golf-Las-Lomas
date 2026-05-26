@@ -378,57 +378,7 @@ const PRODUCTS_DATA = {
         badge: "Alguicida Especializado",
         image: "images/swipol.png"
       },
-      {
-        id: "glass_glow",
-        name: "Glass-Glow Auto-Secante",
-        tagline: "Limpiador de cristales de evaporación ultra rápida",
-        description: "Limpiador profesional para ventanas, ventanales panorámicos de la casa club, espejos y puertas de cristal. Formulado con agentes tensoactivos especiales y disolventes de secado rápido que disuelven depósitos de polvo, huellas dactilares y brisa salina sin dejar marcas.",
-        benefits: [
-          "Efecto antiestático que repele el polvo y mantiene cristales limpios más tiempo.",
-          "Secado inmediato libre de vetas, rayas o el molesto empañamiento.",
-          "Seguro para película de control solar tintada de las ventanas del club."
-        ],
-        usage: "Mantenimiento diario de ventanales en restaurantes, casa club y oficinas del personal.",
-        dosage: "Atomizar directamente y limpiar con un jalador de vidrios o paño que no suelte pelusa.",
-        dilution: "Listo para usar en atomizador.",
-        phImpact: "Ligeramente alcalino para remover grasas dactilares y suciedad atmosférica.",
-        safety: "Evitar la inhalación prolongada de vapores en espacios muy cerrados.",
-        badge: "Transparencia Total"
-      },
-      {
-        id: "cart_wash",
-        name: "Champú Cera Golf Cart",
-        tagline: "Lavado protector con cera carnauba para vehículos de golf",
-        description: "Fórmula de lavado premium concentrada con cera natural de Carnauba para la flota de carritos de golf y vehículos utilitarios del club. Remueve lodo, restos de pasto y polvo del campo mientras deposita una película protectora brillante contra los rayos solares UV y la humedad.",
-        benefits: [
-          "Ahorra tiempo al lavar y encerar en una sola operación.",
-          "Protege la pintura y los plásticos del carrito del envejecimiento prematuro por el sol.",
-          "Facilita los lavados posteriores al crear una capa repelente al agua y al lodo."
-        ],
-        usage: "Lavado periódico de la flota de carritos de golf y maquinaria de mantenimiento del campo.",
-        dosage: "Mezclar 50 ml de champú en una cubeta con 10 litros de agua limpia.",
-        dilution: "Dilución 1:200 en agua. Aplicar con esponja o cepillo suave y enjuagar.",
-        phImpact: "Neutro, no remueve ceras previamente aplicadas ni reseca empaques de hule.",
-        safety: "Biodegradable. Puede desecharse en alcantarillado pluvial seguro del club.",
-        badge: "Protección UV para Vehículos"
-      },
-      {
-        id: "floor_shine",
-        name: "Floor-Shine Autobrillante Mármol",
-        tagline: "Cera acrílica y sellador de alto brillo y tráfico pesado",
-        description: "Emulsión acrílica metálica formulada para el sellado y abrillantado de pisos duros (mármol, terrazo, granito, loseta vinílica) en el lobby y pasillos principales del club. Crea una película de alta resistencia al tráfico peatonal que resiste rayones y marcas de tacones.",
-        benefits: [
-          "Brillo espejo de alta reflectividad tipo 'wet look' (aspecto húmedo).",
-          "Propiedades antideslizantes que garantizan la seguridad de los socios al caminar.",
-          "Resistente a los trapeados diarios con limpiadores neutros."
-        ],
-        usage: "Protección y embellecimiento de pisos principales en casa club y oficinas.",
-        dosage: "1 litro rinde aproximadamente de 40 a 50 metros cuadrados por capa.",
-        dilution: "Aplicar directo con mopa de microfibra limpia sobre piso seco y libre de polvo. Aplicar 2 a 3 capas.",
-        phImpact: "Neutro una vez seco.",
-        safety: "Dejar secar por completo antes de abrir el tráfico. No congelar el producto líquido.",
-        badge: "Pisos Espejo Antiderrapantes"
-      },
+
       {
         id: "rust_off",
         name: "Swipe Rust Off",
