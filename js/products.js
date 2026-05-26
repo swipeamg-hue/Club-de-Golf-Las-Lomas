@@ -190,21 +190,20 @@ const PRODUCTS_DATA = {  alberca: {
       {
         id: "swipol_gym",
         name: "Swipol",
-        tagline: "Alguicida, fungicida y viricida de amplio espectro",
-        description: "Swipol está formulado para el control efectivo de algas en piscinas y en sistemas de recirculación de aguas. Las pruebas de eficiencia bacteriológica lo respaldan como un alguicida, fungicida y viricida de amplio espectro. Compuesto por cuaternario de amonio de quinta generación, es incoloro, inoloro y de grado quirúrgico y alimenticio.",
+        tagline: "Sanitizante y desinfectante de equipos y superficies deportivas",
+        description: "Swipol es el sanitizante y desinfectante de grado quirúrgico definitivo para el Gimnasio y Fitness del club. Su avanzada fórmula a base de cuaternarios de amonio de quinta generación está diseñada para eliminar bacterias, virus y hongos en caminadoras, mancuernas, tapetes de yoga y vestidores. Ofrece una protección higiénica insuperable frente a la sudoración y contacto constante de los socios, sin dañar los materiales de los equipos.",
         benefits: [
-          "Seguridad para los socios: compuesto por cuaternario de amonio de quinta generación (cero irritación cutánea).",
-          "Completamente incoloro e inoloro: no altera la pureza visual ni sensorial del área.",
-          "Estabilidad térmica total en temperaturas altas y bajas (albercas techadas o al aire libre).",
-          "Alta tolerancia a las aguas duras, garantizando su eficacia continua en sistemas hidráulicos.",
-          "Desinfección perimetral total: inhibición de hongos en baños de pies, vestidores, pisos y tapetes sanitarios."
+          "Desinfección de Superficies de Contacto: Ideal para la sanitización inmediata de empuñaduras, pantallas táctiles, tapizados de vinilo y mancuernas.",
+          "Prevención de Infecciones Cruzadas: Combate eficazmente virus y hongos que proliferan por el sudor y contacto físico frecuente entre socios en el gimnasio.",
+          "Dermatológicamente Seguro: Compuesto libre de cloro y vapores tóxicos, 100% incoloro e inoloro. No irrita la piel ni los ojos de los socios al entrenar.",
+          "Protección para Equipamiento Premium: Fórmula de pH neutro (pH 7) no corrosiva que no reseca el vinilo de los asientos ni daña el plástico o metal de los aparatos."
         ],
-        usage: "Control e inhibición de hongos en vestidores y desinfección perimetral de albercas, además de control de algas en piscina.",
-        dosage: "Dosificación recomendada según el área a desinfectar y volumen de recirculación.",
-        dilution: "Dilución de uso general y perimetral de grado quirúrgico y alimenticio.",
-        phImpact: "Completamente neutro y estable ante aguas duras.",
-        safety: "No irritante para la piel en dilución. Totalmente incoloro e inoloro.",
-        badge: "Alguicida Especializado",
+        usage: "Sanitización de caminadoras, elípticas, pesas, tapetes de yoga, vestidores, regaderas y pisos deportivos.",
+        dosage: "Normal (1:200) para sanitización rápida y continua de equipos | Grado quirúrgico (1:100) para desinfección profunda diaria de vestidores y regaderas.",
+        dilution: "Diluir en agua. Rociar directamente sobre la superficie del equipo, dejar actuar y retirar con paño de microfibra limpio.",
+        phImpact: "Completamente neutro (pH 7), seguro para metales, plásticos, pantallas y tapizados de cuero/vinilo.",
+        safety: "Seguro para la piel, incoloro, inoloro y no inflamable.",
+        badge: "Sanitizante de Equipamiento",
         image: "images/swipol.png"
       }
     ]
