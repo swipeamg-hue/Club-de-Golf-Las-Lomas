@@ -214,21 +214,21 @@ const PRODUCTS_DATA = {  alberca: {
       {
         id: "swipe_concentrado_gastronomia",
         name: "Swipe Limpiador Líquido Concentrado",
-        tagline: "Desengrasante industrial de grado alimentario NSF A1",
-        description: "Es un desengrasante industrial líquido de uso general, altamente concentrado y con una biodegradabilidad superior al 99%. Destaca por ser grado alimenticio, avalado por el registro NSF (Categoría A1) y SAGARPA, lo que lo hace completamente seguro para las áreas de preparación de alimentos y comedores del club.",
+        tagline: "Desengrasante de grado alimenticio NSF A1 para cocinas industriales",
+        description: "Swipe Limpiador Concentrado es el desengrasante industrial de grado alimenticio definitivo para las cocinas y áreas gastronómicas del club. Certificado por NSF (Categoría A1) y SAGARPA, remueve con eficacia las grasas pesadas, el cochambre y los residuos de aceites de cocina acumulados en campanas, salamandras, parrillas y superficies de acero inoxidable, manteniendo las cocinas en los más altos estándares de higiene e inocuidad alimentaria.",
         benefits: [
-          "Biodegradabilidad superior al 99%: sustentabilidad y cuidado ecológico.",
-          "Grado alimenticio avalado por NSF (Categoría A1) y SAGARPA.",
-          "Seguridad total: sin cáusticos libres, no quema ni maltrata la piel, no inflamable y no corrosivo.",
-          "Versiones adaptadas: versión Low Foam para restregadoras y versión pH Neutro (pH 7) para plantas tratadoras.",
-          "No daña, no despinta ni corroe los metales y superficies tratadas."
+          "Certificación Grado Alimenticio NSF A1 y SAGARPA: Seguro para usar directamente en superficies de contacto con alimentos en áreas de preparación y comedores.",
+          "Desengrase Industrial Potente: Su dilución pesada (1:4) remueve de raíz las grasas carbonizadas de campanas, freidoras, parrillas y salamandras.",
+          "Versatilidad Total en la Cocina: Mantenimiento diario de mesas y comedores (1:100) | Pisos y área de lavado (1:12) | Desengrase de campanas y fritura (1:4).",
+          "Sin Cáusticos ni Corrosivos: No daña el acero inoxidable, granito ni utensilios. Seguro para la piel del personal de cocina con uso continuo.",
+          "Versión Low Foam para Restregadoras: Disponible para uso en equipos automáticos de limpieza de pisos de la cocina industrial."
         ],
-        usage: "Desengrase industrial y limpieza multiusos en comedores, Casa Club, cocinas y mantenimiento.",
-        dosage: "Liviana (1:100) para mantenimiento estético diario | Normal (1:12) para zonas operativas | Pesada (1:4) para taller y motores.",
-        dilution: "Dilución variable según la carga de suciedad. Rinde hasta 100 litros de limpiador útil.",
-        phImpact: "pH Neutro (pH 7) disponible para proteger plantas tratadoras de agua del club.",
-        safety: "No tóxico, no inflamable, sin cáusticos libres. Seguro para la piel y metales.",
-        badge: "Grado Alimenticio & Eco-Friendly",
+        usage: "Desengrase de campanas extractoras, parrillas, freidoras, salamandras, pisos de cocina, comedores y superficies de acero inoxidable.",
+        dosage: "Diaria (1:100) para comedores y mesas | Operativa (1:12) para pisos y área de lavado | Pesada (1:4) para campanas, freidoras y parrillas.",
+        dilution: "Diluir en agua según la carga de suciedad. 1 litro rinde hasta 100 litros de solución útil. Aplicar, tallar y enjuagar.",
+        phImpact: "pH Neutro (pH 7.0) disponible para proteger plantas tratadoras de aguas residuales de la cocina.",
+        safety: "Grado alimenticio certificado. No tóxico, no inflamable, sin cáusticos libres. Seguro para la piel y metales.",
+        badge: "Grado Alimenticio NSF A1",
         image: "images/swipe_concentrado.png"
       },
       {
