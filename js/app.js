@@ -1638,6 +1638,45 @@ function updateMantenimientoDisplay(product) {
           </div>
         </div>
       `;
+    } else if (product.id === "hand_soap") {
+      featuresHtml = `
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Rendimiento y Aplicación</h4>
+            <p><strong>Uso Concentrado:</strong> Diseñado para usarse directo en estado concentrado para una desinfección efectiva. Se aplica en las manos frotando firmemente por un minuto y luego se enjuaga.<br><strong>Optimización de Insumos:</strong> Para evitar desperdicios y maximizar el rendimiento, se recomienda el uso de los despachadores automáticos o manuales de jabón para manos de SWIPE.</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Uso en el Club (Comedores, Baños y Áreas Médicas)</h4>
+            <p>Jabón líquido germicida y de grado alimenticio formulado para eliminar una amplia gama de bacterias, hongos y levaduras (como <em>S. aureus, E. coli, Salmonella</em>). Es indispensable para la higiene rigurosa en cocinas del club (personal que prepara alimentos), baños generales, consultorios médicos o guarderías, previniendo infecciones cruzadas.</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Ventaja Operativa (Cuidado de la Piel)</h4>
+            <p>Cuenta con un pH balanceado (de 5 a 6) que está en perfecta armonía con la química natural de la piel, asegurando que no irrite ni reseque las manos, incluso con el lavado altamente frecuente exigido al personal operativo y médico del club.</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Versatilidad y Normativas Alimentarias</h4>
+            <p>Además de los aromas premium a almendras o frutas idóneos para baños generales, está disponible en una versión sin fragancia y sin color especialmente diseñada para cocinas y áreas de preparación de alimentos, cumpliendo estrictamente con las normativas sanitarias y de inocuidad alimentaria.</p>
+          </div>
+        </div>
+      `;
     } else {
       // Fallback dinámico premium para otros productos de Mantenimiento (Glass-Glow, Champú Cera Cart, Floor-Shine)
       featuresHtml = `

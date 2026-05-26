@@ -523,6 +523,25 @@ const PRODUCTS_DATA = {
         safety: "Cultivo biológico vivo. NUNCA mezclar con desinfectantes, cloro, ni productos ácidos o alcalinos, para evitar la inactivación celular.",
         badge: "Cultivo Biológico Activo",
         image: "images/biodegreaser.png"
+      },
+      {
+        id: "hand_soap",
+        name: "Swipe Hand Soap",
+        tagline: "Jabón líquido germicida antimicrobial de grado alimenticio",
+        description: "Jabón líquido germicida de alto desempeño formulado con pH balanceado y grado alimentario. Elimina de manera inmediata una amplia gama de bacterias, hongos y levaduras, asegurando la máxima asepsia en las manos del personal.",
+        benefits: [
+          "Grado Alimenticio: Indispensable para cocineros y personal de preparación de alimentos.",
+          "Espectro antimicrobial: Elimina activamente bacterias y hongos como S. aureus, E. coli y Salmonella.",
+          "pH Balanceado (5 a 6): En armonía con la química de la piel para evitar resequedad por lavado frecuente.",
+          "Aromas e inocuidad: Disponible en aroma almendras/frutas, y versión sin fragancia ni color."
+        ],
+        usage: "Higiene y desinfección rigurosa de manos en cocinas, comedores, baños generales, consultorio médico y guardería.",
+        dosage: "Uso concentrado directo sin diluir mediante despachadores de jabón SWIPE.",
+        dilution: "Aplicar directo una dosis en las manos frotándolas firmemente durante 1 minuto, enjuagar posteriormente con abundante agua.",
+        phImpact: "pH balanceado de 5.0 a 6.0 idóneo para la piel humana.",
+        safety: "Uso externo exclusivamente. Evitar contacto con los ojos. Enjuagar bien después de frotar.",
+        badge: "Antimicrobial & pH Balanceado",
+        image: "images/hand_soap.png"
       }
     ]
   },
