@@ -495,23 +495,6 @@ const PRODUCTS_DATA = {  alberca: {
     slogan: "Sustentabilidad financiera y ambiental para el Club de Golf Las Lomas con inyección de alta concentración.",
     products: [
       {
-        id: "eco_doser",
-        name: "Sistema Eco-Doser Swipe",
-        tagline: "Dispensadores automáticos de precisión",
-        description: "Equipo de dosificación en comodato que inyecta la cantidad exacta de producto Swipe concentrado diluido en agua corriente. Garantiza control total de inventarios y costo por litro inigualable.",
-        benefits: [
-          "Elimina el desperdicio por error manual.",
-          "Instalación sin costo sujeta a volumen contractual.",
-          "Llave de seguridad y calibración por personal técnico de Swipe."
-        ],
-        usage: "Control de dosificación en lavandería, mantenimiento y cocinas.",
-        dosage: "Precalibrado según el producto químico a dispensar.",
-        dilution: "Diluciones automáticas reguladas por venturi.",
-        phImpact: "No aplica.",
-        safety: "Previene salpicaduras del producto concentrado, 100% seguro para el operador.",
-        badge: "Control de Insumos"
-      },
-      {
         id: "audit_service",
         name: "Auditoría de Costo-Beneficio",
         tagline: "Análisis y plan de optimización de presupuesto en sitio",
