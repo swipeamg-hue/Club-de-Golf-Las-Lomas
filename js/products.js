@@ -466,6 +466,25 @@ const PRODUCTS_DATA = {
         safety: "QUÍMICO TÓXICO Y ALTAMENTE CORROSIVO (Contiene Ácido Fluorhídrico). Obligatorio el uso de goggles, guantes de neopreno y mandil especial para ácidos. No usar sobre aluminio anodizado ni metales no ferrosos distintos al aluminio. NUNCA mezclar con cloro.",
         badge: "Abrillantador & Restaurador",
         image: "images/alubrite.png"
+      },
+      {
+        id: "steelbrite",
+        name: "Swipe Steelbrite",
+        tagline: "Abrillantador y desincrustante de grado alimentario para acero inoxidable",
+        description: "Poderosa fórmula de grado alimenticio diseñada específicamente para eliminar incrustaciones de sales minerales (sarro) y grasas pesadas en todas las superficies de acero inoxidable del club. Está formulado con inhibidores de corrosión que protegen las valiosas piezas metálicas de la acción de los ácidos.",
+        benefits: [
+          "Grado Alimenticio: Perfecto para campanas, mesas de trabajo, ollas y equipos de cocina industrial.",
+          "Inhibidores de corrosión: Protege las valiosas piezas metálicas de la acción ácida durante la desincrustación.",
+          "Restauración total: Diseñado para eliminar de manera efectiva sarro y grasas pesadas acumuladas.",
+          "Brillo espejo seguro: Devuelve el acabado brillante de fábrica aplicando exclusivamente con fibra blanca suave."
+        ],
+        usage: "Limpieza y desincrustación de sarro/grasa en campanas, mesas de trabajo, ollas, herramientas y cuartos fríos.",
+        dosage: "Se utiliza diluido en una proporción de 1:5 a 1:10 partes de agua, dependiendo de qué tan severas sean las incrustaciones.",
+        dilution: "Dilución 1:5 a 1:10 en agua. Aplicar obligatoriamente con una fibra blanca (suave), evitando estrictamente fibras verdes o negras que puedan rayar el acero.",
+        phImpact: "Ácido protector controlado.",
+        safety: "NUNCA mezclar con cloro bajo ninguna circunstancia. El personal debe utilizar guantes de hule y lentes de seguridad durante su manejo en áreas bien ventiladas.",
+        badge: "Grado Alimenticio & Protector",
+        image: "images/steelbrite.png"
       }
     ]
   },

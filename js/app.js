@@ -1521,6 +1521,45 @@ function updateMantenimientoDisplay(product) {
           </div>
         </div>
       `;
+    } else if (product.id === "steelbrite") {
+      featuresHtml = `
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Rendimiento y Dosificación</h4>
+            <p><strong>Dilución 1:5 a 1:10:</strong> Se utiliza diluido en una proporción de 1 parte de producto por 5 a 10 partes de agua, dependiendo de qué tan severas sean las incrustaciones de sarro o grasas sobre el acero.</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="4"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Uso en el Club (Cocinas y Áreas de Alimentos)</h4>
+            <p>Poderosa fórmula de grado alimenticio diseñada específicamente para eliminar incrustaciones de sales minerales (sarro) y grasas pesadas en todas las superficies de acero inoxidable del club. Ideal para mesas de trabajo, campanas, ollas de cocimiento, herramientas de cocina, cuartos fríos y equipos en general en el procesamiento de alimentos.</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Técnica Segura y Protección de Equipos</h4>
+            <p><strong>Técnica de Aplicación:</strong> Para lograr el acabado brillante sin dañar el mobiliario, debe aplicarse con una fibra blanca (suave), evitando estrictamente fibras verdes o negras que rayen permanentemente el acero.<br><strong>Protección del Equipo:</strong> Formulado con inhibidores de corrosión activos que protegen las valiosas piezas metálicas de la acción ácida durante la desincrustación.</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Precauciones y Manejo</h4>
+            <p style="color: #ff5a5a; font-weight: 600;">NUNCA mezclar con cloro bajo ninguna circunstancia. El personal debe utilizar obligatoriamente guantes de hule y lentes de seguridad durante su manejo en áreas bien ventiladas.</p>
+          </div>
+        </div>
+      `;
     } else {
       // Fallback dinámico premium para otros productos de Mantenimiento (Glass-Glow, Champú Cera Cart, Floor-Shine)
       featuresHtml = `
