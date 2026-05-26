@@ -494,7 +494,7 @@ const CALCULATORS = {
             <div class="calc-input-group">
               <label class="calc-label">Área del Club a Probar</label>
               <select id="demo-area" class="calc-input calc-select" required>
-                <option value="Alberca & Acuáticos">Alberca: Clarificación Express</option>
+                <option value="Alberca & Acuáticos">Alberca: Desinfección Total</option>
                 <option value="Spa & Wellness">Spa: Higiene Sensorial y Aromas</option>
                 <option value="Gimnasio & Fitness">Gimnasio: Sanitización de Equipos</option>
                 <option value="Gastronomía & Cocinas">Gastronomía: Desengrase de Cochambre</option>
