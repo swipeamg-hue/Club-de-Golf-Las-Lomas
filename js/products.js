@@ -341,20 +341,42 @@ const PRODUCTS_DATA = {
     products: [
       {
         id: "swipe_concentrate",
-        name: "Limpiador Multiusos Swipe Concentrado",
-        tagline: "Fórmula emblemática de dilución variable",
-        description: "El limpiador multiusos concentrado por excelencia. Su exclusiva fórmula biodegradable penetra y emulsiona la grasa y suciedad. Permite crear soluciones a la medida mediante tres diluciones básicas (Liviana, Normal, Pesada) para limpiar desde vidrios hasta motores.",
+        name: "Swipe Limpiador Líquido Concentrado",
+        tagline: "Desengrasante industrial de grado alimentario NSF A1",
+        description: "Es un desengrasante industrial líquido de uso general, altamente concentrado y con una biodegradabilidad superior al 99%. Destaca por ser grado alimenticio, avalado por el registro NSF (Categoría A1) y SAGARPA, lo que lo hace completamente seguro para las áreas de preparación de alimentos y comedores del club.",
         benefits: [
-          "Súper concentrado: 1 litro puede rendir hasta 100 litros de limpiador útil.",
-          "Elimina la necesidad de comprar decenas de productos especializados.",
-          "100% biodegradable, libre de fosfatos y seguro para cualquier superficie lavable."
+          "Biodegradabilidad superior al 99%: sustentabilidad y cuidado ecológico.",
+          "Grado alimenticio avalado por NSF (Categoría A1) y SAGARPA.",
+          "Seguridad total: sin cáusticos libres, no quema ni maltrata la piel, no inflamable y no corrosivo.",
+          "Versiones adaptadas: versión Low Foam para restregadoras y versión pH Neutro (pH 7) para plantas tratadoras.",
+          "No daña, no despinta ni corroe los metales y superficies tratadas."
         ],
-        usage: "Limpieza de oficinas, vestíbulos, muebles de exterior, carritos de golf y barandales.",
-        dosage: "Liviana (vidrios/espejos): 1:100. Normal (paredes, plástico, vinil): 1:10. Pesada (motores, grasa pesada): 1:4.",
-        dilution: "Mezclar con agua corriente en botellas atomizadoras codificadas por color.",
-        phImpact: "Neutro (pH 7.0 a 7.5 en dilución normal) - seguro para pinturas y acabados delicados.",
-        safety: "Seguro y noble con las manos en dilución normal. Evitar contacto de concentrado con ojos.",
-        badge: "El Multiusos Definitivo"
+        usage: "Desengrase industrial y limpieza multiusos en comedores, Casa Club, cocinas y mantenimiento.",
+        dosage: "Liviana (1:100) para mantenimiento estético diario | Normal (1:12) para zonas operativas | Pesada (1:4) para taller y motores.",
+        dilution: "Dilución variable según la carga de suciedad. Rinde hasta 100 litros de limpiador útil.",
+        phImpact: "pH Neutro (pH 7) disponible para proteger plantas tratadoras de agua del club.",
+        safety: "No tóxico, no inflamable, sin cáusticos libres. Seguro para la piel y metales.",
+        badge: "Grado Alimenticio & Eco-Friendly",
+        image: "images/swipe_concentrado.png"
+      },
+      {
+        id: "swipol_mantenimiento",
+        name: "Swipol",
+        tagline: "Alguicida, fungicida y viricida de amplio espectro",
+        description: "Swipol está formulado para el control efectivo de algas en piscinas y en sistemas de recirculación de aguas. Las pruebas de eficiencia bacteriológica lo respaldan como un alguicida, fungicida y viricida de amplio espectro. Compuesto por cuaternario de amonio de última generación, es incoloro, inoloro y de grado quirúrgico y alimenticio.",
+        benefits: [
+          "Seguridad para los socios: compuesto por cuaternario de amonio de última generación (cero irritación cutánea).",
+          "Completamente incoloro e inoloro: no altera la pureza visual ni sensorial del área.",
+          "Estabilidad térmica total en temperaturas altas y bajas (albercas techadas o al aire libre).",
+          "Alta tolerancia a las aguas duras, garantizando su eficacia continua en sistemas hidráulicos.",
+          "Desinfección perimetral total: inhibición de hongos en baños de pies, vestidores, pisos y tapetes sanitarios."
+        ],
+        usage: "Control e inhibición de hongos en vestidores y desinfección perimetral de albercas.",
+        dilution: "Dilución de uso general y perimetral de grado quirúrgico y alimenticio.",
+        phImpact: "Completamente neutro y estable ante aguas duras.",
+        safety: "No irritante para la piel en dilución. Totalmente incoloro e inoloro.",
+        badge: "Alguicida Especializado",
+        image: "images/swipol.png"
       },
       {
         id: "glass_glow",
