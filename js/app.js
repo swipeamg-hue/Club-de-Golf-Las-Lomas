@@ -588,6 +588,14 @@ function initSpaProductSwitcher() {
       updateSpaDisplay(product);
     });
   });
+
+  // Inicializar dinámicamente con el primer producto activo
+  const activeTab = selector.querySelector(".spa-product-tab.active");
+  if (activeTab) {
+    const initialId = activeTab.getAttribute("data-product-id");
+    const initialProduct = PRODUCTS_DATA.spa.products.find((p) => p.id === initialId);
+    if (initialProduct) updateSpaDisplay(initialProduct);
+  }
 }
 
 function updateSpaDisplay(product) {
@@ -835,6 +843,14 @@ function initGymProductSwitcher() {
       updateGymDisplay(product);
     });
   });
+
+  // Inicializar dinámicamente con el primer producto activo
+  const activeTab = selector.querySelector(".gym-product-tab.active");
+  if (activeTab) {
+    const initialId = activeTab.getAttribute("data-product-id");
+    const initialProduct = PRODUCTS_DATA.gimnasio.products.find((p) => p.id === initialId);
+    if (initialProduct) updateGymDisplay(initialProduct);
+  }
 }
 
 function updateGymDisplay(product) {
@@ -996,6 +1012,14 @@ function initGastronomiaProductSwitcher() {
       updateGastronomiaDisplay(product);
     });
   });
+
+  // Inicializar dinámicamente con el primer producto activo
+  const activeTab = selector.querySelector(".gastronomia-product-tab.active");
+  if (activeTab) {
+    const initialId = activeTab.getAttribute("data-product-id");
+    const initialProduct = PRODUCTS_DATA.gastronomia.products.find((p) => p.id === initialId);
+    if (initialProduct) updateGastronomiaDisplay(initialProduct);
+  }
 }
 
 function updateGastronomiaDisplay(product) {
@@ -1313,6 +1337,14 @@ function initMantenimientoProductSwitcher() {
       updateMantenimientoDisplay(product);
     });
   });
+
+  // Inicializar dinámicamente con el primer producto activo
+  const activeTab = selector.querySelector(".mantenimiento-product-tab.active");
+  if (activeTab) {
+    const initialId = activeTab.getAttribute("data-product-id");
+    const initialProduct = PRODUCTS_DATA.mantenimiento.products.find((p) => p.id === initialId);
+    if (initialProduct) updateMantenimientoDisplay(initialProduct);
+  }
 }
 
 function updateMantenimientoDisplay(product) {
@@ -1369,8 +1401,8 @@ function updateMantenimientoDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
           <div class="mantenimiento-feature-text">
-            <h4>Identidad y Certificaciones</h4>
-            <p>Desengrasante industrial líquido de uso general, altamente concentrado, biodegradable >99%. Grado alimenticio certificado por NSF (Categoría A1) y SAGARPA para áreas de preparación de alimentos.</p>
+            <h4>Desengrase de Alta Potencia</h4>
+            <p>Remueve con máxima rapidez grasas pesadas, aceites, hollín, polvo y cochambre en vialidades, motores, maquinaria pesada y talleres de mantenimiento del club.</p>
           </div>
         </div>
         <div class="mantenimiento-feature-card">
@@ -1379,7 +1411,7 @@ function updateMantenimientoDisplay(product) {
           </div>
           <div class="mantenimiento-feature-text">
             <h4>Rendimiento y Dosificación</h4>
-            <p>Versatilidad máxima: Solución Liviana (1:100) para limpieza diaria estética de Casa Club, espejos y cromos; Solución Normal (1:12) para cocinas y vehículos de golf; Solución Pesada (1:4) para motores y talleres de mantenimiento.</p>
+            <p>Versatilidad total: Solución Liviana (1:100) para vidrios y Casa Club; Solución Normal (1:12) para vialidades y mantenimiento general de pasillos; Solución Pesada (1:4) para motores y talleres.</p>
           </div>
         </div>
         <div class="mantenimiento-feature-card">
@@ -1387,8 +1419,8 @@ function updateMantenimientoDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
           </div>
           <div class="mantenimiento-feature-text">
-            <h4>Seguridad para Personal e Instalaciones</h4>
-            <p>Sin cáusticos libres que quemen o maltraten la piel. No es tóxico, no es inflamable, no corroe metales y no daña ni despinta las superficies tratadas del club.</p>
+            <h4>Seguridad y Cuidado Ambiental</h4>
+            <p>Fórmula biodegradable en más del 99%, libre de fosfatos. No es tóxica, no es inflamable y no daña ni despinta las superficies del complejo.</p>
           </div>
         </div>
         <div class="mantenimiento-feature-card">
@@ -1396,8 +1428,8 @@ function updateMantenimientoDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
           </div>
           <div class="mantenimiento-feature-text">
-            <h4>Ventaja Técnica Institucional</h4>
-            <p>Adaptado a infraestructuras de nivel premium: versión Low Foam para equipos automáticos industriales de limpieza, y versión de pH neutro (pH 7) que protege las plantas tratadoras de agua del complejo.</p>
+            <h4>Versatilidad y pH Neutro</h4>
+            <p>Versión Low Foam disponible para restregadoras automáticas de pisos y versión pH Neutro (pH 7) para proteger el funcionamiento de las plantas tratadoras del club.</p>
           </div>
         </div>
       `;
