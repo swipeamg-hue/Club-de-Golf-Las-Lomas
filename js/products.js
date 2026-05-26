@@ -325,6 +325,25 @@ const PRODUCTS_DATA = {  alberca: {
         safety: "Evitar contacto directo con la piel y ojos. Diseñado exclusivamente para uso automático mecánico en lavalozas.",
         badge: "Doble Acción & Ahorro Energético",
         image: "images/crystal_dwm.png"
+      },
+      {
+        id: "hand_soap_gastronomia",
+        name: "Swipe Hand Soap",
+        tagline: "Jabón líquido germicida antibacterial e inoloro para cocinas y áreas de alimentos",
+        description: "Swipe Hand Soap es el jabón líquido germicida y antibacterial de alto desempeño, formulado específicamente para la higiene rigurosa del personal en las áreas de preparación de alimentos y cocinas del club. Al ser 100% libre de fragancias y colorantes (incoloro e inoloro), asegura una desinfección total de manos sin riesgo de contaminación cruzada ni alteración de los aromas y sabores de los platillos.",
+        benefits: [
+          "Inocuidad Alimentaria Total: 100% libre de fragancias y colorantes artificiales para evitar cualquier tipo de transferencia de olores a los alimentos preparados.",
+          "Poderoso Efecto Germicida: Elimina de manera inmediata bacterias y hongos patógenos comunes en cocinas como Salmonella, E. coli y S. aureus.",
+          "Protección e Hidratación de la Piel: pH balanceado (5.0 a 6.0) idóneo para la piel humana que evita la irritación y resequedad por el lavado continuo exigido al personal de cocina del club.",
+          "Rendimiento y Asepsia Rigurosa: Apto para despachadores automáticos, asegurando una dosificación exacta y control de insumos inigualable."
+        ],
+        usage: "Lavado e higiene profunda de manos de chefs, cocineros, auxiliares, meseros y personal del área de alimentos.",
+        dosage: "Uso concentrado directo sin diluir mediante despachadores de jabón SWIPE (1.5 ml por descarga).",
+        dilution: "Aplicar directo una dosis en las manos, frotar firmemente palmas, dedos, uñas y antebrazos durante 40-60 segundos, y enjuagar con abundante agua.",
+        phImpact: "pH balanceado de 5.0 a 6.0 en armonía con la piel humana.",
+        safety: "Dermatológicamente probado y seguro para áreas de alimentos. Evitar contacto con los ojos. Uso externo.",
+        badge: "Inodoro y Grado Alimenticio",
+        image: "images/hand_soap.png"
       }
     ]
   },

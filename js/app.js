@@ -1297,6 +1297,45 @@ function updateGastronomiaDisplay(product) {
           </div>
         </div>
       `;
+    } else if (product.id === "hand_soap_gastronomia") {
+      featuresHtml = `
+        <div class="gastronomia-feature-card">
+          <div class="gastronomia-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gastronomia-feature-text">
+            <h4>Inocuidad Alimentaria Total</h4>
+            <p>Fórmula 100% libre de fragancias y colorantes. Al ser incoloro e inoloro, garantiza cero riesgo de contaminación cruzada o transferencia de aromas a los alimentos preparados para los socios del club.</p>
+          </div>
+        </div>
+        <div class="gastronomia-feature-card">
+          <div class="gastronomia-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke-linecap="round" stroke-linejoin="round"/><polyline points="22 4 12 14.01 9 11.01" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gastronomia-feature-text">
+            <h4>Poderoso Efecto Germicida</h4>
+            <p>Elimina al instante bacterias patógenas típicas en ambientes de alimentos como Salmonella, E. coli y S. aureus, asegurando el cumplimiento de los más altos estándares de bioseguridad en cocinas.</p>
+          </div>
+        </div>
+        <div class="gastronomia-feature-card">
+          <div class="gastronomia-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gastronomia-feature-text">
+            <h4>Protección e Hidratación de la Piel</h4>
+            <p>Fórmula con pH balanceado (5.0 a 6.0) idóneo para la piel humana. Previene la resequedad, descamación e irritación de las manos del personal expuesto al lavado continuo en cocinas.</p>
+          </div>
+        </div>
+        <div class="gastronomia-feature-card">
+          <div class="gastronomia-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gastronomia-feature-text">
+            <h4>Higiene Rigurosa y Rendimiento</h4>
+            <p>Listo para despachadores automáticos o de bomba. Requiere solo una dosis (1.5 ml) frotando firmemente palmas, dedos, uñas y antebrazos durante 40-60 segundos antes de enjuagar.</p>
+          </div>
+        </div>
+      `;
     }
 
     featuresColumn.innerHTML = featuresHtml;
