@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initSpaProductSwitcher();
   initGymProductSwitcher();
   initGastronomiaProductSwitcher();
+  initMantenimientoProductSwitcher();
 });
 
 /**
@@ -1272,6 +1273,215 @@ function updateGastronomiaDisplay(product) {
           <div class="gastronomia-feature-text">
             <h4>Protección Térmica y de Boquillas</h4>
             <p>Evita el taponamiento de las boquillas de aspersión al inhibir la precipitación de calcio en el agua dura de lavado, protegiendo las bombas recirculadoras.</p>
+          </div>
+        </div>
+      `;
+    }
+
+    featuresColumn.innerHTML = featuresHtml;
+
+    // Restaurar opacidades con animaciones suaves
+    featuresColumn.style.opacity = "1";
+    featuresColumn.style.transform = "translateY(0)";
+    
+    spotlightCard.style.opacity = "1";
+    spotlightCard.style.transform = "scale(1)";
+  }, 150);
+}
+
+/**
+ * 8. CONTROLADOR INTERACTIVO DE MANTENIMIENTO GENERAL
+ */
+function initMantenimientoProductSwitcher() {
+  const tabs = document.querySelectorAll(".mantenimiento-product-tab");
+  const selector = document.getElementById("mantenimiento-products-selector");
+  if (!tabs.length || !selector) return;
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", function (e) {
+      e.stopPropagation(); // Evitar cerrar o activar columnas del acordeón
+      
+      const productId = this.getAttribute("data-product-id");
+      if (!productId) return;
+
+      // Cambiar clase active en las pestañas
+      tabs.forEach((t) => t.classList.remove("active"));
+      this.classList.add("active");
+
+      // Buscar el producto en PRODUCTS_DATA
+      const product = PRODUCTS_DATA.mantenimiento.products.find((p) => p.id === productId);
+      if (!product) return;
+
+      // Actualizar el panel derecho
+      updateMantenimientoDisplay(product);
+    });
+  });
+}
+
+function updateMantenimientoDisplay(product) {
+  const spotlightCard = document.getElementById("mantenimiento-spotlight-card");
+  const imgEl = document.getElementById("mantenimiento-spotlight-img");
+  const svgContainer = document.getElementById("mantenimiento-spotlight-svg-container");
+  const quoteBtn = document.getElementById("mantenimiento-add-to-quote-btn");
+  const featuresColumn = document.getElementById("mantenimiento-features-column");
+
+  if (!spotlightCard || !featuresColumn) return;
+
+  // Añadir un pequeño efecto de fade-out temporal para la transición
+  featuresColumn.style.opacity = "0";
+  featuresColumn.style.transform = "translateY(10px)";
+  featuresColumn.style.transition = "all 0.3s ease";
+  
+  spotlightCard.style.opacity = "0.5";
+  spotlightCard.style.transform = "scale(0.98)";
+
+  setTimeout(() => {
+    // 1. Actualizar imagen o SVG en el spotlight
+    if (product.image) {
+      imgEl.src = product.image;
+      imgEl.style.display = "block";
+      svgContainer.style.display = "none";
+    } else {
+      imgEl.style.display = "none";
+      // Obtener el SVG correspondiente de getProductIconSvg
+      const iconSvg = getProductIconSvg(product.id);
+      svgContainer.innerHTML = iconSvg;
+      // Hacer que el SVG sea grande y estilizado en el spotlight
+      const svgInner = svgContainer.querySelector("svg");
+      if (svgInner) {
+        svgInner.style.width = "120px";
+        svgInner.style.height = "120px";
+        svgInner.style.strokeWidth = "1.2";
+      }
+      svgContainer.style.display = "block";
+    }
+
+    // 2. Actualizar botón de cotización
+    if (quoteBtn) {
+      quoteBtn.setAttribute("onclick", `addToQuoteCart('${product.id}', 'mantenimiento')`);
+    }
+
+    // 3. Generar las características técnicas dinámicas
+    let featuresHtml = "";
+    
+    // Mapeo inteligente de características según el producto
+    if (product.id === "swipe_concentrate") {
+      featuresHtml = `
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Identidad y Certificaciones</h4>
+            <p>Desengrasante industrial líquido de uso general, altamente concentrado, biodegradable >99%. Grado alimenticio certificado por NSF (Categoría A1) y SAGARPA para áreas de preparación de alimentos.</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Rendimiento y Dosificación</h4>
+            <p>Versatilidad máxima: Solución Liviana (1:100) para limpieza diaria estética de Casa Club, espejos y cromos; Solución Normal (1:12) para cocinas y vehículos de golf; Solución Pesada (1:4) para motores y talleres de mantenimiento.</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Seguridad para Personal e Instalaciones</h4>
+            <p>Sin cáusticos libres que quemen o maltraten la piel. No es tóxico, no es inflamable, no corroe metales y no daña ni despinta las superficies tratadas del club.</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Ventaja Técnica Institucional</h4>
+            <p>Adaptado a infraestructuras de nivel premium: versión Low Foam para equipos automáticos industriales de limpieza, y versión de pH neutro (pH 7) que protege las plantas tratadoras de agua del complejo.</p>
+          </div>
+        </div>
+      `;
+    } else if (product.id === "swipol_mantenimiento") {
+      featuresHtml = `
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Seguridad e Inocuidad (Cero Irritación)</h4>
+            <p>Seguridad absoluta para los socios del club: formulado con cuaternarios de amonio de última generación que garantizan cero irritación cutánea. Al ser completamente incoloro e inoloro, mantiene intacta la pureza visual y sensorial del área.</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke-linecap="round" stroke-linejoin="round"/><polyline points="22 4 12 14.01 9 11.01" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Desinfección de Grado Quirúrgico</h4>
+            <p>Alguicida, fungicida y viricida de amplio espectro, ideal para la desinfección perimetral total. Previene e inhibe eficazmente el crecimiento de hongos y bacterias en vestidores, baños de vapor, regaderas, áreas comunes y tapetes sanitarios.</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Rendimiento Estabilizado</h4>
+            <p>Máxima estabilidad química y tolerancia total frente a aguas duras. Mantiene su eficiencia desinfectante en una amplia gama de temperaturas, lo que lo hace idóneo para áreas de alta exigencia operacional en el club.</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Manejo Seguro y pH Neutro</h4>
+            <p>Es seguro al tacto y no corrosivo para el equipamiento premium y superficies delicadas de Casa Club. Fórmula de pH neutro, estable y amigable con el personal de limpieza y el entorno.</p>
+          </div>
+        </div>
+      `;
+    } else {
+      // Fallback dinámico premium para otros productos de Mantenimiento (Glass-Glow, Champú Cera Cart, Floor-Shine)
+      featuresHtml = `
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z" stroke-linecap="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Descripción del Producto</h4>
+            <p>${product.description}</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Beneficios Clave</h4>
+            <ul style="font-size: 0.85rem; line-height: 1.5; color: var(--color-glass-text); padding-left: 1.2rem; margin: 0.3rem 0 0 0;">
+              ${product.benefits.map(b => `<li style="margin-bottom: 0.3rem;">${b}</li>`).join("")}
+            </ul>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zM12 6v6l4 2"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Rendimiento y Dosificación</h4>
+            <p><strong>Dosificación:</strong> ${product.dosage}<br><strong>Dilución / Método:</strong> ${product.dilution}</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Seguridad e Impacto Ambiental</h4>
+            <p><strong>Manejo Seguro:</strong> ${product.safety}<br><strong>Impacto en pH:</strong> ${product.phImpact || 'Neutro.'}</p>
           </div>
         </div>
       `;

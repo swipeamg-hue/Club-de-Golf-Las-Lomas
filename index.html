@@ -784,23 +784,176 @@
           </div>
 
           <div class="dashboard-grid">
+            <!-- Columna Izquierda: Selector de Productos (info-panel) -->
             <div class="info-panel">
               <div class="info-title-group">
-                <p class="info-slogan">Preservación meticulosa de la casa club, oficinas, áreas comunes y vehículos utilitarios. Diluciones inteligentes biodegradables.</p>
+                <span class="info-area-badge" style="color: var(--color-mantenimiento)">Línea Operativa</span>
+                <h3 class="info-title" style="font-size: 2.3rem; color: #fff; font-family: var(--font-title); font-weight: 800; margin-top: 0.5rem; margin-bottom: 0.5rem;">Mantenimiento General</h3>
+                <p class="info-slogan" style="border-left: 2px solid var(--color-mantenimiento); padding-left: 1rem; font-size: 0.95rem; line-height: 1.5; color: var(--color-glass-text); text-align: justify; margin-top: 0.5rem; margin-bottom: 1.5rem;">
+                  Preservación meticulosa de la Casa Club, oficinas, áreas comunes y vehículos utilitarios del complejo. Cuidado premium y sustentabilidad con diluciones inteligentes biodegradables.
+                </p>
               </div>
-              <div id="calc-container-mantenimiento"></div>
+
+              <!-- Selector de Contenedores de Producto (Mantenimiento) -->
+              <div class="mantenimiento-products-selector" id="mantenimiento-products-selector">
+                
+                <!-- Producto 1: Swipe Concentrado -->
+                <div class="mantenimiento-product-tab active" data-product-id="swipe_concentrate">
+                  <div class="product-tab-img-container">
+                    <img src="images/swipe_concentrado.png" alt="Swipe Limpiador Concentrado">
+                  </div>
+                  <div class="product-tab-info">
+                    <span class="product-tab-badge">Grado Alimenticio & Eco-Friendly</span>
+                    <h4 class="product-tab-name">Swipe Limpiador Concentrado</h4>
+                  </div>
+                  <div class="product-tab-indicator"></div>
+                </div>
+
+                <!-- Producto 2: Swipol -->
+                <div class="mantenimiento-product-tab" data-product-id="swipol_mantenimiento">
+                  <div class="product-tab-img-container">
+                    <img src="images/swipol.png" alt="Swipol">
+                  </div>
+                  <div class="product-tab-info">
+                    <span class="product-tab-badge">Alguicida Especializado</span>
+                    <h4 class="product-tab-name">Swipol</h4>
+                  </div>
+                  <div class="product-tab-indicator"></div>
+                </div>
+
+                <!-- Producto 3: Glass-Glow -->
+                <div class="mantenimiento-product-tab" data-product-id="glass_glow">
+                  <div class="product-tab-img-container">
+                    <svg class="product-tab-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                  <div class="product-tab-info">
+                    <span class="product-tab-badge">Transparencia Total</span>
+                    <h4 class="product-tab-name">Glass-Glow Auto-Secante</h4>
+                  </div>
+                  <div class="product-tab-indicator"></div>
+                </div>
+
+                <!-- Producto 4: Champú Cera Golf Cart -->
+                <div class="mantenimiento-product-tab" data-product-id="cart_wash">
+                  <div class="product-tab-img-container">
+                    <svg class="product-tab-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-1.1 0-2 .9-2 2v7c0 .6.4 1 1 1h2M7 21a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm10 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                  <div class="product-tab-info">
+                    <span class="product-tab-badge">Protección UV para Vehículos</span>
+                    <h4 class="product-tab-name">Champú Cera Golf Cart</h4>
+                  </div>
+                  <div class="product-tab-indicator"></div>
+                </div>
+
+                <!-- Producto 5: Floor-Shine -->
+                <div class="mantenimiento-product-tab" data-product-id="floor_shine">
+                  <div class="product-tab-img-container">
+                    <svg class="product-tab-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z" stroke-linecap="round"/><path d="M12 18v-6" stroke-linecap="round"/><circle cx="12" cy="8" r="1"/></svg>
+                  </div>
+                  <div class="product-tab-info">
+                    <span class="product-tab-badge">Pisos Espejo Antiderrapantes</span>
+                    <h4 class="product-tab-name">Floor-Shine Autobrillante</h4>
+                  </div>
+                  <div class="product-tab-indicator"></div>
+                </div>
+
+              </div>
+
+              <!-- Elementos de control ocultos para mantener la compatibilidad con el render dinámico de JS -->
+              <div style="display: none;">
+                <div id="calc-container-mantenimiento"></div>
+                <div id="catalog-grid-mantenimiento"></div>
+              </div>
             </div>
 
+            <!-- Columna Derecha: Información Técnica Dinámica (catalog-panel) -->
             <div class="catalog-panel">
               <div class="catalog-title-bar">
-                <h3 class="catalog-title">Línea de Mantenimiento General</h3>
-                <span class="catalog-subtitle">Productos Químicos Profesionales</span>
+                <h3 class="catalog-title" style="color: var(--color-mantenimiento); font-family: var(--font-title); font-weight: 700; font-size: 1.4rem;">Información del Producto</h3>
+                <span class="catalog-subtitle" style="font-size: 0.85rem; color: var(--color-text-muted);">Especificaciones Técnicas</span>
               </div>
-              <div class="catalog-grid" id="catalog-grid-mantenimiento">
-                <!-- Se inyecta dinámicamente -->
+
+              <div class="mantenimiento-dynamic-display">
+                <!-- Columna de Spotlight (Imagen del Producto) -->
+                <div class="mantenimiento-spotlight-column">
+                  <div class="mantenimiento-spotlight-card" id="mantenimiento-spotlight-card">
+                    <div class="mantenimiento-spotlight-glow"></div>
+                    <img id="mantenimiento-spotlight-img" src="images/swipe_concentrado.png" alt="Swipe Limpiador Concentrado">
+                    <!-- Contenedor para SVGs cuando el producto no tiene imagen dedicada -->
+                    <div id="mantenimiento-spotlight-svg-container" style="display: none; z-index: 2;"></div>
+                  </div>
+                  
+                  <!-- Botón premium de cotización -->
+                  <button class="mantenimiento-add-to-quote-btn" id="mantenimiento-add-to-quote-btn" onclick="addToQuoteCart('swipe_concentrate', 'mantenimiento')">
+                    <svg style="width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2;" viewBox="0 0 24 24">
+                      <circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle>
+                      <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    Añadir a Cotización
+                  </button>
+                </div>
+
+                <!-- Columna de Características Técnicas -->
+                <div class="mantenimiento-features-column" id="mantenimiento-features-column">
+                  <!-- Renderizado por defecto del Producto 1 (Swipe Concentrado) -->
+                  
+                  <!-- Ficha 1: Identidad y Certificaciones -->
+                  <div class="mantenimiento-feature-card">
+                    <div class="mantenimiento-feature-icon-container">
+                      <svg class="feature-icon-svg" viewBox="0 0 24 24">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                      </svg>
+                    </div>
+                    <div class="mantenimiento-feature-text">
+                      <h4>Identidad y Certificaciones</h4>
+                      <p>Desengrasante industrial líquido de uso general, altamente concentrado, biodegradable >99%. Grado alimenticio certificado por NSF (Categoría A1) y SAGARPA para áreas de preparación de alimentos.</p>
+                    </div>
+                  </div>
+
+                  <!-- Ficha 2: Rendimiento y Dosificación -->
+                  <div class="mantenimiento-feature-card">
+                    <div class="mantenimiento-feature-icon-container">
+                      <svg class="feature-icon-svg" viewBox="0 0 24 24">
+                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                      </svg>
+                    </div>
+                    <div class="mantenimiento-feature-text">
+                      <h4>Rendimiento y Dosificación</h4>
+                      <p>Versatilidad máxima: Solución Liviana (1:100) para limpieza diaria estética de Casa Club, espejos y cromos; Solución Normal (1:12) para cocinas y vehículos de golf; Solución Pesada (1:4) para motores y talleres de mantenimiento.</p>
+                    </div>
+                  </div>
+
+                  <!-- Ficha 3: Seguridad y Manejo -->
+                  <div class="mantenimiento-feature-card">
+                    <div class="mantenimiento-feature-icon-container">
+                      <svg class="feature-icon-svg" viewBox="0 0 24 24">
+                        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                        <line x1="12" y1="9" x2="12" y2="13"/>
+                        <line x1="12" y1="17" x2="12.01" y2="17"/>
+                      </svg>
+                    </div>
+                    <div class="mantenimiento-feature-text">
+                      <h4>Seguridad y Manejo</h4>
+                      <p>Sin cáusticos libres que quemen o maltraten la piel. No es tóxico, no es inflamable, no corroe metales y no daña ni despinta las superficies tratadas del club.</p>
+                    </div>
+                  </div>
+
+                  <!-- Ficha 4: Ventaja Técnica Institucional -->
+                  <div class="mantenimiento-feature-card">
+                    <div class="mantenimiento-feature-icon-container">
+                      <svg class="feature-icon-svg" viewBox="0 0 24 24">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                      </svg>
+                    </div>
+                    <div class="mantenimiento-feature-text">
+                      <h4>Ventaja Técnica Institucional</h4>
+                      <p>Adaptado a infraestructuras de nivel premium: versión Low Foam para equipos automáticos industriales de limpieza, y versión de pH neutro (pH 7) que protege las plantas tratadoras de agua del complejo.</p>
+                    </div>
+                  </div>
+
+                </div>
               </div>
             </div>
-          </div>
         </div>
       </section>
 
