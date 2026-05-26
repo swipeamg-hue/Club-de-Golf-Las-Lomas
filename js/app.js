@@ -1408,8 +1408,8 @@ function updateMantenimientoDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="mantenimiento-feature-text">
-            <h4>Seguridad e Inocuidad (Cero Irritación)</h4>
-            <p>Seguridad absoluta para los socios del club: formulado con cuaternarios de amonio de quinta generación que garantizan cero irritación cutánea. Al ser completamente incoloro e inoloro, mantiene intacta la pureza visual y sensorial del área.</p>
+            <h4>Bioseguridad Total Multiusos</h4>
+            <p>Formulado con cuaternarios de amonio de quinta generación que garantizan cero irritación cutánea. Elimina al 99.999% bacterias, virus y hongos en lobbys, pasillos, salones de eventos, mostradores y áreas de atención al socio del club.</p>
           </div>
         </div>
         <div class="mantenimiento-feature-card">
@@ -1417,8 +1417,8 @@ function updateMantenimientoDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke-linecap="round" stroke-linejoin="round"/><polyline points="22 4 12 14.01 9 11.01" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="mantenimiento-feature-text">
-            <h4>Desinfección de Grado Quirúrgico</h4>
-            <p>Alguicida, fungicida y viricida de amplio espectro, ideal para la desinfección perimetral total. Previene e inhibe eficazmente el crecimiento de hongos y bacterias en vestidores, baños de vapor, regaderas, áreas comunes y tapetes sanitarios.</p>
+            <h4>Discreción Absoluta (Incoloro e Inodoro)</h4>
+            <p>Su fórmula 100% incolora e inodora garantiza que la desinfección profunda de oficinas de administración, salones y áreas de recepción se realice sin dejar olores químicos que alteren la experiencia premium de los socios.</p>
           </div>
         </div>
         <div class="mantenimiento-feature-card">
@@ -1426,8 +1426,8 @@ function updateMantenimientoDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="mantenimiento-feature-text">
-            <h4>Rendimiento Estabilizado</h4>
-            <p>Máxima estabilidad química y tolerancia total frente a aguas duras. Mantiene su eficiencia desinfectante en una amplia gama de temperaturas, lo que lo hace idóneo para áreas de alta exigencia operacional en el club.</p>
+            <h4>Rendimiento y Dosificación</h4>
+            <p>Limpieza de rutina (1:200) para superficies de alto tráfico como pasillos y lobbys. Desinfección profunda (1:100) para baños generales y zonas de atención médica del club. No requiere enjuague en diluciones de mantenimiento.</p>
           </div>
         </div>
         <div class="mantenimiento-feature-card">
@@ -1436,7 +1436,7 @@ function updateMantenimientoDisplay(product) {
           </div>
           <div class="mantenimiento-feature-text">
             <h4>Manejo Seguro y pH Neutro</h4>
-            <p>Es seguro al tacto y no corrosivo para el equipamiento premium y superficies delicadas de Casa Club. Fórmula de pH neutro, estable y amigable con el personal de limpieza y el entorno.</p>
+            <p>Completamente neutro (pH 7.0), no deja residuos ni altera los acabados de pisos finos, muebles y superficies premium del club. Dermatológicamente seguro y sin vapores irritantes para el personal de limpieza.</p>
           </div>
         </div>
       `;

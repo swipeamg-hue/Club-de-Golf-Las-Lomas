@@ -86,21 +86,20 @@ const PRODUCTS_DATA = {  alberca: {
       {
         id: "swipe_concentrado_spa",
         name: "Swipe Limpiador Líquido Concentrado",
-        tagline: "Desengrasante industrial de grado alimentario NSF A1",
-        description: "Es un desengrasante industrial líquido de uso general, altamente concentrado y con una biodegradabilidad superior al 99%. Destaca por ser grado alimenticio, avalado por el registro NSF (Categoría A1) y SAGARPA, lo que lo hace completamente seguro para las áreas de preparación de alimentos y comedores del club.",
+        tagline: "Limpiador y desengrasante neutro biodegradable para spas",
+        description: "Swipe Limpiador Concentrado es la solución ecológica definitiva para mantener la higiene y pureza estética en las áreas de relajación y bienestar del club. Destaca por su biodegradabilidad superior al 99% y su pH neutro (en su versión especial), lo que lo hace completamente seguro para desinfectar camillas de masaje, camastros y superficies de madera, piedra o vinilo sin dañarlas.",
         benefits: [
-          "Biodegradabilidad superior al 99%: sustentabilidad y cuidado ecológico.",
-          "Grado alimenticio avalado por NSF (Categoría A1) y SAGARPA.",
-          "Seguridad total: sin cáusticos libres, no quema ni maltrata la piel, no inflamable y no corrosivo.",
-          "Versiones adaptadas: versión Low Foam para restregadoras y versión pH Neutro (pH 7) para plantas tratadoras.",
-          "No daña, no despinta ni corroe los metales y superficies tratadas."
+          "100% Biodegradable (>99%): Máximo respeto ecológico en sistemas de drenaje y plantas de tratamiento del Spa.",
+          "Seguridad Total sin Cáusticos: No reseca las manos del personal ni daña los materiales de camillas y mobiliario.",
+          "Versión pH Neutro (pH 7): Ideal para la limpieza de maderas finas de saunas y recubrimientos de mármol del Spa.",
+          "Gran Economía de Uso: Fórmula ultra concentrada que rinde hasta 100 litros de limpiador útil en diluciones suaves."
         ],
-        usage: "Desengrase industrial y limpieza multiusos en comedores, Casa Club, cocinas y mantenimiento.",
-        dosage: "Liviana (1:100) para mantenimiento estético diario | Normal (1:12) para zonas operativas | Pesada (1:4) para taller y motores.",
-        dilution: "Dilución variable según la carga de suciedad. Rinde hasta 100 litros de limpiador útil.",
-        phImpact: "pH Neutro (pH 7) disponible para proteger plantas tratadoras de agua del club.",
+        usage: "Limpieza y preparación higiénica de salas de masaje, camastros, vestidores, saunas y áreas comunes.",
+        dosage: "Mantenimiento diario (1:100) para vidrios y cromos | Lavado normal (1:12) para vestidores y pisos de Spa.",
+        dilution: "Dilución variable según la carga de suciedad. Rociar o trapear y retirar con paño limpio.",
+        phImpact: "pH Neutro disponible para proteger acabados premium del Spa.",
         safety: "No tóxico, no inflamable, sin cáusticos libres. Seguro para la piel y metales.",
-        badge: "Grado Alimenticio & Eco-Friendly",
+        badge: "Limpiador Biodegradable",
         image: "images/swipe_concentrado.png"
       },
       {
@@ -170,21 +169,20 @@ const PRODUCTS_DATA = {  alberca: {
       {
         id: "swipe_concentrado_gym",
         name: "Swipe Limpiador Líquido Concentrado",
-        tagline: "Desengrasante industrial de grado alimentario NSF A1",
-        description: "Es un desengrasante industrial líquido de uso general, altamente concentrado y con una biodegradabilidad superior al 99%. Destaca por ser grado alimenticio, avalado por el registro NSF (Categoría A1) y SAGARPA, lo que lo hace completamente seguro para las áreas de preparación de alimentos y comedores del club.",
+        tagline: "Limpiador desengrasante biodegradable de equipos deportivos",
+        description: "Swipe Limpiador Concentrado es la solución definitiva para mantener el equipamiento y las áreas de acondicionamiento físico en condiciones óptimas. Formulado con tensoactivos de alta potencia, remueve grasa corporal, sudor, polvo y aceites bronceadores acumulados en mancuernas, caminadoras y tapizados, sin resecar ni cuartear los vinilos ni plásticos.",
         benefits: [
-          "Biodegradabilidad superior al 99%: sustentabilidad y cuidado ecológico.",
-          "Grado alimenticio avalado por NSF (Categoría A1) y SAGARPA.",
-          "Seguridad total: sin cáusticos libres, no quema ni maltrata la piel, no inflamable y no corrosivo.",
-          "Versiones adaptadas: versión Low Foam para restregadoras y versión pH Neutro (pH 7) para plantas tratadoras.",
-          "No daña, no despinta ni corroe los metales y superficies tratadas."
+          "Eliminación de Sudor y Grasa Corporal: Remueve con rapidez el sudor y grasas acumuladas en empuñaduras y asientos.",
+          "Protección para Tapizados Premium: Cero cáusticos libres, ideal para limpiar vinilo, cuero sintético y plásticos sin cuartearlos.",
+          "Biodegradabilidad Superior al 99%: Limpiador ecológico libre de fosfatos que protege el medio ambiente y los drenajes.",
+          "Rendimiento Extremo: Diluciones variables que rinden hasta 100 litros de limpiador estético y de mantenimiento diario."
         ],
-        usage: "Desengrase industrial y limpieza multiusos en comedores, Casa Club, cocinas y mantenimiento.",
-        dosage: "Liviana (1:100) para mantenimiento estético diario | Normal (1:12) para zonas operativas | Pesada (1:4) para taller y motores.",
-        dilution: "Dilución variable según la carga de suciedad. Rinde hasta 100 litros de limpiador útil.",
-        phImpact: "pH Neutro (pH 7) disponible para proteger plantas tratadoras de agua del club.",
-        safety: "No tóxico, no inflamable, sin cáusticos libres. Seguro para la piel y metales.",
-        badge: "Grado Alimenticio & Eco-Friendly",
+        usage: "Lavado y desengrase de caminadoras, bancos de pesas, pisos deportivos, mats de ejercicio y vestidores del gimnasio.",
+        dosage: "Estético diario (1:100) para limpieza rápida | Lavado normal (1:12) para desengrase periódico de estructuras.",
+        dilution: "Diluir en agua. Aplicar con atomizador, tallar suavemente y retirar el excedente con paño de microfibra.",
+        phImpact: "Neutro, seguro para acabados plásticos y metálicos.",
+        safety: "Seguro al tacto, no corrosivo y dermatológicamente amigable con el personal.",
+        badge: "Desengrasante Deportivo",
         image: "images/swipe_concentrado.png"
       },
       {
@@ -236,21 +234,20 @@ const PRODUCTS_DATA = {  alberca: {
       {
         id: "swipol_gastronomia",
         name: "Swipol",
-        tagline: "Alguicida, fungicida y viricida de amplio espectro",
-        description: "Swipol está formulado para el control efectivo de algas en piscinas y en sistemas de recirculación de aguas. Las pruebas de eficiencia bacteriológica lo respaldan como un alguicida, fungicida y viricida de amplio espectro. Compuesto por cuaternario de amonio de quinta generación, es incoloro, inoloro y de grado quirúrgico y alimenticio.",
+        tagline: "Sanitizante y desinfectante de grado alimenticio para cocinas",
+        description: "Swipol es el desinfectante definitivo de grado alimenticio y quirúrgico para las áreas gastronómicas y cocinas del club. Su formulación a base de cuaternarios de amonio de quinta generación elimina al 99.999% bacterias (como Salmonella, E. coli, S. aureus), virus y hongos en mesas de preparación, tablas de picar, cámaras de refrigeración y loza, garantizando la total inocuidad sin dejar olores ni sabores.",
         benefits: [
-          "Seguridad para los socios: compuesto por cuaternario de amonio de quinta generación (cero irritación cutánea).",
-          "Completamente incoloro e inoloro: no altera la pureza visual ni sensorial del área.",
-          "Estabilidad térmica total en temperaturas altas y bajas (albercas techadas o al aire libre).",
-          "Alta tolerancia a las aguas duras, garantizando su eficacia continua en sistemas hidráulicos.",
-          "Desinfección perimetral total: inhibición de hongos en baños de pies, vestidores, pisos y tapetes sanitarios."
+          "Inocuidad Alimentaria Total: Registrado y certificado para su uso directo en superficies de contacto con alimentos sin riesgo de contaminación.",
+          "Sin Olor ni Sabor Residual: 100% incoloro e inoloro. No altera las propiedades organolépticas de los alimentos ni la experiencia culinaria de los socios.",
+          "Amplio Espectro Bactericida: Elimina de manera inmediata bacterias patógenas que causan infecciones alimentarias en cocinas industriales.",
+          "Seguro para Equipos Premium: Fórmula no corrosiva y de pH neutro (pH 7) idónea para acero inoxidable, granito, madera y utensilios."
         ],
-        usage: "Control e inhibición de hongos en vestidores y desinfección perimetral de albercas.",
-        dosage: "Dosificación recomendada según el área a desinfectar y volumen de recirculación.",
-        dilution: "Dilución de uso general y perimetral de grado quirúrgico y alimenticio.",
-        phImpact: "Completamente neutro y estable ante aguas duras.",
-        safety: "No irritante para la piel en dilución. Totalmente incoloro e inoloro.",
-        badge: "Alguicida Especializado",
+        usage: "Desinfección de mesas de trabajo, tablas de picar, cuchillos, loza, rebanadoras, cámaras frías y utensilios de cocina.",
+        dosage: "Sanitización de rutina (1:200) para superficies de alimentos | Desinfección profunda (1:100) para drenajes, campanas y pisos de cocina.",
+        dilution: "Diluir en agua. Aplicar por aspersión, inmersión o trapeado, dejar actuar por 2 a 5 minutos. No requiere enjuague en superficies sanitizadas a 1:200.",
+        phImpact: "Neutro y estable (pH 7.0).",
+        safety: "Seguro para áreas de alimentos, libre de cloro, incoloro e inoloro.",
+        badge: "Sanitizante Grado Alimenticio",
         image: "images/swipol.png"
       },
       {
@@ -339,40 +336,40 @@ const PRODUCTS_DATA = {  alberca: {
       {
         id: "swipe_concentrate",
         name: "Swipe Limpiador Líquido Concentrado",
-        tagline: "Desengrasante industrial de grado alimentario NSF A1",
-        description: "Es un desengrasante industrial líquido de uso general, altamente concentrado y con una biodegradabilidad superior al 99%. Destaca por ser grado alimenticio, avalado por el registro NSF (Categoría A1) y SAGARPA, lo que lo hace completamente seguro para las áreas de preparación de alimentos y comedores del club.",
+        tagline: "Desengrasante y limpiador industrial multiusos concentrado",
+        description: "Swipe Limpiador Concentrado es la solución industrial definitiva para el mantenimiento general de las instalaciones del club. Su fórmula súper concentrada con una biodegradabilidad superior al 99% remueve con facilidad grasas pesadas, aceites y hollín en talleres, vialidades y motores. Su versatilidad permite diluciones a la medida, adaptándose a restregadoras automáticas (versión Low Foam) y protegiendo las plantas de tratamiento de agua del club (versión pH Neutro).",
         benefits: [
-          "Biodegradabilidad superior al 99%: sustentabilidad y cuidado ecológico.",
-          "Grado alimenticio avalado por NSF (Categoría A1) y SAGARPA.",
-          "Seguridad total: sin cáusticos libres, no quema ni maltrata la piel, no inflamable y no corrosivo.",
-          "Versiones adaptadas: versión Low Foam para restregadoras y versión pH Neutro (pH 7) para plantas tratadoras.",
-          "No daña, no despinta ni corroe los metales y superficies tratadas."
+          "Versatilidad Industrial Total: Solución Liviana (1:100) para vidrios y cromos, Normal (1:12) para andadores y vehículos, y Pesada (1:4) para motores y talleres.",
+          "Especial para Equipamiento Automático: Disponible en versión Low Foam (baja espuma) diseñada específicamente para máquinas restregadoras de pisos del club.",
+          "Protección Ambiental: 100% biodegradable (>99%), libre de fosfatos. Disponible en versión pH Neutro (pH 7) para cuidar las plantas tratadoras.",
+          "Seguro y no Corrosivo: Fórmula sin cáusticos libres que no daña la piel del personal de limpieza ni corroe metales, plásticos o acabados del club."
         ],
-        usage: "Desengrase industrial y limpieza multiusos en comedores, Casa Club, cocinas y mantenimiento.",
-        dosage: "Liviana (1:100) para mantenimiento estético diario | Normal (1:12) para zonas operativas | Pesada (1:4) para taller y motores.",
-        dilution: "Dilución variable según la carga de suciedad. Rinde hasta 100 litros de limpiador útil.",
-        phImpact: "pH Neutro (pH 7) disponible para proteger plantas tratadoras de agua del club.",
+        usage: "Lavado de motores, desengrase de pisos de talleres, andadores de piedra, mantenimiento estético general de áreas comunes del club.",
+        dosage: "Mantenimiento diario (1:100) | Limpieza operativa (1:12) | Desengrase pesado (1:4).",
+        dilution: "Diluir en agua. Aplicar por rociado, hidrolavadora, mopa o restregadora, tallar y enjuagar.",
+        phImpact: "pH Neutro (pH 7.0) disponible para salvaguardar las plantas de tratamiento de aguas residuales.",
         safety: "No tóxico, no inflamable, sin cáusticos libres. Seguro para la piel y metales.",
-        badge: "Grado Alimenticio & Eco-Friendly",
+        badge: "Desengrasante Multiusos",
         image: "images/swipe_concentrado.png"
       },
       {
         id: "swipol_mantenimiento",
         name: "Swipol",
-        tagline: "Alguicida, fungicida y viricida de amplio espectro",
-        description: "Swipol está formulado para el control efectivo de algas en piscinas y en sistemas de recirculación de aguas. Las pruebas de eficiencia bacteriológica lo respaldan como un alguicida, fungicida y viricida de amplio espectro. Compuesto por cuaternario de amonio de quinta generación, es incoloro, inoloro y de grado quirúrgico y alimenticio.",
+        tagline: "Desinfectante y germicida multiusos de grado quirúrgico para el club",
+        description: "Swipol es el desinfectante y germicida de grado quirúrgico y alimenticio definitivo para la bioseguridad profunda de las instalaciones generales del club. Su formulación a base de cuaternarios de amonio de quinta generación elimina al 99.999% bacterias, virus y hongos en lobbys, pasillos, oficinas de administración, salones de eventos, baños generales y áreas de atención al socio, garantizando una higiene integral y discreta en cada rincón del club.",
         benefits: [
-          "Seguridad para los socios: compuesto por cuaternario de amonio de quinta generación (cero irritación cutánea).",
-          "Completamente incoloro e inoloro: no altera la pureza visual ni sensorial del área.",
-          "Estabilidad térmica total en temperaturas altas y bajas (albercas techadas o al aire libre).",
-          "Alta tolerancia a las aguas duras, garantizando su eficacia continua en sistemas hidráulicos.",
-          "Desinfección perimetral total: inhibición de hongos en baños de pies, vestidores, pisos y tapetes sanitarios."
+          "Bioseguridad Total Multiusos: Elimina eficazmente bacterias, virus y hongos en todas las superficies comunes como pisos, paredes, bancas, manijas y mostradores de recepción.",
+          "Discreción Absoluta: Fórmula de grado quirúrgico 100% incolora e inodora. No deja olor químico en salones, lobbys ni oficinas, preservando la experiencia premium del socio.",
+          "Alta Tolerancia Operativa: Estabilidad química y eficacia constante frente a aguas duras, variaciones de temperatura y superficies de alto tráfico.",
+          "Seguridad para Personal y Socios: Compuesto de cuaternario de amonio de quinta generación, dermatológicamente seguro y sin vapores irritantes para el personal de limpieza.",
+          "Prevención de Infecciones Cruzadas: Protección activa en baños generales, áreas de recepción, pasillos de tránsito y zonas de atención médica del club."
         ],
-        usage: "Control e inhibición de hongos en vestidores y desinfección perimetral de albercas.",
-        dilution: "Dilución de uso general y perimetral de grado quirúrgico y alimenticio.",
-        phImpact: "Completamente neutro y estable ante aguas duras.",
-        safety: "No irritante para la piel en dilución. Totalmente incoloro e inoloro.",
-        badge: "Alguicida Especializado",
+        usage: "Desinfección de lobbys, pasillos, oficinas de administración, baños generales, salones de eventos y áreas comunes de atención al socio.",
+        dosage: "Limpieza de rutina (1:200) para superficies de alto tráfico | Desinfección profunda (1:100) para baños y áreas de contacto frecuente.",
+        dilution: "Diluir en agua. Rociar o trapear sobre la superficie, dejar actuar de 2 a 5 minutos. No requiere enjuague en diluciones de mantenimiento.",
+        phImpact: "Completamente neutro (pH 7.0), no deja residuos ni altera los acabados de pisos ni superficies.",
+        safety: "No irritante para la piel en dilución recomendada. Totalmente incoloro e inodoro.",
+        badge: "Desinfectante Multiusos",
         image: "images/swipol.png"
       },
 
