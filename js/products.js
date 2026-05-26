@@ -119,7 +119,7 @@ const PRODUCTS_DATA = {  alberca: {
         dilution: "Uso Concentrado (Restauración Profunda): directo sin diluir. | Mantenimiento Diario: 1 parte de producto por 4 partes de agua.",
         phImpact: "Ácido activo.",
         safety: "Debido a su naturaleza ácida y nivel de corrosividad, NUNCA debe mezclarse con cloro o cualquier otro producto. Si su uso es continuo por parte del personal de limpieza, se recomienda estrictamente el uso de guantes.",
-        badge: "Desincrustante Ácido",
+        badge: "Desensarrante, desinfectante y desodorizante",
         image: "images/swipe_brite.png"
       },
       {
