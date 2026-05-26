@@ -1482,6 +1482,45 @@ function updateMantenimientoDisplay(product) {
           </div>
         </div>
       `;
+    } else if (product.id === "alubrite") {
+      featuresHtml = `
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Rendimiento y Aplicación</h4>
+            <p><strong>Dilución 1:10 a 1:20:</strong> Se diluye 1 parte de producto por 10 a 20 partes de agua, dependiendo de qué tan severas sean las incrustaciones en el metal. La técnica correcta exige aplicarlo de abajo hacia arriba, dejarlo actuar entre 3 y 5 minutos, y enjuagar inmediatamente con abundante agua para que el producto no se seque y deje marcas de escurrimiento.</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-1.1 0-2 .9-2 2v7c0 .6.4 1 1 1h2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7" cy="21" r="2"/><circle cx="17" cy="21" r="2"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Uso en el Club (Estructuras, Ventanales y Vehículos)</h4>
+            <p>Limpiador y abrillantador altamente eficiente diseñado para superficies de aluminio y acero inoxidable. Es la herramienta perfecta para el mantenimiento de cancelerías, puertas de aluminio, escaleras de albercas y para dejar relucientes los rines de los automóviles o carritos de golf de las flotas del club.</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Ventaja Operativa (Restauración del Brillo)</h4>
+            <p>Su fórmula crea una capa de espuma fina y densa que penetra el metal para eliminar esos molestos "óxidos blancos" que opacan el aluminio con el tiempo, así como la suciedad adherida, devolviéndole su brillo original de fábrica. Un gran plus es que no daña la pintura ni las calcomanías de los vehículos o flotillas.</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Precauciones Críticas de Seguridad</h4>
+            <p style="color: #ff5a5a; font-weight: 600;">Químico industrial TÓXICO y ALTAMENTE CORROSIVO (contiene Ácido Fluorhídrico). Obligatorio el uso de goggles, guantes de neopreno y mandil especial para ácidos. Se recomienda NO utilizar en aluminio anodizado ni en otros metales que no sean aluminio. NUNCA mezclar con cloro.</p>
+          </div>
+        </div>
+      `;
     } else {
       // Fallback dinámico premium para otros productos de Mantenimiento (Glass-Glow, Champú Cera Cart, Floor-Shine)
       featuresHtml = `

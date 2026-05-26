@@ -447,6 +447,25 @@ const PRODUCTS_DATA = {
         safety: "NUNCA mezclar con cloro ni con ningún otro producto. Obligatorio utilizar guantes de hule, goggles de protección y trabajar en áreas ventiladas.",
         badge: "Desincrustante & Antioxidante",
         image: "images/rust_off.png"
+      },
+      {
+        id: "alubrite",
+        name: "Swipe Alubrite",
+        tagline: "Abrillantador y limpiador desincrustante de base ácida para aluminio y acero",
+        description: "Abrillantador y desincrustante altamente eficiente de base ácida diseñado para restaurar el brillo original en superficies de aluminio y acero inoxidable. Penetra la suciedad y elimina los óxidos blancos protectores sin dañar la pintura ni calcomanías.",
+        benefits: [
+          "Restauración total: Elimina óxidos blancos y opacidad devolviendo el brillo original de fábrica.",
+          "Fórmula espumosa: Crea una capa de espuma fina y densa que se adhiere y penetra en el metal.",
+          "Protección de acabados: No daña la pintura ni las calcomanías decorativas de los vehículos.",
+          "Rápida acción: Remueve suciedad adherida actuando en un periodo de 3 a 5 minutos."
+        ],
+        usage: "Limpieza y abrillantado de cancelería, puertas de aluminio, escaleras de albercas y rines de rines de carros de golf.",
+        dosage: "Dilución activa de 1:10 a 1:20 según la severidad de la incrustación.",
+        dilution: "Se diluye 1 parte de producto por 10 a 20 partes de agua. Aplicar de abajo hacia arriba, dejar actuar entre 3 y 5 minutos, y enjuagar inmediatamente con abundante agua para evitar marcas.",
+        phImpact: "Ácido fluorhídrico altamente activo.",
+        safety: "QUÍMICO TÓXICO Y ALTAMENTE CORROSIVO (Contiene Ácido Fluorhídrico). Obligatorio el uso de goggles, guantes de neopreno y mandil especial para ácidos. No usar sobre aluminio anodizado ni metales no ferrosos distintos al aluminio. NUNCA mezclar con cloro.",
+        badge: "Abrillantador & Restaurador",
+        image: "images/alubrite.png"
       }
     ]
   },
