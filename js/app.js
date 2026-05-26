@@ -1560,6 +1560,45 @@ function updateMantenimientoDisplay(product) {
           </div>
         </div>
       `;
+    } else if (product.id === "sure_thing") {
+      featuresHtml = `
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Rendimiento y Dosificación</h4>
+            <p><strong>Concentración Extrema:</strong> Líquido altamente concentrado con rendimiento sobresaliente.<br><strong>Uso Directo:</strong> Unas cuantas gotas puras en ceniceros/botes de basura, o simplemente destapar y regular inserto para desodorizar espacios pequeños.<br><strong>Aspersión (Rendimiento Máximo):</strong> Diluir de 30 a 60 gotas en medio litro de agua en atomizador para áreas grandes o malos olores impregnados.</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zM12 6v6l4 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Uso en el Club (Recepción, Oficinas y Salones)</h4>
+            <p>Desodorante y desinfectante de ambiente biodegradable que actúa neutralizando los aromas de raíz. Disponible en aromas premium (menta, floral, canela y vainilla), es perfecto para mantener una atmósfera fresca en áreas sociales, salas de juntas, baños y oficinas de la Casa Club.</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Ventaja Operativa (Neutralización Real)</h4>
+            <p>No solo enmascara el olor con perfume; contiene agentes germicidas y degradadores de materia orgánica que eliminan del medio ambiente los olores desagradables de raíz (como humo de tabaco o vapores de cocinas).</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Sinergia Swipol y Seguridad</h4>
+            <p><strong>Dato Estratégico de Sinergia:</strong> Compatible y combinable con el desinfectante **Swipol** sin que este último pierda sus propiedades germicidas. Esto permite limpiar, desinfectar y aromatizar en un solo paso.<br><strong style="color: #ff5a5a;">Nota de Seguridad:</strong> A pesar de su baja toxicidad, este producto es FLAMABLE, por lo que debe almacenarse adecuadamente alejado de fuentes de calor.</p>
+          </div>
+        </div>
+      `;
     } else {
       // Fallback dinámico premium para otros productos de Mantenimiento (Glass-Glow, Champú Cera Cart, Floor-Shine)
       featuresHtml = `

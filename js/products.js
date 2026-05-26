@@ -485,6 +485,25 @@ const PRODUCTS_DATA = {
         safety: "NUNCA mezclar con cloro bajo ninguna circunstancia. El personal debe utilizar guantes de hule y lentes de seguridad durante su manejo en áreas bien ventiladas.",
         badge: "Grado Alimenticio & Protector",
         image: "images/steelbrite.png"
+      },
+      {
+        id: "sure_thing",
+        name: "Swipe Sure Thing",
+        tagline: "Desodorante, aromatizante y desinfectante ambiental biodegradable",
+        description: "Líquido altamente concentrado que funciona como desodorante y desinfectante de ambiente biodegradable de acción neutralizadora absoluta. Elimina olores de raíz de origen orgánico (tabaco, humedad, comida) en vez de solo enmascararlos.",
+        benefits: [
+          "Neutralización real: Contiene degradadores de materia orgánica y agentes germicidas activos.",
+          "Sinergia Swipol: Único aromatizante compatible con Swipol que limpia, desinfecta y aromatiza en un solo paso.",
+          "Variedad premium: Disponible en aromas menta, floral, canela y vainilla para salones de Casa Club.",
+          "Gran rendimiento: Concentración extrema que rinde desde gotas puras hasta aspersión de amplias áreas."
+        ],
+        usage: "Aromatización, desinfección y desodorización en recepciones, oficinas, baños, comedores y salones.",
+        dosage: "Uso Directo (Gotas puras) | Aspersión (30 a 60 gotas en medio litro de agua) según la necesidad.",
+        dilution: "Directo: aplicar gotas en ceniceros/botes, o regular inserto. Aspersión: 30-60 gotas por 500 ml de agua en atomizador. Combinable con desinfectante Swipol.",
+        phImpact: "Ligeramente alcalino (aromatizante activo).",
+        safety: "Producto flamable. Almacenar adecuadamente alejado de fuentes de calor. Mantener envase bien cerrado.",
+        badge: "Neutralizador Aromatizante",
+        image: "images/sure_thing.png"
       }
     ]
   },
