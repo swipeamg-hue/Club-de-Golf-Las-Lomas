@@ -115,8 +115,8 @@ const PRODUCTS_DATA = {  alberca: {
           "100% biodegradable: Respetuoso con el medio ambiente y los sistemas biológicos."
         ],
         usage: "Desincrustación, desinfección y desodorización en sanitarios y vestidores del club.",
-        dosage: "Concentrado para sarro incrustado | Dilución 1:4 para mantenimiento de rutina.",
-        dilution: "Uso Concentrado (Restauración Profunda): directo sin diluir. | Mantenimiento Diario: 1 parte de producto por 4 partes de agua.",
+        dosage: "Concentrado para sarro incrustado.",
+        dilution: "Uso Concentrado (Restauración Profunda): directo sin diluir.",
         phImpact: "Ácido activo.",
         safety: "Debido a su naturaleza ácida y nivel de corrosividad, NUNCA debe mezclarse con cloro o cualquier otro producto. Si su uso es continuo por parte del personal de limpieza, se recomienda estrictamente el uso de guantes.",
         badge: "Desensarrante, desinfectante y desodorizante",

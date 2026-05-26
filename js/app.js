@@ -693,7 +693,7 @@ function updateSpaDisplay(product) {
           </div>
           <div class="spa-feature-text">
             <h4>Rendimiento y Dosificación</h4>
-            <p><strong>Uso Concentrado (Restauración Profunda):</strong> Se aplica de forma directa, sin diluir, cuando existe un problema serio de sarro incrustado en los inodoros.<br><strong>Mantenimiento Diario (Dilución 1:4):</strong> Se mezcla 1 parte de producto por 4 partes de agua para la limpieza de rutina.</p>
+            <p><strong>Uso Concentrado (Restauración Profunda):</strong> Se aplica de forma directa, sin diluir, cuando existe un problema serio de sarro incrustado en los inodoros.</p>
           </div>
         </div>
         <div class="spa-feature-card">
