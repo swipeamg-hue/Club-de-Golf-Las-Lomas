@@ -519,23 +519,6 @@ const PRODUCTS_DATA = {  alberca: {
     slogan: "Comprueba el rendimiento y resultados espectaculares de Swipe directamente en tus instalaciones.",
     products: [
       {
-        id: "demo_alberca",
-        name: "Demo: Clarificación Express",
-        tagline: "Prueba de floculación instantánea en tu alberca",
-        description: "Programamos una prueba en vivo del Clarificador Gold en la alberca de tu elección. Observa el brillo espejo y la aglutinación de turbidez en tiempo récord ante tu personal.",
-        benefits: [
-          "Demostración física sin costo con resultados en 12 horas.",
-          "Medición y análisis digital de parámetros químicos del agua sin costo.",
-          "Capacitación express al operador de la alberca durante la prueba."
-        ],
-        usage: "Albercas principales o jacuzzis con problemas de turbidez.",
-        dosage: "Aplicado de forma controlada por nuestro especialista técnico.",
-        dilution: "Directo en la succión o retorno seleccionado de prueba.",
-        phImpact: "Neutro.",
-        safety: "Seguro. No altera el balance de desinfección existente.",
-        badge: "Prueba Sin Compromiso"
-      },
-      {
         id: "demo_cocina",
         name: "Demo: Desengrase Extremo",
         tagline: "Remoción de cochambre carbonizado en vivo",
