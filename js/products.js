@@ -224,7 +224,7 @@ const PRODUCTS_DATA = {  alberca: {
           "Versión Low Foam para Restregadoras: Disponible para uso en equipos automáticos de limpieza de pisos de la cocina industrial."
         ],
         usage: "Desengrase de campanas extractoras, parrillas, freidoras, salamandras, pisos de cocina, comedores y superficies de acero inoxidable.",
-        dosage: "Diaria (1:100) para comedores y mesas | Operativa (1:12) para pisos y área de lavado | Pesada (1:4) para campanas, freidoras y parrillas.",
+        dosage: "Diaria (1:100) para comedores and mesas | Operativa (1:12) para pisos y área de lavado | Pesada (1:4) para campanas, freidoras y parrillas.",
         dilution: "Diluir en agua según la carga de suciedad. 1 litro rinde hasta 100 litros de solución útil. Aplicar, tallar y enjuagar.",
         phImpact: "pH Neutro (pH 7.0) disponible para proteger plantas tratadoras de aguas residuales de la cocina.",
         safety: "Grado alimenticio certificado. No tóxico, no inflamable, sin cáusticos libres. Seguro para la piel y metales.",
@@ -251,23 +251,22 @@ const PRODUCTS_DATA = {  alberca: {
         image: "images/swipol.png"
       },
       {
-        id: "freezer_cleaner",
-        name: "Freezer Cleaner",
-        tagline: "Limpiador desengrasante para congeladores y cámaras frías",
-        description: "Limpiador especializado de alto rendimiento diseñado para operar en temperaturas de congelación extremas de hasta -55 °C. Permite realizar la limpieza profunda y el desengrase de cámaras de congelación y cuartos fríos sin apagar los equipos, garantizando que nunca se rompa la cadena de frío.",
+        id: "veggiefruit_wash",
+        name: "Veggiefruit Wash",
+        tagline: "Jabón líquido desinfectante de frutas y verduras",
+        description: "Veggiefruit Wash es un jabón líquido biodegradable y de grado alimenticio altamente concentrado, diseñado específicamente para lavar y desinfectar todo tipo de frutas, verduras y hierbas (como cilantro, lechugas, jitomates, papas, etc.) en las cocinas y áreas de alimentos del club.",
         benefits: [
-          "Limpieza en frío extremo: Evita el apagado de equipos y el deshielo, ahorrando energía y tiempo.",
-          "Preservación de la cadena de frío: Protege la integridad y sanidad de los alimentos almacenados.",
-          "Fórmula de rápida acción: Desengrasa y limpia a fondo depósitos difíciles y suciedad congelada.",
-          "Seguridad operativa: No inflamable, biodegradable y totalmente inofensivo para metales."
+          "Rendimiento y Dosificación (Dilución 1:100): Es un producto altamente concentrado; se requiere mezclar únicamente 10 ml de concentrado por cada litro de agua. Gracias a esta formulación, 1 litro de producto rinde hasta 100 litros de solución limpiadora, brindando una economía sorprendente. Para lograr una desinfección efectiva, se recomienda un tiempo de contacto de 1 minuto.",
+          "Uso en el Club (Cocinas y Área de Alimentos): Es un jabón líquido biodegradable y de grado alimenticio, diseñado específicamente para lavar y desinfectar todo tipo de frutas, verduras y hierbas (como cilantro, lechugas, jitomates, papas, etc.). Para procesar los alimentos, las hierbas pueden lavarse por inmersión agitándolas enérgicamente tras enjuagarles la tierra, mientras que las verduras de hoja grande se pueden tallar hoja por hoja con un cepillo de cerdas suaves.",
+          "Ventaja Operativa (Cero Alteración y Cuidado del Personal): A nivel culinario, una de sus mayores virtudes es que es completamente libre de aroma, por lo que no altera el sabor ni el olor natural de los ingredientes. A nivel operativo, su pH neutro (6 a 8) garantiza que no maltrata ni irrita las manos del personal en el uso diario, y tiene la gran ventaja de no dejar residuos acumulados en las tarjas de acero inoxidable."
         ],
-        usage: "Limpieza profunda de cámaras de congelación extrema, cuartos fríos de almacenamiento y refrigeradores comerciales.",
-        dosage: "Uso concentrado para frío extremo (-55 °C) | Solución 1:1 para frío regular (-20 °C) | Solución 1:5 para refrigeradores (-6 °C).",
-        dilution: "Uso Concentrado (-55 °C): Aplicación directa. | Solución 1:1 (-20 °C): 1 parte de producto por 1 de agua. | Solución 1:5 (-6 °C): 1 parte de producto por 5 de agua.",
-        phImpact: "Alcalinidad balanceada, formulado para no dañar serpentines ni superficies metálicas.",
-        safety: "Seguro de aplicar en frío. Utilizar el equipo de protección adecuado para áreas congeladas. Evitar contacto con los ojos.",
-        badge: "Frío Extremo hasta -55 °C",
-        image: "images/freezer_cleaner.png"
+        usage: "Lavado y desinfección profunda de frutas, verduras y hierbas finas en cocinas y áreas de banquetes.",
+        dosage: "10 ml de producto por cada litro de agua (dilución 1:100). Tiempo de contacto recomendado de 1 minuto.",
+        dilution: "Inmersión para hierbas finas (agitar tras enjuagar tierra) o tallado hoja por hoja con cepillo suave para verduras.",
+        phImpact: "pH Neutro (6.0 a 8.0) estable y amigable.",
+        safety: "Grado alimenticio y biodegradable. Dermatológicamente seguro para el operador, no deja acumulaciones en tarjas.",
+        badge: "Frutas y Verduras 1:100",
+        image: "images/veggiefruit_wash.png"
       },
       {
         id: "crystal",
@@ -344,6 +343,25 @@ const PRODUCTS_DATA = {  alberca: {
         safety: "Dermatológicamente probado y seguro para áreas de alimentos. Evitar contacto con los ojos. Uso externo.",
         badge: "Inodoro y Grado Alimenticio",
         image: "images/hand_soap.png"
+      },
+      {
+        id: "freezer_cleaner",
+        name: "Freezer Cleaner",
+        tagline: "Limpiador desengrasante para congeladores y cámaras frías",
+        description: "Limpiador especializado de alto rendimiento diseñado para operar en temperaturas de congelación extremas de hasta -55 °C. Permite realizar la limpieza profunda y el desengrase de cámaras de congelación y cuartos fríos sin apagar los equipos, garantizando que nunca se rompa la cadena de frío.",
+        benefits: [
+          "Limpieza en frío extremo: Evita el apagado de equipos y el deshielo, ahorrando energía y tiempo.",
+          "Preservación de la cadena de frío: Protege la integridad y sanidad de los alimentos almacenados.",
+          "Fórmula de rápida acción: Desengrasar y limpia a fondo depósitos difíciles y suciedad congelada.",
+          "Seguridad operativa: No inflamable, biodegradable y totalmente inofensivo para metales."
+        ],
+        usage: "Limpieza profunda de cámaras de congelación extrema, cuartos fríos de almacenamiento y refrigeradores comerciales.",
+        dosage: "Uso concentrado para frío extremo (-55 °C) | Solución 1:1 para frío regular (-20 °C) | Solución 1:5 para refrigeradores (-6 °C).",
+        dilution: "Uso Concentrado (-55 °C): Aplicación directa. | Solución 1:1 (-20 °C): 1 parte de producto por 1 de agua. | Solución 1:5 (-6 °C): 1 parte de producto por 5 de agua.",
+        phImpact: "Alcalinidad balanceada, formulado para no dañar serpentines ni superficies metálicas.",
+        safety: "Seguro de aplicar en frío. Utilizar el equipo de protección adecuado para áreas congeladas. Evitar contacto con los ojos.",
+        badge: "Frío Extremo hasta -55 °C",
+        image: "images/freezer_cleaner.png"
       }
     ]
   },

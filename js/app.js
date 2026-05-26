@@ -1141,6 +1141,36 @@ function updateGastronomiaDisplay(product) {
           </div>
         </div>
       `;
+    } else if (product.id === "veggiefruit_wash") {
+      featuresHtml = `
+        <div class="gastronomia-feature-card">
+          <div class="gastronomia-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gastronomia-feature-text">
+            <h4>Rendimiento y Dosificación (Dilución 1:100)</h4>
+            <p>Es un producto altamente concentrado; se requiere mezclar únicamente 10 ml de concentrado por cada litro de agua. Gracias a esta formulación, 1 litro de producto rinde hasta 100 litros de solución limpiadora, brindando una economía sorprendente. Para lograr una desinfección efectiva, se recomienda un tiempo de contacto de 1 minuto.</p>
+          </div>
+        </div>
+        <div class="gastronomia-feature-card">
+          <div class="gastronomia-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <div class="gastronomia-feature-text">
+            <h4>Uso en el Club (Cocinas y Área de Alimentos)</h4>
+            <p>Es un jabón líquido biodegradable y de grado alimenticio, diseñado específicamente para lavar y desinfectar todo tipo de frutas, verduras y hierbas (como cilantro, lechugas, jitomates, papas, etc.). Para procesar los alimentos, las hierbas pueden lavarse por inmersión agitándolas enérgicamente tras enjuagarles la tierra, mientras que las verduras de hoja grande se pueden tallar hoja por hoja con un cepillo de cerdas suaves.</p>
+          </div>
+        </div>
+        <div class="gastronomia-feature-card">
+          <div class="gastronomia-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke-linecap="round" stroke-linejoin="round"/><polyline points="22 4 12 14.01 9 11.01" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gastronomia-feature-text">
+            <h4>Ventaja Operativa (Cero Alteración y Cuidado del Personal)</h4>
+            <p>A nivel culinario, una de sus mayores virtudes es que es completamente libre de aroma, por lo que no altera el sabor ni el olor natural de los ingredientes. A nivel operativo, su pH neutro (6 a 8) garantiza que no maltrata ni irrita las manos del personal en el uso diario, y tiene la gran ventaja de no dejar residuos acumulados en las tarjas de acero inoxidable.</p>
+          </div>
+        </div>
+      `;
     } else if (product.id === "freezer_cleaner") {
       featuresHtml = `
         <div class="gastronomia-feature-card">
