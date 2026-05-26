@@ -925,7 +925,7 @@ function updateGymDisplay(product) {
           </div>
           <div class="gym-feature-text">
             <h4>Seguridad e Inocuidad (Cero Irritación)</h4>
-            <p>Seguridad absoluta para los socios del club: formulado con cuaternarios de amonio de última generación que garantizan cero irritación cutánea. Al ser completamente incoloro e inoloro, mantiene intacta la pureza visual y sensorial del área.</p>
+            <p>Seguridad absoluta para los socios del club: formulado con cuaternarios de amonio de quinta generación que garantizan cero irritación cutánea. Al ser completamente incoloro e inoloro, mantiene intacta la pureza visual y sensorial del área.</p>
           </div>
         </div>
         <div class="gym-feature-card">
@@ -1086,7 +1086,7 @@ function updateGastronomiaDisplay(product) {
           </div>
           <div class="gastronomia-feature-text">
             <h4>Seguridad e Inocuidad (Cero Irritación)</h4>
-            <p>Seguridad absoluta para los socios del club: formulado con cuaternarios de amonio de última generación que garantizan cero irritación cutánea. Al ser completamente incoloro e inoloro, mantiene intacta la pureza visual y sensorial del área.</p>
+            <p>Seguridad absoluta para los socios del club: formulado con cuaternarios de amonio de quinta generación que garantizan cero irritación cutánea. Al ser completamente incoloro e inoloro, mantiene intacta la pureza visual y sensorial del área.</p>
           </div>
         </div>
         <div class="gastronomia-feature-card">
@@ -1409,7 +1409,7 @@ function updateMantenimientoDisplay(product) {
           </div>
           <div class="mantenimiento-feature-text">
             <h4>Seguridad e Inocuidad (Cero Irritación)</h4>
-            <p>Seguridad absoluta para los socios del club: formulado con cuaternarios de amonio de última generación que garantizan cero irritación cutánea. Al ser completamente incoloro e inoloro, mantiene intacta la pureza visual y sensorial del área.</p>
+            <p>Seguridad absoluta para los socios del club: formulado con cuaternarios de amonio de quinta generación que garantizan cero irritación cutánea. Al ser completamente incoloro e inoloro, mantiene intacta la pureza visual y sensorial del área.</p>
           </div>
         </div>
         <div class="mantenimiento-feature-card">
