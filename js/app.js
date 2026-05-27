@@ -645,7 +645,46 @@ function updateSpaDisplay(product) {
     let featuresHtml = "";
     
     // Mapeo inteligente de características según el producto
-    if (product.id === "swipe_concentrado_spa") {
+    if (product.id === "sure_thing_spa") {
+      featuresHtml = `
+        <div class="spa-feature-card">
+          <div class="spa-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="spa-feature-text">
+            <h4>Rendimiento y Dosificación en el Spa</h4>
+            <p><strong>Fórmula Ultra Concentrada:</strong> Unas pocas gotas puras aplicadas directamente bastan para desodorizar espacios pequeños. Para atomización ambiental en cabinas o salas de masaje, diluir de 30 a 60 gotas en medio litro de agua en atomizador.</p>
+          </div>
+        </div>
+        <div class="spa-feature-card">
+          <div class="spa-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zM12 6v6l4 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="spa-feature-text">
+            <h4>Atmósfera Sensorial de Lujo</h4>
+            <p><strong>Aromaterapia Premium:</strong> Disponible en aromas exclusivos (menta, floral, vainilla y canela), ideal para diseñar la firma aromática distintiva del Spa en cabinas, saunas, vestidores y áreas de recepción.</p>
+          </div>
+        </div>
+        <div class="spa-feature-card">
+          <div class="spa-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="spa-feature-text">
+            <h4>Neutralización Real de Olores</h4>
+            <p><strong>Destrucción de Olores de Raíz:</strong> No disfraza el mal olor con perfumes fuertes. Su fórmula biodegradable descompone activamente las moléculas orgánicas causantes de la humedad, sudor o encierro, asegurando una pureza ambiental real.</p>
+          </div>
+        </div>
+        <div class="spa-feature-card">
+          <div class="spa-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="spa-feature-text">
+            <h4>Sinergia con Swipol y Seguridad</h4>
+            <p><strong>Aromatización y Desinfección en 1 Paso:</strong> Es el único aromatizante químicamente compatible con el desinfectante quirúrgico **Swipol**, permitiendo preparar cabinas desinfectadas y deliciosamente ambientadas de forma simultánea. Mantener alejado de fuentes de calor directo.</p>
+          </div>
+        </div>
+      `;
+    } else if (product.id === "swipe_concentrado_spa") {
       featuresHtml = `
         <div class="spa-feature-card">
           <div class="spa-feature-icon-container">

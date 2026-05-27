@@ -84,6 +84,25 @@ const PRODUCTS_DATA = {  alberca: {
     slogan: "Santuarios de relajación absoluta con los más altos estándares de higiene y aromas cautivadores.",
     products: [
       {
+        id: "sure_thing_spa",
+        name: "Swipe Sure Thing",
+        tagline: "Aromatizante, desodorizante y desinfectante de ambientes",
+        description: "Swipe Sure Thing es el aromatizante y desodorizante biodegradable premium de acción neutralizadora absoluta diseñado para los espacios más exclusivos del Spa. No enmascara los olores, los elimina de raíz neutralizando compuestos orgánicos. Perfecto para crear una firma aromática (menta, floral, vainilla o canela) y una sensación de absoluta pureza higiénica que complementa la atmósfera sensorial de relajación del Spa.",
+        benefits: [
+          "Neutralización Orgánica de Raíz: Elimina olores de humedad, sudor y vapores en lugar de solo enmascararlos.",
+          "Sinergia Total con Swipol: Único aromatizante compatible con Swipol para limpiar, desinfectar y aromatizar en un solo paso.",
+          "Aromaterapia Premium y Exclusiva: Disponible en aromas menta, floral, vainilla y canela para personalizar la experiencia sensorial.",
+          "Rendimiento de Alta Concentración: Rinde desde gotas puras de dosificación directa hasta atomizaciones ambientales de amplio espectro."
+        ],
+        usage: "Aromatización, desinfección y desodorización en áreas comunes, salas de masaje, vestidores, recepción del Spa y cabinas.",
+        dosage: "Gotas puras en áreas focalizadas | Aspersión (30-60 gotas por 500 ml de agua) para atomización ambiental.",
+        dilution: "Directo (gotas) o dilución en atomizador con agua. Puede combinarse directamente con la solución desinfectante Swipol.",
+        phImpact: "Ligeramente alcalino (aromatizante activo).",
+        safety: "Producto inflamable. Mantener cerrado y alejado de fuentes de calor o vapores de saunas calientes.",
+        badge: "Neutralizador Aromatizante",
+        image: "images/sure_thing.png"
+      },
+      {
         id: "swipe_concentrado_spa",
         name: "Swipe Limpiador Líquido Concentrado",
         tagline: "Limpiador y desengrasante neutro biodegradable para spas",
